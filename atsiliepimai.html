@@ -35,33 +35,23 @@ a{color:inherit;text-decoration:none}
 .eyebrow{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--pink);font-weight:600;margin-bottom:10px;}
 h1,h2{font-family:'Playfair Display',serif;font-weight:500;color:var(--cream)}
 .em{font-style:italic;color:var(--pink)}
-
 nav{position:sticky;top:0;z-index:50;background:rgba(13,13,13,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);}
 .nav-in{max-width:1060px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;}
 .logo{font-family:'Playfair Display',serif;font-size:1.12rem;letter-spacing:.04em}
 .logo i{font-style:italic;color:var(--pink)}
 .nav-cta{font-size:.84rem;font-weight:500;color:#fff;background:var(--pink);padding:9px 20px;border-radius:99px;transition:background .2s ease;}
 .nav-cta:hover{background:var(--magenta)}
-
 .hero-at{padding:48px 0 36px;border-bottom:1px solid var(--line);}
 .hero-at h1{font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:8px;font-weight:400}
 .hero-at p{color:var(--muted);font-size:.96rem;}
-
-/* SKYRIAUS ANTRAŠTĖ */
 .block{padding:48px 0 0;}
 .block-head{margin-bottom:20px;}
 .block-head h2{font-size:clamp(1.2rem,2.5vw,1.7rem);margin-bottom:4px;}
 .block-head p{color:var(--muted);font-size:.9rem;}
 .divider{height:1px;background:var(--line);margin-top:48px;}
-
-/* MASONRY TINKLELIS */
-.masonry{
-  columns:3;
-  column-gap:14px;
-}
+.masonry{columns:3;column-gap:14px;}
 @media(max-width:720px){.masonry{columns:2;}}
 @media(max-width:440px){.masonry{columns:1;}}
-
 .masonry .card{
   break-inside:avoid;
   margin-bottom:14px;
@@ -72,10 +62,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(13,13,13,.92);backdrop-filt
   transition:border-color .2s ease, transform .2s ease;
   display:block;
 }
-.masonry .card:hover{
-  border-color:var(--line-pink);
-  transform:translateY(-2px);
-}
+.masonry .card:hover{border-color:var(--line-pink);transform:translateY(-2px);}
 .masonry .card img{
   width:100% !important;
   height:auto !important;
@@ -85,36 +72,33 @@ nav{position:sticky;top:0;z-index:50;background:rgba(13,13,13,.92);backdrop-filt
   object-fit:fill !important;
 }
 
-/* NEMOKAMA GRID */
-.nemokama-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-  align-items: start;
+/* NEMOKAMA - 3 atskiros kolonos */
+.nem-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:14px;
+  align-items:start;
 }
-.nemokama-grid .card {
-  border-radius: var(--radius);
-  border: 1px solid var(--line);
-  overflow: hidden;
-  background: var(--surface);
-  transition: border-color .2s ease, transform .2s ease;
+.nem-col{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
 }
-.nemokama-grid .card:hover {
-  border-color: var(--line-pink);
-  transform: translateY(-2px);
+.nem-col .card{
+  border-radius:var(--radius);
+  border:1px solid var(--line);
+  overflow:hidden;
+  background:var(--surface);
+  transition:border-color .2s ease, transform .2s ease;
 }
-.nemokama-grid .card img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-@media(max-width:720px){ .nemokama-grid { grid-template-columns: repeat(2,1fr); } }
-@media(max-width:440px){ .nemokama-grid { grid-template-columns: 1fr; } }
+.nem-col .card:hover{border-color:var(--line-pink);transform:translateY(-2px);}
+.nem-col .card img{width:100%;height:auto;display:block;}
+@media(max-width:720px){.nem-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:440px){.nem-grid{grid-template-columns:1fr;}}
 
 .cta-center{text-align:center;padding:48px 0 56px;}
 .cta-center a{display:inline-block;padding:14px 36px;background:var(--pink);color:#fff;border-radius:99px;font-weight:500;font-size:.96rem;transition:background .2s ease;}
 .cta-center a:hover{background:var(--magenta);}
-
 footer{border-top:1px solid var(--line);padding:20px 0;font-size:.82rem;color:var(--muted);text-align:center}
 footer a{color:var(--pink)}
 </style>
@@ -139,9 +123,7 @@ footer a{color:var(--pink)}
 <!-- BENDRI -->
 <section class="block">
   <div class="wrap">
-    <div class="block-head">
-      <h2>Apie darbą su Erika</h2>
-    </div>
+    <div class="block-head"><h2>Apie darbą su Erika</h2></div>
     <div class="masonry">
       <div class="card"><img src="img/reviews/bendri/Atsiliepimas.png" alt="Atsiliepimas" loading="lazy"></div>
       <div class="card"><img src="img/reviews/bendri/Atsiliepimas1.png" alt="Atsiliepimas" loading="lazy"></div>
@@ -159,9 +141,7 @@ footer a{color:var(--pink)}
 <!-- KONSULTACIJA -->
 <section class="block">
   <div class="wrap">
-    <div class="block-head">
-      <h2>Strateginė augimo sesija</h2>
-    </div>
+    <div class="block-head"><h2>Strateginė augimo sesija</h2></div>
     <div class="masonry">
       <div class="card"><img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija.jpg" alt="Atsiliepimas" loading="lazy"></div>
       <div class="card"><img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija2.jpg" alt="Atsiliepimas" loading="lazy"></div>
@@ -177,24 +157,31 @@ footer a{color:var(--pink)}
 <!-- NEMOKAMA -->
 <section class="block">
   <div class="wrap">
-    <div class="block-head">
-      <h2>Nemokamas diagnostinis pokalbis</h2>
-    </div>
-    <div class="nemokama-grid">
-      <!-- 1 eilė -->
-      <div class="card"><img src="img/reviews/nemokama/Atsiliepimas konsultacija9.jpg" alt="Atsiliepimas 9" loading="lazy"></div>
-      <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija2.jpg" alt="Atsiliepimas 2" loading="lazy"></div>
-      <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija8.png" alt="Atsiliepimas 8" loading="lazy"></div>
-      <!-- 2 eilė -->
-      <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija.jpg" alt="Atsiliepimas 0" loading="lazy"></div>
-      <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija4.jpg" alt="Atsiliepimas 4" loading="lazy"></div>
-      <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija5.jpg" alt="Atsiliepimas 5" loading="lazy"></div>
-      <!-- 3 eilė -->
-      <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija1.jpg" alt="Atsiliepimas 1" loading="lazy"></div>
-      <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija3.png" alt="Atsiliepimas 3" loading="lazy"></div>
-      <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija6.png" alt="Atsiliepimas 6" loading="lazy"></div>
-      <!-- 4 eilė -->
-      <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija7.png" alt="Atsiliepimas 7" loading="lazy"></div>
+    <div class="block-head"><h2>Nemokamas diagnostinis pokalbis</h2></div>
+    <div class="nem-grid">
+
+      <!-- 1 KOLONA: Labai ačiū, Miela Erika, Labai jums Erika, Sveikos -->
+      <div class="nem-col">
+        <div class="card"><img src="img/reviews/nemokama/Atsiliepimas konsultacija9.jpg" alt="Atsiliepimas 9" loading="lazy"></div>
+        <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija.jpg" alt="Atsiliepimas 0" loading="lazy"></div>
+        <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija1.jpg" alt="Atsiliepimas 1" loading="lazy"></div>
+        <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija6.png" alt="Atsiliepimas 6" loading="lazy"></div>
+      </div>
+
+      <!-- 2 KOLONA: Andrea Vy, Labas vis galvoju, Pataikei tiesiai -->
+      <div class="nem-col">
+        <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija2.jpg" alt="Atsiliepimas 2" loading="lazy"></div>
+        <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija3.png" alt="Atsiliepimas 3" loading="lazy"></div>
+        <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija4.jpg" alt="Atsiliepimas 4" loading="lazy"></div>
+      </div>
+
+      <!-- 3 KOLONA: Labutis Erikut, Rusiškas, Sveikos mergaitės, Julija -->
+      <div class="nem-col">
+        <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija8.png" alt="Atsiliepimas 8" loading="lazy"></div>
+        <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija5.jpg" alt="Atsiliepimas 5" loading="lazy"></div>
+        <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija7.png" alt="Atsiliepimas 7" loading="lazy"></div>
+      </div>
+
     </div>
   </div>
   <div class="wrap"><div class="divider"></div></div>
@@ -203,9 +190,7 @@ footer a{color:var(--pink)}
 <!-- MENTORYSTĖ -->
 <section class="block">
   <div class="wrap">
-    <div class="block-head">
-      <h2>Individuali mentorystė</h2>
-    </div>
+    <div class="block-head"><h2>Individuali mentorystė</h2></div>
     <div class="masonry">
       <div class="card"><img src="img/reviews/mentoryste/Egles%20atsiliepimas%20mentoryste.jpg" alt="Atsiliepimas" loading="lazy"></div>
       <div class="card"><img src="img/reviews/mentoryste/atsiliepimas%20Egle.jpg" alt="Atsiliepimas" loading="lazy"></div>
