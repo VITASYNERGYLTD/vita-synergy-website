@@ -25,7 +25,7 @@
   --muted:#B5A6AC;
   --line:rgba(250,249,246,.1);
   --line-pink:rgba(233,30,140,.28);
-  --radius:14px;
+  --radius:12px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -47,44 +47,37 @@ nav{position:sticky;top:0;z-index:50;background:rgba(13,13,13,.92);backdrop-filt
 .hero-at h1{font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:8px;font-weight:400}
 .hero-at p{color:var(--muted);font-size:.96rem;}
 
-/* GRID — visada po 3, lygūs */
-.rev-grid{
+/* TINKLELIS — nuotraukos pilno dydžio */
+.photo-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:14px;
   padding:32px 0 16px;
 }
-@media(max-width:720px){.rev-grid{grid-template-columns:repeat(2,1fr);}}
-@media(max-width:440px){.rev-grid{grid-template-columns:1fr;}}
+@media(max-width:720px){.photo-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:440px){.photo-grid{grid-template-columns:1fr;}}
 
-.rev-card{
-  border-radius:var(--radius);
-  overflow:hidden;
-  border:1px solid var(--line);
-  background:var(--surface);
-  aspect-ratio:3/4;
-  transition:border-color .2s ease,transform .2s ease;
-}
-.rev-card:hover{border-color:var(--line-pink);transform:translateY(-3px);}
-.rev-card img{
-  width:100%;height:100%;
-  object-fit:cover;object-position:top;
+.photo-grid img{
+  width:100%;
+  height:auto;
   display:block;
+  border-radius:var(--radius);
+  border:1px solid var(--line);
+  transition:border-color .2s ease, transform .2s ease;
+}
+.photo-grid img:hover{
+  border-color:var(--line-pink);
+  transform:translateY(-2px);
 }
 
-.block{padding:48px 0 0;}
+.block{padding:40px 0 0;}
 .block-head{margin-bottom:4px;}
 .block-head h2{font-size:clamp(1.2rem,2.5vw,1.7rem);margin-bottom:4px;}
 .block-head p{color:var(--muted);font-size:.9rem;}
-.divider{height:1px;background:var(--line);margin-top:48px;}
+.divider{height:1px;background:var(--line);margin-top:40px;}
 
 .cta-center{text-align:center;padding:48px 0 56px;}
-.cta-center a{
-  display:inline-block;padding:14px 36px;
-  background:var(--pink);color:#fff;
-  border-radius:99px;font-weight:500;font-size:.96rem;
-  transition:background .2s ease;
-}
+.cta-center a{display:inline-block;padding:14px 36px;background:var(--pink);color:#fff;border-radius:99px;font-weight:500;font-size:.96rem;transition:background .2s ease;}
 .cta-center a:hover{background:var(--magenta);}
 
 footer{border-top:1px solid var(--line);padding:20px 0;font-size:.82rem;color:var(--muted);text-align:center}
@@ -108,86 +101,82 @@ footer a{color:var(--pink)}
   </div>
 </header>
 
-<!-- BENDRI — 9 nuotraukos, 3×3 -->
+<!-- BENDRI -->
 <section class="block">
   <div class="wrap">
     <div class="block-head">
       <h2>Apie darbą su Erika</h2>
-      <p>Ką žmonės sako apie bendradarbiavimą</p>
     </div>
-    <div class="rev-grid">
-      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas.png" alt="Atsiliepimas" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas1.png" alt="Atsiliepimas" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas2.png" alt="Atsiliepimas" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas3.jpg" alt="Atsiliepimas" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas4.png" alt="Atsiliepimas" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas5.jpg" alt="Atsiliepimas" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas6.jpg" alt="Atsiliepimas" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas7.png" alt="Atsiliepimas" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas8.png" alt="Atsiliepimas" loading="lazy"></div>
+    <div class="photo-grid">
+      <img src="img/reviews/bendri/Atsiliepimas.png" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/bendri/Atsiliepimas1.png" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/bendri/Atsiliepimas2.png" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/bendri/Atsiliepimas3.jpg" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/bendri/Atsiliepimas4.png" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/bendri/Atsiliepimas5.jpg" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/bendri/Atsiliepimas6.jpg" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/bendri/Atsiliepimas7.png" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/bendri/Atsiliepimas8.png" alt="Atsiliepimas" loading="lazy">
     </div>
   </div>
   <div class="wrap"><div class="divider"></div></div>
 </section>
 
-<!-- KONSULTACIJA — 6 nuotraukos, 3×2 -->
+<!-- KONSULTACIJA -->
 <section class="block">
   <div class="wrap">
     <div class="block-head">
       <h2>Strateginė augimo sesija</h2>
-      <p>Po mokamos konsultacijos — konkretūs rezultatai</p>
     </div>
-    <div class="rev-grid">
-      <div class="rev-card"><img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija.jpg" alt="Atsiliepimas po konsultacijos" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija2.jpg" alt="Atsiliepimas po konsultacijos" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija3.jpg" alt="Atsiliepimas po konsultacijos" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija4.png" alt="Atsiliepimas po konsultacijos" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija5.png" alt="Atsiliepimas po konsultacijos" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija6.jpg" alt="Atsiliepimas po konsultacijos" loading="lazy"></div>
+    <div class="photo-grid">
+      <img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija.jpg" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija2.jpg" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija3.jpg" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija4.png" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija5.png" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija6.jpg" alt="Atsiliepimas" loading="lazy">
     </div>
   </div>
   <div class="wrap"><div class="divider"></div></div>
 </section>
 
-<!-- NEMOKAMA — 9 nuotraukos, 3×3 -->
+<!-- NEMOKAMA -->
 <section class="block">
   <div class="wrap">
     <div class="block-head">
       <h2>Nemokamas diagnostinis pokalbis</h2>
-      <p>30 minučių — ir žinai, kur tavo sistemoje dingsta pinigai</p>
     </div>
-    <div class="rev-grid">
-      <div class="rev-card"><img src="img/reviews/nemokama/Atsiliepimas%20konsultacija9.jpg" alt="Atsiliepimas" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/nemokama/atsiliepimas%20apie%20konsultacija.jpg" alt="Atsiliepimas" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/nemokama/atsiliepimas%20konsultacija.jpg" alt="Atsiliepimas" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/nemokama/atsiliepimas%20konsultacija2.jpg" alt="Atsiliepimas" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/nemokama/atsiliepimas%20konsultacija3.png" alt="Atsiliepimas" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/nemokama/atsiliepimas%20konsultacija4.jpg" alt="Atsiliepimas" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/nemokama/atsiliepimas%20konsultacija5.jpg" alt="Atsiliepimas" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/nemokama/atsiliepimas%20konsultacija6.png" alt="Atsiliepimas" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/nemokama/atsiliepimas%20konsultacija7.png" alt="Atsiliepimas" loading="lazy"></div>
+    <div class="photo-grid">
+      <img src="img/reviews/nemokama/Atsiliepimas%20konsultacija9.jpg" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/nemokama/atsiliepimas%20apie%20konsultacija.jpg" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/nemokama/atsiliepimas%20konsultacija.jpg" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/nemokama/atsiliepimas%20konsultacija2.jpg" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/nemokama/atsiliepimas%20konsultacija3.png" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/nemokama/atsiliepimas%20konsultacija4.jpg" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/nemokama/atsiliepimas%20konsultacija5.jpg" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/nemokama/atsiliepimas%20konsultacija6.png" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/nemokama/atsiliepimas%20konsultacija7.png" alt="Atsiliepimas" loading="lazy">
     </div>
   </div>
   <div class="wrap"><div class="divider"></div></div>
 </section>
 
-<!-- MENTORYSTĖ — 9 nuotraukos, 3×3 (8 turime, pridedame Atsiliepimas9 iš bendri) -->
+<!-- MENTORYSTĖ -->
 <section class="block">
   <div class="wrap">
     <div class="block-head">
       <h2>Individuali mentorystė</h2>
-      <p>4+2 mėn. — nuo produkto kūrimo iki stabilaus klientų srauto</p>
     </div>
-    <div class="rev-grid">
-      <div class="rev-card"><img src="img/reviews/mentoryste/Egle%20mentoryste.png" alt="Atsiliepimas po mentorystės" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/mentoryste/Egles%20atsiliepimas%20mentoryste.jpg" alt="Atsiliepimas po mentorystės" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/mentoryste/Genute%20mentoryste.png" alt="Atsiliepimas po mentorystės" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/mentoryste/Mentoryste%20be%20kaukes.png" alt="Atsiliepimas po mentorystės" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/mentoryste/Mentoryste.png" alt="Atsiliepimas po mentorystės" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/mentoryste/Regina%20mentoryste.jpg" alt="Atsiliepimas po mentorystės" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/mentoryste/Virginija%20mentoryste%20atsiliepimai.jpg" alt="Atsiliepimas po mentorystės" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/mentoryste/atsiliepimas%20Egle.jpg" alt="Atsiliepimas po mentorystės" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas9.png" alt="Atsiliepimas po mentorystės" loading="lazy"></div>
+    <div class="photo-grid">
+      <img src="img/reviews/mentoryste/Egle%20mentoryste.png" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/mentoryste/Egles%20atsiliepimas%20mentoryste.jpg" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/mentoryste/Genute%20mentoryste.png" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/mentoryste/Mentoryste%20be%20kaukes.png" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/mentoryste/Mentoryste.png" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/mentoryste/Regina%20mentoryste.jpg" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/mentoryste/Virginija%20mentoryste%20atsiliepimai.jpg" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/mentoryste/atsiliepimas%20Egle.jpg" alt="Atsiliepimas" loading="lazy">
+      <img src="img/reviews/bendri/Atsiliepimas9.png" alt="Atsiliepimas" loading="lazy">
     </div>
   </div>
 </section>
