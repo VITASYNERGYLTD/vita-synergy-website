@@ -47,7 +47,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(13,13,13,.92);backdrop-filt
 .hero-at h1{font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:8px;font-weight:400}
 .hero-at p{color:var(--muted);font-size:.96rem;}
 
-/* TINKLELIS — nuotraukos pilno dydžio */
+/* TINKLELIS */
 .photo-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -57,17 +57,24 @@ nav{position:sticky;top:0;z-index:50;background:rgba(13,13,13,.92);backdrop-filt
 @media(max-width:720px){.photo-grid{grid-template-columns:repeat(2,1fr);}}
 @media(max-width:440px){.photo-grid{grid-template-columns:1fr;}}
 
-.photo-grid img{
-  width:100%;
-  height:auto;
-  display:block;
+.photo-grid .card{
   border-radius:var(--radius);
   border:1px solid var(--line);
+  overflow:hidden;
+  background:var(--surface);
   transition:border-color .2s ease, transform .2s ease;
+  aspect-ratio:4/5;
 }
-.photo-grid img:hover{
+.photo-grid .card:hover{
   border-color:var(--line-pink);
   transform:translateY(-2px);
+}
+.photo-grid .card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:top;
+  display:block;
 }
 
 .block{padding:40px 0 0;}
@@ -108,15 +115,15 @@ footer a{color:var(--pink)}
       <h2>Apie darbą su Erika</h2>
     </div>
     <div class="photo-grid">
-      <img src="img/reviews/bendri/Atsiliepimas.png" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/bendri/Atsiliepimas1.png" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/bendri/Atsiliepimas2.png" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/bendri/Atsiliepimas3.jpg" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/bendri/Atsiliepimas4.png" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/bendri/Atsiliepimas5.jpg" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/bendri/Atsiliepimas6.jpg" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/bendri/Atsiliepimas7.png" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/bendri/Atsiliepimas8.png" alt="Atsiliepimas" loading="lazy">
+      <div class="card"><img src="img/reviews/bendri/Atsiliepimas.png" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/bendri/Atsiliepimas1.png" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/bendri/Atsiliepimas2.png" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/bendri/Atsiliepimas3.jpg" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/bendri/Atsiliepimas4.png" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/bendri/Atsiliepimas5.jpg" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/bendri/Atsiliepimas6.jpg" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/bendri/Atsiliepimas7.png" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/bendri/Atsiliepimas8.png" alt="Atsiliepimas" loading="lazy"></div>
     </div>
   </div>
   <div class="wrap"><div class="divider"></div></div>
@@ -129,12 +136,12 @@ footer a{color:var(--pink)}
       <h2>Strateginė augimo sesija</h2>
     </div>
     <div class="photo-grid">
-      <img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija.jpg" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija2.jpg" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija3.jpg" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija4.png" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija5.png" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija6.jpg" alt="Atsiliepimas" loading="lazy">
+      <div class="card"><img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija.jpg" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija2.jpg" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija3.jpg" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija4.png" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija5.png" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/konsultacija/Atsiliepimai%20konsultacija6.jpg" alt="Atsiliepimas" loading="lazy"></div>
     </div>
   </div>
   <div class="wrap"><div class="divider"></div></div>
@@ -147,15 +154,15 @@ footer a{color:var(--pink)}
       <h2>Nemokamas diagnostinis pokalbis</h2>
     </div>
     <div class="photo-grid">
-      <img src="img/reviews/nemokama/Atsiliepimas%20konsultacija9.jpg" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/nemokama/atsiliepimas%20apie%20konsultacija.jpg" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/nemokama/atsiliepimas%20konsultacija.jpg" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/nemokama/atsiliepimas%20konsultacija2.jpg" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/nemokama/atsiliepimas%20konsultacija3.png" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/nemokama/atsiliepimas%20konsultacija4.jpg" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/nemokama/atsiliepimas%20konsultacija5.jpg" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/nemokama/atsiliepimas%20konsultacija6.png" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/nemokama/atsiliepimas%20konsultacija7.png" alt="Atsiliepimas" loading="lazy">
+      <div class="card"><img src="img/reviews/nemokama/Atsiliepimas%20konsultacija9.jpg" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/nemokama/atsiliepimas%20apie%20konsultacija.jpg" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/nemokama/atsiliepimas%20konsultacija.jpg" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/nemokama/atsiliepimas%20konsultacija2.jpg" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/nemokama/atsiliepimas%20konsultacija3.png" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/nemokama/atsiliepimas%20konsultacija4.jpg" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/nemokama/atsiliepimas%20konsultacija5.jpg" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/nemokama/atsiliepimas%20konsultacija6.png" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/nemokama/atsiliepimas%20konsultacija7.png" alt="Atsiliepimas" loading="lazy"></div>
     </div>
   </div>
   <div class="wrap"><div class="divider"></div></div>
@@ -168,15 +175,15 @@ footer a{color:var(--pink)}
       <h2>Individuali mentorystė</h2>
     </div>
     <div class="photo-grid">
-      <img src="img/reviews/mentoryste/Egle%20mentoryste.png" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/mentoryste/Egles%20atsiliepimas%20mentoryste.jpg" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/mentoryste/Genute%20mentoryste.png" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/mentoryste/Mentoryste%20be%20kaukes.png" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/mentoryste/Mentoryste.png" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/mentoryste/Regina%20mentoryste.jpg" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/mentoryste/Virginija%20mentoryste%20atsiliepimai.jpg" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/mentoryste/atsiliepimas%20Egle.jpg" alt="Atsiliepimas" loading="lazy">
-      <img src="img/reviews/bendri/Atsiliepimas9.png" alt="Atsiliepimas" loading="lazy">
+      <div class="card"><img src="img/reviews/mentoryste/Egle%20mentoryste.png" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/mentoryste/Egles%20atsiliepimas%20mentoryste.jpg" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/mentoryste/Genute%20mentoryste.png" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/mentoryste/Mentoryste%20be%20kaukes.png" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/mentoryste/Mentoryste.png" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/mentoryste/Regina%20mentoryste.jpg" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/mentoryste/Virginija%20mentoryste%20atsiliepimai.jpg" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/mentoryste/atsiliepimas%20Egle.jpg" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/bendri/Atsiliepimas9.png" alt="Atsiliepimas" loading="lazy"></div>
     </div>
   </div>
 </section>
