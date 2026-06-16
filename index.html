@@ -151,7 +151,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(13,13,13,.9);backdrop-filte
 @media(max-width:500px){.rev-grid{columns:1;}}
 .rev-card{break-inside:avoid;margin-bottom:16px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:var(--surface);transition:border-color .2s ease,transform .2s ease;display:block;}
 .rev-card:hover{border-color:var(--line-pink);transform:translateY(-3px);}
-.rev-card img{width:100%;height:auto;display:block;object-fit:contain;}
+.rev-card img{width:100% !important;height:auto !important;max-height:none !important;aspect-ratio:unset !important;display:block;object-fit:fill !important;}
 .rev-more{margin-top:36px;text-align:center;}
 .rev-more a{display:inline-block;font-size:.92rem;font-weight:500;color:var(--cream);border:1.5px solid var(--ruby);padding:12px 32px;border-radius:99px;transition:all .2s ease;}
 .rev-more a:hover{background:var(--ruby);}
