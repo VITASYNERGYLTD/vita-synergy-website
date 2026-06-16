@@ -85,6 +85,32 @@ nav{position:sticky;top:0;z-index:50;background:rgba(13,13,13,.92);backdrop-filt
   object-fit:fill !important;
 }
 
+/* NEMOKAMA GRID */
+.nemokama-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  align-items: start;
+}
+.nemokama-grid .card {
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  background: var(--surface);
+  transition: border-color .2s ease, transform .2s ease;
+}
+.nemokama-grid .card:hover {
+  border-color: var(--line-pink);
+  transform: translateY(-2px);
+}
+.nemokama-grid .card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media(max-width:720px){ .nemokama-grid { grid-template-columns: repeat(2,1fr); } }
+@media(max-width:440px){ .nemokama-grid { grid-template-columns: 1fr; } }
+
 .cta-center{text-align:center;padding:48px 0 56px;}
 .cta-center a{display:inline-block;padding:14px 36px;background:var(--pink);color:#fff;border-radius:99px;font-weight:500;font-size:.96rem;transition:background .2s ease;}
 .cta-center a:hover{background:var(--magenta);}
@@ -154,18 +180,22 @@ footer a{color:var(--pink)}
     <div class="block-head">
       <h2>Nemokamas diagnostinis pokalbis</h2>
     </div>
-<div class="masonry">
-  <div class="card"><img src="img/reviews/nemokama/Atsiliepimas konsultacija9.jpg" alt="Atsiliepimas 9" loading="lazy"></div>
-  <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija.jpg" alt="Atsiliepimas 0" loading="lazy"></div>
-  <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija1.jpg" alt="Atsiliepimas 1" loading="lazy"></div>
-  <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija4.jpg" alt="Atsiliepimas 4" loading="lazy"></div>
-  <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija2.jpg" alt="Atsiliepimas 2" loading="lazy"></div>
-  <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija3.png" alt="Atsiliepimas 3" loading="lazy"></div>
-  <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija8.png" alt="Atsiliepimas 8" loading="lazy"></div>
-  <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija5.jpg" alt="Atsiliepimas 5" loading="lazy"></div>
-  <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija6.png" alt="Atsiliepimas 6" loading="lazy"></div>
-  <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija7.png" alt="Atsiliepimas 7" loading="lazy"></div>
-</div>
+    <div class="nemokama-grid">
+      <!-- 1 eilė -->
+      <div class="card"><img src="img/reviews/nemokama/Atsiliepimas konsultacija9.jpg" alt="Atsiliepimas 9" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija2.jpg" alt="Atsiliepimas 2" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija8.png" alt="Atsiliepimas 8" loading="lazy"></div>
+      <!-- 2 eilė -->
+      <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija.jpg" alt="Atsiliepimas 0" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija4.jpg" alt="Atsiliepimas 4" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija5.jpg" alt="Atsiliepimas 5" loading="lazy"></div>
+      <!-- 3 eilė -->
+      <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija1.jpg" alt="Atsiliepimas 1" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija3.png" alt="Atsiliepimas 3" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija6.png" alt="Atsiliepimas 6" loading="lazy"></div>
+      <!-- 4 eilė -->
+      <div class="card"><img src="img/reviews/nemokama/atsiliepimas konsultacija7.png" alt="Atsiliepimas 7" loading="lazy"></div>
+    </div>
   </div>
   <div class="wrap"><div class="divider"></div></div>
 </section>
@@ -178,14 +208,13 @@ footer a{color:var(--pink)}
     </div>
     <div class="masonry">
       <div class="card"><img src="img/reviews/mentoryste/Egles%20atsiliepimas%20mentoryste.jpg" alt="Atsiliepimas" loading="lazy"></div>
-       <div class="card"><img src="img/reviews/mentoryste/atsiliepimas%20Egle.jpg" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="card"><img src="img/reviews/mentoryste/atsiliepimas%20Egle.jpg" alt="Atsiliepimas" loading="lazy"></div>
       <div class="card"><img src="img/reviews/mentoryste/Genute%20mentoryste.png" alt="Atsiliepimas" loading="lazy"></div>
       <div class="card"><img src="img/reviews/mentoryste/Mentoryste%20be%20kaukes.png" alt="Atsiliepimas" loading="lazy"></div>
       <div class="card"><img src="img/reviews/mentoryste/Mentoryste.png" alt="Atsiliepimas" loading="lazy"></div>
       <div class="card"><img src="img/reviews/mentoryste/Regina%20mentoryste.jpg" alt="Atsiliepimas" loading="lazy"></div>
       <div class="card"><img src="img/reviews/mentoryste/Virginija%20mentoryste%20atsiliepimai.jpg" alt="Atsiliepimas" loading="lazy"></div>
       <div class="card"><img src="img/reviews/mentoryste/Egle%20mentoryste.png" alt="Atsiliepimas" loading="lazy"></div>
-     
       <div class="card"><img src="img/reviews/bendri/Atsiliepimas9.png" alt="Atsiliepimas" loading="lazy"></div>
     </div>
   </div>
