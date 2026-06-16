@@ -4,68 +4,393 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Strateginė augimo sesija — Erika Karta</title>
+<meta name="description" content="Strateginė augimo sesija, kuri duoda aiškią kryptį ir pirmus veiksmus, kaip paversti turinį klientais. 2 susitikimai · £150.">
+<link rel="canonical" href="https://www.vita-synergy.com/konsultacija.html">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Erika Karta">
+<meta property="og:title" content="Strateginė augimo sesija — Erika Karta">
+<meta property="og:description" content="2 susitikimai, £150 — tavo socialinių tinklų sistemos diagnostika su konkrečiu veiksmų planu.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.vita-synergy.com/konsultacija.html">
+<meta property="og:image" content="https://www.vita-synergy.com/erika-karta.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#0D0D0D;
   --surface:#181014;
+  --surface2:#1E1018;
+  --burgundy:#5C0E26;
+  --ruby:#A4133C;
   --pink:#E91E8C;
+  --magenta:#D90F6A;
+  --pink-soft:rgba(233,30,140,.09);
   --cream:#FAF9F6;
   --muted:#B5A6AC;
   --line:rgba(250,249,246,.1);
-  --radius:16px;
+  --line-pink:rgba(233,30,140,.28);
+  --radius:12px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--bg);color:var(--cream);font-family:'Inter',sans-serif;font-weight:400;line-height:1.6}
-h1,h2,h3{font-family:'Playfair Display',serif;color:var(--cream);margin-bottom:16px}
-.wrap{max-width:760px;margin:0 auto;padding:40px 24px}
-section{padding:48px 0}
-.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--cream);
+  font-family:'Inter',sans-serif;font-weight:300;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--pink);color:#fff}
+h1,h2,h3{font-family:'Playfair Display',serif;font-weight:500;line-height:1.18;color:var(--cream)}
+.em{font-style:italic;color:var(--pink)}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:840px;margin:0 auto;padding:0 24px}
+.eyebrow{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--pink);font-weight:600;margin-bottom:8px;}
+section{padding:24px 0}
 
-/* Vizualiniai patobulinimai */
-.card{background:rgba(233,30,140,0.05);border:1px solid rgba(233,30,140,0.2);padding:30px;border-radius:var(--radius);margin-bottom:24px}
-.seg{border:1px solid var(--line);padding:24px;border-radius:var(--radius);margin-bottom:16px;background:var(--bg)}
-.btn{display:inline-block;padding:16px 32px;border-radius:99px;background:var(--pink);color:#fff;font-weight:600;text-decoration:none;text-align:center}
-p{color:var(--muted);margin-bottom:16px}
-ul{margin-left:20px;margin-bottom:16px;color:var(--muted)}
-li{margin-bottom:8px}
+nav{position:sticky;top:0;z-index:50;background:rgba(13,13,13,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);}
+.nav-in{max-width:840px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.logo{font-family:'Playfair Display',serif;font-size:1.12rem;letter-spacing:.04em}
+.logo i{font-style:italic;color:var(--pink)}
+.nav-cta{font-size:.84rem;font-weight:500;color:#fff;background:var(--pink);padding:8px 18px;border-radius:99px;transition:background .2s ease;white-space:nowrap;}
+.nav-cta:hover{background:var(--magenta)}
+
+.btn{display:inline-block;padding:13px 30px;border-radius:99px;font-weight:500;font-size:.96rem;transition:all .2s ease;background:var(--pink);color:#fff;}
+.btn:hover{background:var(--magenta);transform:translateY(-2px)}
+.cta-block{text-align:center;margin-top:16px}
+
+/* SPALVŲ BLOKAI */
+.box-white{background:var(--cream);color:#1a1a1a;}
+.box-white h1,.box-white h2,.box-white h3{color:#1a1a1a}
+.box-white .eyebrow{color:var(--pink)}
+.box-white .sub{color:#555}
+.box-white p{color:#444}
+.box-white ul.check li{color:#555}
+.box-white ul.check li::before{color:var(--pink)}
+.box-white .prob{background:#fff;border:1px solid rgba(0,0,0,.08);}
+.box-white .prob h3{color:#1a1a1a}
+.box-white .prob p{color:#555}
+.box-white .prob .num{color:var(--pink)}
+.box-white .prob .after{color:#222}
+.box-white .prob .bonus{background:rgba(233,30,140,.07);border:1px solid rgba(233,30,140,.18);color:#1a1a1a}
+.box-white .prob .bonus b{color:var(--magenta)}
+.box-white .cta-block .btn{background:var(--pink);color:#fff}
+
+/* box-pink — tamsus akcentinis blokas su rausvos spalvos kraštu */
+.box-pink{
+  background:var(--surface2);
+  border-top:2px solid var(--ruby);
+  border-bottom:2px solid var(--ruby);
+}
+
+.box-surface{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+
+/* HERO */
+.hero{padding:40px 0 28px}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);margin-bottom:10px;font-weight:400}
+.hero .lead{font-size:1.02rem;color:#555;margin-bottom:18px;font-weight:400;max-width:38em;line-height:1.58}
+.promise{background:#fff;border:1px solid rgba(233,30,140,.2);border-left:3px solid var(--pink);border-radius:var(--radius);padding:18px 22px;}
+.promise h3{font-size:1.18rem;margin-bottom:8px;color:#1a1a1a}
+.promise p.intro{color:#555;font-weight:400;margin-bottom:10px;font-size:.95rem}
+ul.check{list-style:none}
+ul.check li{padding-left:26px;position:relative;margin-bottom:6px;color:var(--muted);font-weight:400;font-size:.94rem;}
+ul.check li::before{content:"→";position:absolute;left:0;color:var(--pink);font-weight:600}
+.promise .punch{font-family:'Playfair Display',serif;font-style:italic;font-size:1.06rem;color:#1a1a1a;margin-top:12px;padding-top:10px;border-top:1px solid rgba(233,30,140,.2);}
+
+h2.sec{font-size:clamp(1.45rem,3vw,2.1rem);margin-bottom:6px}
+.sub{color:var(--muted);font-weight:400;margin-bottom:14px;max-width:40em;font-size:.95rem;line-height:1.55}
+
+/* SEG */
+.seg{border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;margin-bottom:8px;background:var(--surface2);}
+.seg h3{font-size:1.05rem;margin-bottom:5px}
+.seg p{color:var(--muted);font-weight:400;font-size:.93rem;line-height:1.52}
+.seg p.goal{margin-top:8px;font-style:italic;color:var(--cream);font-size:.93rem}
+.seg p.goal b{color:var(--pink);font-style:normal;font-weight:600;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:2px;}
+
+/* PROB */
+.prob{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;margin-bottom:8px;}
+.prob:last-of-type{margin-bottom:0}
+.prob .num{font-family:'Playfair Display',serif;font-size:.78rem;color:var(--pink);letter-spacing:.18em;font-weight:600;margin-bottom:4px;}
+.prob h3{font-size:1.15rem;margin-bottom:6px}
+.prob p{color:var(--muted);font-weight:400;margin-bottom:8px;font-size:.93rem;line-height:1.52}
+.prob p:last-of-type{margin-bottom:0}
+.prob .after{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--cream);font-weight:600;margin-bottom:6px;margin-top:2px;display:block;}
+.prob ul.check{margin-bottom:6px}
+.prob .bonus{background:var(--pink-soft);border:1px solid var(--line-pink);border-radius:8px;padding:10px 14px;color:var(--cream);font-weight:400;font-size:.91rem;margin-top:8px;line-height:1.52;}
+.prob .bonus b{color:var(--pink);font-weight:600}
+
+/* HOW */
+.how .step-row{display:grid;grid-template-columns:44px 1fr;gap:12px;border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;margin-bottom:8px;background:var(--bg);}
+.how .step-row b{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--pink);font-weight:600;line-height:1;}
+.how .step-row h3{font-size:1.05rem;margin-bottom:5px}
+.how .step-row p{color:var(--muted);font-weight:400;font-size:.93rem;line-height:1.52}
+
+/* FORMATS */
+.formats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){.formats{grid-template-columns:1fr}}
+.fmt{border:1px solid var(--line);border-radius:var(--radius);padding:18px 16px;background:var(--bg);display:flex;flex-direction:column;}
+.fmt.feat{border:2px solid var(--pink);background:var(--pink-soft);}
+.fmt .tag{align-self:flex-start;font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;font-weight:600;color:var(--pink);background:rgba(233,30,140,.12);padding:4px 10px;border-radius:99px;margin-bottom:10px;}
+.fmt h3{font-size:1.12rem;margin-bottom:5px}
+.fmt .price{font-family:'Playfair Display',serif;font-size:1.35rem;color:var(--pink);font-weight:600;margin-bottom:8px}
+.fmt p{color:var(--muted);font-weight:400;font-size:.91rem;margin-bottom:12px;flex:1;line-height:1.52}
+.fmt a{font-size:.88rem;font-weight:500;color:#fff;background:var(--pink);text-align:center;padding:10px 16px;border-radius:99px;transition:background .2s ease;}
+.fmt a:hover{background:var(--magenta)}
+.fmt.alt2 a{background:transparent;border:1.5px solid var(--ruby);color:var(--cream)}
+.fmt.alt2 a:hover{background:var(--ruby)}
+
+.note{margin-top:10px;background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--pink);border-radius:8px;padding:10px 14px;color:var(--cream);font-weight:400;font-size:.92rem;line-height:1.52;}
+
+.deficit{text-align:center}
+footer{border-top:1px solid var(--line);padding:18px 0;font-size:.83rem;color:var(--muted);font-weight:400;text-align:center}
+footer a{color:var(--pink)}
 </style>
 </head>
 <body>
 
-<header class="wrap">
-  <h1>Kur dingsta <span style="color:var(--pink)">pinigai</span>?</h1>
-  <p style="font-size: 1.2rem; color: var(--cream);">Padedu ekspertams monetizuoti paslaugas per parduodančio turinio sistemą. Be motyvacinio triukšmo — tik realūs rezultatai.</p>
-  <div class="card">
-    <h3>Strateginė augimo sesija</h3>
-    <p>Po 2 susitikimų turėsite aiškų veiksmų planą, kuris parodo, kur stringa jūsų pardavimai ir kaip tai ištaisyti.</p>
-    <a class="btn" href="https://tidycal.com/erikakartaseva/120-minute-meeting">Užsiregistruoti</a>
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="index.html">ERIKA <i>KARTA</i></a>
+    <a class="nav-cta" href="https://tidycal.com/erikakartaseva/120-minute-meeting">Užsiregistruoti</a>
+  </div>
+</nav>
+
+<!-- HERO — BALTAS fonas -->
+<header class="hero box-white">
+  <div class="wrap">
+    <p class="eyebrow">Erika Karta · Strateginė augimo sesija</p>
+    <h1>Kur dingsta <span class="em">pinigai</span>?</h1>
+    <p class="lead">Padedu ekspertams, specialistams ir tinklinio marketingo atstovams monetizuoti savo paslaugas socialiniuose tinkluose per parduodančio turinio sistemą. Be motyvacinio triukšmo, cirkų ir šokių — su realiais rezultatais.</p>
+    <div class="promise">
+      <h3>Strateginė augimo sesija, kuri duoda aiškią kryptį ir pirmus veiksmus, kaip paversti turinį klientais</h3>
+      <p class="intro">Po 2 susitikimų turėsite aiškų veiksmų planą, kuris parodo:</p>
+      <ul class="check">
+        <li>aiškiai identifikuotą vietą, kur stringa jūsų turinio monetizacija arba pardavimų srautas</li>
+        <li>tikslų supratimą, kodėl tai vyksta</li>
+        <li>konkretų veiksmų planą + pirmus žingsnius, ką daryti iš karto</li>
+      </ul>
+      <p class="punch">Tai nėra teorija ar „įžvalgos". Tai konkretus planas, ką daryti toliau.</p>
+    </div>
+    <div class="cta-block">
+      <a class="btn" href="https://tidycal.com/erikakartaseva/120-minute-meeting">Užsiregistruoti į strateginę augimo sesiją</a>
+    </div>
   </div>
 </header>
 
-<section class="alt">
+<!-- Su kokia situacija — TAMSUS surface -->
+<section class="box-surface">
   <div class="wrap">
-    <h2>Su kokia situacija kreiptis?</h2>
+    <h2 class="sec">Su kokia situacija galite kreiptis?</h2>
+    <p class="sub">Nesvarbu, kur tiksliai stringa jūsų augimas — problema visada atsiranda viename iš šių taškų:</p>
+    <ul class="check">
+      <li>Kuriate turinį, bet klientų iš jo beveik neateina.</li>
+      <li>Kuriate turinį, bet jis atrodo „atsitiktinis", be aiškios krypties.</li>
+      <li>Žmonės reaguoja (like, žinutės, peržiūros), bet pirkimo nėra.</li>
+      <li>Turite klientų, bet jie ateina chaotiškai, be stabilaus srauto.</li>
+      <li>Dirbate daug, bet pajamos neauga taip, kaip turėtų.</li>
+      <li>Bijote kelti kainas, nes neaišku, kaip tai priims klientai.</li>
+      <li>Turite žinių ar patirties, bet nežinote, nuo ko pradėti online.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Kam tinka — RAUSVAS blokas -->
+<section class="box-pink">
+  <div class="wrap">
+    <h2 class="sec">Kam tinka</h2>
+    <p class="sub">Nesvarbu, koks jūsų startas — sesija pritaikoma prie jūsų situacijos.</p>
     <div class="seg">
-      <ul>
-        <li>Kuriate turinį, bet klientų iš jo beveik neateina.</li>
-        <li>Žmonės reaguoja, bet pirkimo nėra.</li>
-        <li>Dirbate daug, bet pajamos neauga.</li>
-      </ul>
+      <h3>Digital specialistams — SMM, asistentams, administratoriams</h3>
+      <p>Dirbantiems su klientų socialiniais tinklais, turiniu ar marketingo užduotimis, bet dar neturintiems stabilios, aukštai apmokamos pozicijos.</p>
+      <p class="goal"><b>Tikslas</b>Norite tapti paklausiais specialistais ir uždirbti daugiau padedant uždirbti savo klientams. Net jeigu tik pradedate ir dar neturite portfolio, sėkmingų rezultatų ir atsiliepimų.</p>
+    </div>
+    <div class="seg">
+      <h3>Grožio meistrams, treneriams, mitybos specialistams</h3>
+      <p>Žmonėms, kurių pajamos priklauso nuo asmeninių paslaugų, bet kuriuos nuolat veikia rinkos bangavimas ir nereguliarus klientų srautas.</p>
+      <p class="goal"><b>Tikslas</b>Norite patys valdyti klientų srautą ir nenorite priklausyti tik nuo rekomendacijų. Net jeigu visiškai nežinote, nuo ko pradėti, bijote pardavinėti arba manote, kad jums trūksta techninės patirties ir pasitikėjimo.</p>
+    </div>
+    <div class="seg">
+      <h3>Ekspertams, savo srities specialistams — psichologams, koučams</h3>
+      <p>Žmonėms, kurie turi gilias žinias, bet socialiniuose tinkluose jaučiasi priversti „adaptuotis" prie paviršinio formato, kad būtų matomi.</p>
+      <p class="goal"><b>Tikslas</b>Norite padėti žmonėms socialinių tinklų pagalba, be cirko ir šokių, nemenkindami savo profesinio autoriteto. Net jeigu neturite nei vieno sekėjo, o klientai ateina tik per rekomendacijas.</p>
     </div>
   </div>
 </section>
 
-<section class="wrap">
-  <h2>Kam tinka</h2>
-  <div class="seg">
-    <h3>Digital specialistams</h3>
-    <p>Norite tapti paklausiais ir uždirbti daugiau.</p>
-  </div>
-  <div class="seg">
-    <h3>Ekspertams</h3>
-    <p>Norite parduoti be „šokių“ kamerai.</p>
+<!-- Kokias problemas — BALTAS blokas -->
+<section class="box-white">
+  <div class="wrap">
+    <h2 class="sec">Kokias problemas sprendžiame?</h2>
+    <p class="sub">Sesijoje išsprendžiame vieną jūsų pasirinktą užklausą — giliai, iki konkrečių veiksmų.</p>
+
+    <div class="prob">
+      <p class="num">01</p>
+      <h3>Kodėl jūsų turinys nepasiekia klientų</h3>
+      <p>Jei nežinote, nuo ko pradėti, apie ką kalbėti, ar pavargote kurti turinį, į kurį niekas nereaguoja. Sekėjai neauga, o klientus reikia gaudyti kitais būdais. Kai kuriamas turinys neveikia, pardavimai yra tik pavieniai arba apskritai jų nėra.</p>
+      <span class="after">Po konsultacijos aiškiai žinote:</span>
+      <ul class="check">
+        <li>apie ką kalbėti savo tinklaraštyje — temos pagal auditorijos sąmoningumo lygį</li>
+        <li>kokiomis prasmėmis jūsų turinys pasiekia tikslinį klientą</li>
+        <li>kaip vesti žmogų nuo pirmo įrašo iki sprendimo pirkti</li>
+        <li>kaip kurti turinį be spaudimo, bet su aiškia pardavimo logika</li>
+      </ul>
+    </div>
+
+    <div class="prob">
+      <p class="num">02</p>
+      <h3>Paslaugų kainos kėlimas ir mokių klientų pritraukimas</h3>
+      <p>Jei dirbate daug, bet pajamos neauga taip, kaip turėtų. Norite kelti kainas ir pritraukti mokius klientus, bet stabdo baimė, nes neaišku, kaip tai priims rinka. Jaučiatės nepatogiai siūlydami brangesnes paslaugas, nes galvojate, kad jums vis dar trūksta portfolio, sėkmingų rezultatų ar garsių atsiliepimų.</p>
+      <span class="after">Po konsultacijos aiškiai žinote:</span>
+      <ul class="check">
+        <li>kaip turi būti suformuotas jūsų paslaugų pasiūlymas 3 segmentams — pagal skausmą, norą ir abejonę</li>
+        <li>kaip aiškiai komunikuoti vertę, kad kaina būtų priimama be pasipriešinimo</li>
+        <li>tikslias gaires, kaip užmegzti dialogą su klientu, kad klientai lengvai priimtų jūsų kandidatūrą</li>
+      </ul>
+    </div>
+
+    <div class="prob">
+      <p class="num">03</p>
+      <h3>Mokymų / kursų pardavimo pradžia</h3>
+      <p>Jei turite žinių ar praktinės patirties, bet nežinote, kaip jas paversti produktu. Neaišku, ką tiksliai siūlyti, kaip tai įvardinti ir kaip gauti pirmą klientą.</p>
+      <span class="after">Po konsultacijos aiškiai žinote:</span>
+      <ul class="check">
+        <li>koks turi būti jūsų pirmas produktas — ką konkrečiai parduodate</li>
+        <li>kaip suformuoti pasiūlymą, kad jis būtų suprantamas ir lengvai perkamas</li>
+        <li>kaip jį patikrinti rinkoje ir gauti pirmus realius pirkimus</li>
+      </ul>
+    </div>
+
+    <div class="prob">
+      <p class="num">04</p>
+      <h3>Nėra stabilaus klientų srauto</h3>
+      <p>Ekspertams ir specialistams, kurie jau daro veiksmus, bet procesas kažkurioje vietoje visiškai užsikirto ir nėra jokio augimo. Jei klientų srautas nestabilus, sekėjų augimas stringa arba pardavimai vyksta be aiškios sistemos.</p>
+      <span class="after">Po konsultacijos aiškiai žinote:</span>
+      <ul class="check">
+        <li>kur jūsų klientų kelias praranda žmones</li>
+        <li>kodėl turinys ar pasiūlymas neveikia kaip sistema</li>
+        <li>ką konkrečiai keisti, kad klientų srautas taptų stabilus ir prognozuojamas</li>
+      </ul>
+      <p class="bonus"><b>Ką išsinešate jūsų rankose:</b> struktūrizuotą PDF auditą su konkrečiomis gairėmis, kokį pritraukimo metodą ar piltuvėlio etapą privalote pakeisti jau rytoj, kad srautas atsidarytų ir prasidėtų pardavimai.</p>
+    </div>
+
+    <div class="cta-block">
+      <a class="btn" href="https://tidycal.com/erikakartaseva/120-minute-meeting">Užsiregistruoti į strateginę augimo sesiją</a>
+    </div>
   </div>
 </section>
+
+<!-- Kaip tai vyksta — TAMSUS surface -->
+<section class="how box-surface">
+  <div class="wrap">
+    <h2 class="sec">Kaip tai vyksta</h2>
+    <p class="sub">Jokių varginančių rašytinių anketų — visą informaciją surenku gyvai. Išsprendžiame vieną jūsų pasirinktą užklausą: išanalizuojame esamą situaciją, identifikuojame pagrindinį tašką, kuris daro didžiausią įtaką pardavimams, ir suformuojame aiškų veiksmų planą.</p>
+    <div class="step-row">
+      <b>1</b>
+      <div>
+        <h3>Pirmas susitikimas — auditas / brifas</h3>
+        <p>Gyvo pokalbio metu visiškai pasineriu į jūsų projektą: surenku informaciją apie tai, ką jau darėte, kas neveikia ir kodėl. Nustatau pirminę diagnozę ir paimu 5 dienų terminą jūsų asmeniniam sprendimui paruošti.</p>
+      </div>
+    </div>
+    <div class="step-row">
+      <b>2</b>
+      <div>
+        <h3>Antras susitikimas — strateginė sesija</h3>
+        <p>Pateikiu paruoštą konkrečių veiksmų planą ir praktinius įrankius jūsų užklausai išspręsti. Aš parodau kelią ir atiduodu instrumentus, o viską įgyvendinate patys.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Galimybės dirbti kartu — RAUSVAS blokas -->
+<section class="box-pink">
+  <div class="wrap">
+    <h2 class="sec">Galimybės dirbti kartu</h2>
+    <p class="sub">Atsižvelgiant į jūsų dabartinį etapą, tikslus ir tai, kiek asmeninio įsitraukimo jums reikia, galite pasirinkti vieną iš dviejų formatų:</p>
+    <div class="formats">
+      <div class="fmt feat">
+        <span class="tag">Formatas 1</span>
+        <h3>Strateginė augimo sesija</h3>
+        <p class="price">£150</p>
+        <p>Vienos konkrečios problemos išsprendimas per 2 susitikimus — turinys, pasiūlymas arba klientų srautas. Jei turite aiškią problemą ir norite gauti konkretų veiksmų planą ir įrankius, ką daryti toliau.</p>
+        <a href="https://tidycal.com/erikakartaseva/120-minute-meeting">Pirkti strateginę sesiją</a>
+      </div>
+      <div class="fmt alt2">
+        <span class="tag">Formatas 2</span>
+        <h3>Asmeninis mentoriavimas</h3>
+        <p class="price">£4 000</p>
+        <p>Pilnas darbas kartu — nuo produkto kūrimo iki stabilaus klientų srauto sistemos. Kartu supakuojame produktą, kuriame produktų liniją ir matricą, parenkame pritraukimo metodus, sudėliojame prasmių lentelę ir komunikacijos planą visam paslaugų ciklui.</p>
+        <a href="https://tidycal.com/erikakartaseva/45-mentoringmeeting">Užsirašyti pradinei konsultacijai</a>
+      </div>
+    </div>
+    <p class="note"><strong>Svarbu:</strong> jei strateginės sesijos metu nuspręsite eiti į mentoriavimą — sesijos kaina įskaičiuojama į programą. Savaitės bėgyje galite sklandžiai pereiti į ilgalaikį formatą.</p>
+  </div>
+</section>
+
+<!-- Registracija + Kontaktai — BALTAS blokas -->
+<section class="deficit box-white">
+  <div class="wrap">
+    <h2 class="sec">Registracijos tvarka</h2>
+    <p style="color:#555;font-weight:400;margin-bottom:10px">Konsultacijų vietų skaičius yra griežtai ribojamas, siekiant užtikrinti maksimalią darbo kokybę.</p>
+
+    <div style="display:grid;gap:8px;margin-bottom:14px">
+      <div style="background:#fff;border:1px solid rgba(233,30,140,.2);border-radius:10px;padding:12px 16px;display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start">
+        <span style="color:var(--pink);font-weight:700;font-size:1rem;margin-top:1px">→</span>
+        <div>
+          <p style="color:#1a1a1a;font-weight:500;margin-bottom:3px">Laisvos vietos</p>
+          <p style="color:#555;font-weight:400;font-size:.92rem">Visi galimi laikai kelioms savaitėms į priekį yra pateikti kalendoriuje. Kitomis dienomis ar laikotarpiais rezervacija nevyksta.</p>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid rgba(233,30,140,.2);border-radius:10px;padding:12px 16px;display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start">
+        <span style="color:var(--pink);font-weight:700;font-size:1rem;margin-top:1px">→</span>
+        <div>
+          <p style="color:#1a1a1a;font-weight:500;margin-bottom:3px">Nerandate laiko?</p>
+          <p style="color:#555;font-weight:400;font-size:.92rem">Jei kalendoriuje laisvų vietų nebėra — susisiekite asmeniškai. Pasirinkite jums patogų būdą žemiau.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-block" style="margin-bottom:18px">
+      <a class="btn" href="https://tidycal.com/erikakartaseva/120-minute-meeting" rel="noopener" target="_blank">Rinktis konsultacijos laiką</a>
+    </div>
+
+    <h2 class="sec" style="margin-bottom:5px">Kontaktai</h2>
+    <p style="color:#555;font-weight:400;margin-bottom:10px">Pasirink tinkamą būdą susisiekti</p>
+
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <a href="https://www.facebook.com/erikakarta.uk" target="_blank" rel="noopener"
+        style="display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border:1.5px solid rgba(233,30,140,.22);border-radius:99px;color:#1a1a1a;font-size:.88rem;font-weight:500;transition:all .2s ease;background:#fff"
+        onmouseover="this.style.borderColor='var(--pink)';this.style.color='var(--pink)'"
+        onmouseout="this.style.borderColor='rgba(233,30,140,.22)';this.style.color='#1a1a1a'">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        Facebook
+      </a>
+      <a href="https://t.me/ErikaKarta" target="_blank" rel="noopener"
+        style="display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border:1.5px solid rgba(233,30,140,.22);border-radius:99px;color:#1a1a1a;font-size:.88rem;font-weight:500;transition:all .2s ease;background:#fff"
+        onmouseover="this.style.borderColor='var(--pink)';this.style.color='var(--pink)'"
+        onmouseout="this.style.borderColor='rgba(233,30,140,.22)';this.style.color='#1a1a1a'">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+        Telegram
+      </a>
+      <a href="https://www.instagram.com/erika.marketingas/" target="_blank" rel="noopener"
+        style="display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border:1.5px solid rgba(233,30,140,.22);border-radius:99px;color:#1a1a1a;font-size:.88rem;font-weight:500;transition:all .2s ease;background:#fff"
+        onmouseover="this.style.borderColor='var(--pink)';this.style.color='var(--pink)'"
+        onmouseout="this.style.borderColor='rgba(233,30,140,.22)';this.style.color='#1a1a1a'">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        Instagram
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+    <span>© 2026 Vita Synergy LTD · Company Number: 15346047</span>
+    <span>
+      <a href="index.html" style="color:var(--pink);margin-right:16px">← Pagrindinis</a>
+      <a href="straipsnis-sistema.html" style="color:var(--pink)">Straipsniai</a>
+    </span>
+  </div>
+</footer>
 
 </body>
 </html>
