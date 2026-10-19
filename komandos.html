@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>125 komandos vaizdams ChatGPT · Erika Karta</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="description" content="Trumpos komandos vaizdams ChatGPT su tikrais pavyzdžiais: portretai, virsmai, meno stiliai, produktų ir reklamos vizualai. Paspausk ir nusikopijuok promptą.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Erika Karta">
+<link rel="canonical" href="https://www.vita-synergy.com/komandos">
+<meta property="og:title" content="125 komandos vaizdams ChatGPT · Erika Karta">
+<meta property="og:description" content="Įkelk nuotrauką, parašyk vieną žodį ir gauk portretą, reklamą ar produkto kadrą. Su tikrais pavyzdžiais.">
+<meta property="og:image" content="https://www.vita-synergy.com/img/komandos/hero.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0D0D0D; --surface:#181014; --surface-2:#221219; --burgundy:#5C0E26; --ruby:#A4133C;
+  --pink:#D90F6A; --magenta:#b80d59; --cream:#FAF9F6; --muted:#B5A6AC;
+  --line:rgba(250,249,246,.1); --line-pink:rgba(217,15,106,.28); --radius:18px; --navh:68px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:150px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--bg);color:var(--cream);font-family:'Inter',sans-serif;font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased}
+::selection{background:var(--pink);color:#fff}
+h1,h2,h3{font-family:'Playfair Display',serif;font-weight:500;line-height:1.15;color:var(--cream)}
+.em{font-style:italic;color:var(--pink)}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--pink);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+.eyebrow{font-size:.76rem;letter-spacing:.22em;text-transform:uppercase;color:var(--pink);font-weight:600;margin-bottom:18px}
+.note{font-family:'Playfair Display',serif;font-style:italic;color:var(--pink)}
+
+/* nav (kaip visoje svetainėje) */
+.topnav{position:sticky;top:0;z-index:50;background:rgba(13,13,13,.9);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1100px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:var(--navh)}
+.logo{font-family:'Playfair Display',serif;font-size:1.2rem;letter-spacing:.04em}
+.logo i{font-style:italic;color:var(--pink)}
+.nav-links{display:flex;gap:28px;font-size:.9rem;color:var(--muted);font-weight:400}
+.nav-links a:hover,.nav-links a[aria-current]{color:var(--cream)}
+.nav-cta{font-size:.86rem;font-weight:500;color:#fff;background:var(--pink);padding:10px 20px;border-radius:99px;transition:background .2s ease;white-space:nowrap}
+.nav-cta:hover{background:var(--magenta)}
+@media(max-width:800px){.nav-links{display:none}}
+
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:99px;font:500 .95rem 'Inter',sans-serif;cursor:pointer;border:1.5px solid var(--ruby);background:transparent;color:var(--cream);transition:background .2s ease}
+.btn:hover{background:var(--ruby)}
+.btn.primary{background:var(--pink);border-color:var(--pink);color:#fff}
+.btn.primary:hover{background:var(--magenta);border-color:var(--magenta)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:center;padding:56px 0 80px}
+.hero-fig{position:relative;justify-self:center;width:min(340px,70vw)}
+.hero-fig img{position:relative;z-index:1;border-radius:var(--radius);width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center top}
+.hero-fig::after{content:"";position:absolute;inset:0;transform:translate(18px,18px);border:1.5px solid var(--ruby);border-radius:var(--radius);z-index:0}
+.hero-fig figcaption{position:absolute;z-index:2;left:-14px;bottom:28px;background:var(--bg);border:1px solid var(--line-pink);border-radius:12px;padding:8px 14px;font-size:.85rem;color:var(--muted)}
+.hero-fig figcaption b{font-weight:600;color:var(--pink)}
+.hero h1{font-size:clamp(2.3rem,5vw,3.6rem);font-weight:400;letter-spacing:-.01em;margin-bottom:18px}
+.lead{font-size:1.1rem;color:var(--muted);max-width:32em;margin-bottom:34px;font-weight:400}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+
+/* sections */
+section.band{padding:72px 0;border-top:1px solid var(--line)}
+section.band.alt{background:var(--surface)}
+h2{font-size:clamp(1.8rem,3.4vw,2.6rem);margin-bottom:14px}
+.sub{color:var(--muted);max-width:40em;margin-bottom:40px;font-weight:400}
+.explain{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.explain p{color:var(--muted);font-weight:400;margin-bottom:16px;max-width:34em}
+.explain p strong{color:var(--cream);font-weight:500}
+.chat{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:12px}
+.bubble{max-width:88%;padding:12px 16px;border-radius:16px;font-size:.95rem;font-weight:400}
+.bubble.me{align-self:flex-end;background:var(--pink);color:#fff;border-bottom-right-radius:4px;font-weight:600;font-size:1.05rem}
+.bubble.me small{display:block;font-weight:400;font-size:.75rem;opacity:.85}
+.bubble.ai{align-self:flex-start;background:var(--surface-2);border-bottom-left-radius:4px;color:var(--muted)}
+.bubble.ai b{color:var(--cream);font-weight:500}
+.chat .note{align-self:center;text-align:center;font-size:1.05rem}
+
+.steps{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:44px;counter-reset:s}
+.steps li{counter-increment:s;border-top:1.5px solid var(--ruby);padding-top:16px}
+.steps li::before{content:counter(s);display:block;font-family:'Playfair Display',serif;font-style:italic;font-size:2.2rem;line-height:1;color:var(--pink);margin-bottom:10px}
+.steps b{display:block;font-weight:500;margin-bottom:6px}
+.steps span{color:var(--muted);font-size:.93rem;font-weight:400}
+.template{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:30px}
+.template+.template{margin-top:20px}
+.template h3{font-size:1.35rem;margin-bottom:8px}
+.template p{color:var(--muted);font-size:.95rem;font-weight:400}
+pre.prompt{white-space:pre-wrap;word-break:break-word;font:400 .92rem/1.65 'Inter',sans-serif;background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:16px 18px;color:var(--cream)}
+pre.prompt .k{color:var(--pink);font-weight:600}
+.copyrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.why div{border-left:1.5px solid var(--pink);padding-left:20px}
+.why h3{font-size:1.2rem;margin-bottom:8px}
+.why p{color:var(--muted);font-size:.95rem;font-weight:400}
+.why p+p{margin-top:10px}
+.why .todo b{color:var(--cream);font-weight:500}
+.why code{font-family:'Inter',sans-serif;font-weight:500;color:var(--pink)}
+
+/* katalogo juosta */
+.toolbar{position:sticky;top:var(--navh);z-index:40;background:rgba(13,13,13,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);border-top:1px solid var(--line);padding:12px 0}
+.tb{display:flex;gap:14px;align-items:center}
+.search{flex:0 0 250px;position:relative}
+.search input{width:100%;padding:10px 14px 10px 40px;border-radius:99px;border:1px solid var(--line);background:var(--surface);color:var(--cream);font:400 .95rem 'Inter',sans-serif}
+.search input::placeholder{color:var(--muted)}
+.search input:focus{outline:none;border-color:var(--pink)}
+.search svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted)}
+.chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:2px}
+.chips::-webkit-scrollbar{display:none}
+.chips a{flex:0 0 auto;padding:7px 14px;border-radius:99px;border:1px solid var(--line);color:var(--muted);font-size:.85rem;font-weight:400;white-space:nowrap;transition:border-color .2s,color .2s}
+.chips a:hover{border-color:var(--pink);color:var(--cream)}
+
+/* blokai ir kortelės */
+.block{padding:60px 0 8px}
+.block-head{display:flex;gap:16px;align-items:baseline;flex-wrap:wrap;margin-bottom:8px}
+.block-head h2{margin:0}
+.block-head .n{font-family:'Playfair Display',serif;font-style:italic;color:var(--pink);font-size:1.15rem}
+.block .sub{margin-bottom:26px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:16px}
+.card{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:transform .2s ease,border-color .2s ease}
+.card:hover{transform:translateY(-3px);border-color:var(--ruby)}
+.card:focus-visible{outline:2px solid var(--pink);outline-offset:2px}
+.thumb{aspect-ratio:4/5;background:var(--surface-2);position:relative;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.ph{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:14px;background:repeating-linear-gradient(135deg,transparent 0 14px,rgba(217,15,106,.06) 14px 15px),var(--surface-2)}
+.ph b{font-family:'Playfair Display',serif;font-weight:500;font-size:1.1rem;line-height:1.15;color:var(--pink);overflow-wrap:anywhere}
+.ph small{color:var(--muted);font-size:.75rem;margin-top:6px}
+.meta{padding:12px 14px 15px}
+.meta b{display:block;font-weight:600;font-size:.95rem;color:var(--cream)}
+.meta span{display:block;color:var(--muted);font-size:.82rem;line-height:1.4;margin-top:3px;font-weight:400}
+.meta em{display:inline-block;font-style:normal;font-size:.72rem;margin-top:8px;padding:2px 9px;border-radius:99px;border:1px solid var(--line-pink);color:var(--pink)}
+.multi{position:absolute;top:8px;right:8px;background:rgba(13,13,13,.8);border:1px solid var(--line-pink);color:var(--cream);font-size:.7rem;font-weight:500;padding:3px 9px;border-radius:99px}
+.card.orig{border-color:var(--line-pink)}
+.card.orig .meta b{font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:1.25rem;color:var(--pink)}
+.empty{padding:60px 0;text-align:center;color:var(--muted);display:none}
+
+/* CTA */
+.final{padding:96px 0;text-align:center;border-top:1px solid var(--line);margin-top:72px;background:var(--surface)}
+.final h2{font-size:clamp(2rem,4.2vw,3rem);font-weight:400;max-width:18em;margin:0 auto 18px}
+.final p{color:var(--muted);max-width:34em;margin:0 auto 32px;font-weight:400}
+
+/* langas */
+dialog{border:1px solid var(--line);padding:0;border-radius:var(--radius);max-width:min(940px,calc(100vw - 24px));width:100%;background:var(--surface);color:var(--cream);margin:auto}
+dialog::backdrop{background:rgba(0,0,0,.72);backdrop-filter:blur(3px)}
+.dlg{display:grid;grid-template-columns:5fr 6fr}
+.dlg-img{background:var(--surface-2);min-height:300px;position:relative}
+.dlg-img img{width:100%;height:100%;max-height:80vh;object-fit:contain}
+.dlg-body{padding:32px 30px 28px;display:flex;flex-direction:column;gap:12px}
+.dlg-body h3{font-size:2rem;font-weight:500;color:var(--pink);word-break:break-word}
+.dlg-body p{color:var(--muted);font-weight:400}
+.dlg-body .lbl{font-weight:600;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cream);margin-top:6px}
+.close{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--bg);color:var(--cream);font-size:1.3rem;cursor:pointer;z-index:2}
+.more{border-top:1px solid var(--line);padding-top:16px;margin-top:4px;display:flex;flex-direction:column;gap:10px}
+.more .lbl{margin-top:0}
+.more-note{font-size:.88rem}
+.vars{position:absolute;left:12px;bottom:12px;display:flex;gap:6px;flex-wrap:wrap}
+.vars button{border:1px solid var(--line);border-radius:99px;padding:6px 12px;font:500 .78rem 'Inter',sans-serif;background:rgba(13,13,13,.85);color:var(--cream);cursor:pointer}
+.vars button.on{background:var(--pink);border-color:var(--pink);color:#fff}
+.plink{font-size:.85rem;color:var(--muted);border-bottom:1px solid var(--line-pink);align-self:flex-start}
+.plink:hover{color:var(--pink)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);opacity:0;background:var(--cream);color:var(--bg);padding:10px 20px;border-radius:99px;font-weight:500;transition:.2s;pointer-events:none;z-index:100}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+/* footer (kaip visoje svetainėje) */
+footer{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.9rem;color:var(--muted);font-weight:400}
+.foot-grid{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;margin-bottom:36px}
+.foot-grid h4{font-family:'Inter',sans-serif;font-weight:600;color:var(--cream);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:14px}
+.foot-grid a{display:block;margin-bottom:8px;transition:color .2s}
+.foot-grid a:hover{color:var(--pink)}
+.legal{border-top:1px solid var(--line);padding-top:24px;font-size:.8rem;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.legal a:hover{color:var(--pink)}
+
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;gap:48px;padding-top:40px}
+  .hero-fig{order:2}
+  .explain,.template{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .why{grid-template-columns:1fr}
+  .tb{flex-direction:column;align-items:stretch;gap:10px}
+  .search{flex:none}
+  .dlg{grid-template-columns:1fr}
+  .dlg-img img{max-height:52vh}
+}
+@media (max-width:520px){
+  .wrap{padding-left:16px;padding-right:16px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .steps{grid-template-columns:1fr}
+  .template{padding:20px}
+  .dlg-body{padding:24px 18px}
+  .hero-fig figcaption{left:-6px}
+}
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-in">
+    <a class="logo" href="index.html">ERIKA <i>KARTA</i></a>
+    <div class="nav-links">
+      <a href="index.html">Pradžia</a>
+      <a href="index.html#paslaugos">Paslaugos</a>
+      <a href="komandos.html" aria-current="page">Komandos</a>
+      <a href="promptai.html">Promptai</a>
+    </div>
+    <a class="nav-cta" href="https://tidycal.com/erikakartaseva/30minute-meetingerika" target="_blank" rel="noopener">Nemokamas pokalbis</a>
+  </div>
+</nav>
+
+<header class="wrap hero">
+  <figure class="hero-fig">
+    <img src="img/komandos/hero.jpg" width="667" height="1000" alt="Erika kaip kolekcinė figūrėlė dėžutėje su kompiuteriu, fotoaparatu, knygomis ir šuniuku">
+    <figcaption>Čia irgi komanda: <b>/actionfigure</b></figcaption>
+  </figure>
+  <div>
+    <p class="eyebrow">ChatGPT · vaizdai</p>
+    <h1>125 komandos vaizdams <span class="em">ChatGPT</span></h1>
+    <p class="lead">Įkelk nuotrauką, parašyk norimą komandą, pavyzdžiui, /neonportrait, ir gauk portretą, reklamą ar produkto kadrą. Surinkau komandas, kurias naudoju pati, sugrupavau jas pagal tai, ko tau reikia, ir prie kiekvienos įdėjau tikrą pavyzdį. Paspausk ant bet kurios ir nusikopijuok trumpą komandą arba pilną promptą.</p>
+    <div class="btns">
+      <a class="btn primary" href="#katalogas">Žiūrėti komandas</a>
+      <a class="btn" href="#kaip">Kaip naudoti</a>
+    </div>
+  </div>
+</header>
+
+<section class="band alt" id="kas">
+  <div class="wrap explain">
+    <div>
+      <p class="eyebrow">Kaip tai veikia</p>
+      <h2>Tai ne slapti kodai</h2>
+      <p>ChatGPT neturi paslėpto meniu su /proshot ar /billboard. Jam tai tiesiog žodis. Brūkšnys priekyje parodo, kad toliau eina užduotis, o ne pokalbis, ir ChatGPT pats atspėja, ką tas žodis reiškia.</p>
+      <p>Komanda pasako tik kryptį: koks turi būti rezultatas. Ji nepasako, ko negalima keisti. Todėl ChatGPT kartais perpiešia veidą, pakeičia logotipą ar prikuria užrašų.</p>
+      <p><strong>Jei su trumpa komanda nepavyko gauti norimo rezultato,</strong> prie kiekvienos komandos rasi išsamesnį promptą. Arba pati prie komandos pridėk vieną kitą eilutę apie tai, ką išsaugoti ir ko nori. Taip komanda iš loterijos tampa įrankiu.</p>
+    </div>
+    <div class="chat" aria-label="Pavyzdys, kaip ChatGPT supranta komandą">
+      <div class="bubble me"><small>tu rašai</small>/headshot</div>
+      <div class="bubble ai">ChatGPT supranta: <b>dalykinis portretas, ramus fonas, gera šviesa.</b></div>
+      <div class="bubble ai">Bet nežino: ar palikti tavo veidą tokį, koks yra? Ar galima keisti aprangą, šukuoseną? Kokio dydžio reikia nuotraukos?</div>
+      <span class="note">jei rezultatas netinka, pridėk patikslinimą ↓</span>
+      <div class="bubble me" style="font-size:.95rem;font-weight:500">/headshot<br>Išsaugok veidą be retušo, pilkas fonas, formatas 1:1</div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="kaip">
+  <div class="wrap">
+    <p class="eyebrow">Instrukcija</p>
+    <h2>Kaip naudoti</h2>
+    <p class="sub">Užtenka keturių žingsnių. Svarbiausias yra pirmasis, nors jį dažniausiai praleidžia.</p>
+    <ol class="steps">
+      <li><b>Atidaryk naują pokalbį</b><span>Geriausia laikiną. Jei darai daug vaizdų viename pokalbyje, pradžioje įspėk ChatGPT, kad kiekvienas kadras atskiras (tekstas žemiau).</span></li>
+      <li><b>Įkelk nuotrauką</b><span>Ryški, šviesi, veidas ar produktas gerai matomas. Iš prastos nuotraukos stebuklo nebus.</span></li>
+      <li><b>Parašyk komandą</b><span>Pavyzdžiui, /neonportrait. Jei reikia, pridėk patikslinimą arba naudok išsamesnį promptą: ką išsaugoti ir kokio formato reikia.</span></li>
+      <li><b>Taisyk, kas nepavyko</b><span>Tame pačiame pokalbyje trumpai paaiškink, ką pakeisti: šviesą, spalvas, foną. Pavyzdžiui, „šviesiau“, „grąžink logotipą“.</span></li>
+    </ol>
+    <div class="template">
+      <div>
+        <h3>Šablonas, kurį gali kopijuoti</h3>
+        <p>Kai trumpos komandos neužtenka. Pakeisk laužtinių skliaustų vietas savo žodžiais. Išsamesni promptai kataloge sudėti pagal šį šabloną.</p>
+      </div>
+      <div>
+        <pre class="prompt" id="tpl"><span class="k">/[komanda]</span>
+Nuotrauka: įkelta
+Užduotis: [ką pakeisti, viena eilute]
+Išsaugok: [veidą / pozą / logotipą / užrašus]
+Formatas: [1:1, 4:5, 9:16 arba 16:9]</pre>
+        <div class="copyrow"><button class="btn primary" data-copy="tpl">Kopijuoti šabloną</button></div>
+      </div>
+    </div>
+    <div class="template">
+      <div>
+        <h3>Darai daug vaizdų viename pokalbyje?</h3>
+        <p>Pirmą žinutę parašyk su nuotrauka ir šiuo tekstu. Tada ChatGPT kiekvieną komandą darys iš naujo ir nekels į ją fono, aksesuarų ar stiliaus iš ankstesnių kadrų. Su produktu vietoj „žmogaus, veido, plaukų“ parašyk „produkto formos, spalvos ir logotipo“. Jei vis tiek perima, prie komandos prirašyk: „nauja atskira generacija, be jokių elementų iš ankstesnių vaizdų“.</p>
+      </div>
+      <div>
+        <pre class="prompt" id="ref">Šią nuotrauką laikyk vieninteliu pagrindiniu reference.
+Kiekvienai naujai komandai:
+• naudok tik šią originalią nuotrauką kaip žmogaus, veido, plaukų ir bazinės išvaizdos šaltinį;
+• nesiremk jokia anksčiau sugeneruota nuotrauka;
+• kiekvienas rezultatas yra atskiras naujas kūrinys nuo nulio pagal konkrečią komandą;
+• ankstesnių generacijų stilius, poza, apranga, fonas ar detalės nepersiduoda, nebent pati komanda jų aiškiai reikalauja.</pre>
+        <div class="copyrow"><button class="btn primary" data-copy="ref">Kopijuoti tekstą</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" id="kodel">
+  <div class="wrap">
+    <p class="eyebrow">Dažniausios klaidos</p>
+    <h2>Kodėl komanda kartais neveikia</h2>
+    <p class="sub">Dažniausiai dėl vienos iš trijų priežasčių. Prie kiekvienos parašiau, ką daryti.</p>
+    <div class="why">
+      <div><h3>ChatGPT žodį supranta kitaip</h3><p>Komanda yra tik žodis, o vieną žodį galima suprasti keliais būdais. Pavyzdžiui, /brickfigure gali duoti ir laisvai stovinčią figūrėlę, ir figūrėlę dėžutėje.</p><p class="todo"><b>Ką daryti:</b> po komanda parašyk, ko nenori, pavyzdžiui, <code>be dėžutės, be pakuotės</code>.</p></div>
+      <div><h3>Pokalbis prisimena ankstesnius vaizdus</h3><p>Jei tame pačiame pokalbyje padarei kelias figūrėles dėžutėse, ChatGPT ims dėžutes kišti ir į kitus vaizdus.</p><p class="todo"><b>Ką daryti:</b> kiekvienai komandai atidaryk naują pokalbį arba pradžioje įklijuok tekstą iš bloko „Darai daug vaizdų viename pokalbyje?“.</p></div>
+      <div><h3>Nepasakei, ko nekeisti</h3><p>Jei nieko neparašai, ChatGPT gali pakeisti veidą, amžių, logotipą ar užrašus ant pakuotės.</p><p class="todo"><b>Ką daryti:</b> po komanda pridėk vieną eilutę, pavyzdžiui, <code>Išsaugok mano veidą ir plaukų spalvą</code> arba <code>Išsaugok logotipą ir užrašus</code>.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="toolbar" id="katalogas">
+  <div class="wrap tb">
+    <label class="search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="q" type="search" placeholder="Ieškoti: portretas, fonas…" aria-label="Ieškoti komandos">
+    </label>
+    <nav class="chips" id="chips" aria-label="Blokai"></nav>
+  </div>
+</div>
+
+<main class="wrap" id="blocks"></main>
+<p class="empty wrap" id="empty">Tokios komandos neradau. Pabandyk kitą žodį, pavyzdžiui, „portretas“, „fonas“ arba „reklama“.</p>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Gražūs vizualai yra pradžia. Klientus atveda <span class="em">sistema</span>.</h2>
+    <p>Jei nori, kad tavo turinys ne tik gražiai atrodytų, bet ir pardavinėtų, pradėkime nuo nemokamo 30 minučių pokalbio.</p>
+    <div class="btns" style="justify-content:center"><a class="btn primary" href="https://tidycal.com/erikakartaseva/30minute-meetingerika" target="_blank" rel="noopener">Registruotis nemokamam pokalbiui</a><a class="btn" href="index.html#svetaine">Noriu išmokti susikurti tokį puslapį</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Erika Karta</h4>
+        <a href="index.html#poziuris">Požiūris</a>
+        <a href="index.html#paslaugos">Paslaugos</a>
+        <a href="index.html#rezultatai">Rezultatai</a>
+        <a href="index.html#blogas">Straipsniai</a>
+        <a href="index.html#apie">Apie mane</a>
+      </div>
+      <div>
+        <h4>ChatGPT vizualai</h4>
+        <a href="komandos.html">Komandos su pavyzdžiais</a>
+        <a href="promptai.html">Promptų biblioteka</a>
+      </div>
+      <div>
+        <h4>Susisiek</h4>
+        <a href="https://www.instagram.com/erika.marketingas/" target="_blank" rel="noopener">Instagram · @erika.marketingas</a>
+        <a href="https://t.me/ErikaKarta" target="_blank" rel="noopener">Telegram · ErikaKarta</a>
+        <a href="https://www.facebook.com/erikakarta.uk" target="_blank" rel="noopener">Facebook · Erika Karta UK</a>
+        <a href="https://www.youtube.com/@erikakarta" target="_blank" rel="noopener">YouTube · @erikakarta</a>
+        <a href="https://www.tiktok.com/@erika.karta" target="_blank" rel="noopener">TikTok · @erika.karta</a>
+      </div>
+      <div>
+        <h4>Paslaugos</h4>
+        <a href="https://tidycal.com/erikakartaseva/30minute-meetingerika" target="_blank" rel="noopener">Nemokamas pokalbis</a>
+        <a href="konsultacija.html">Strateginė sesija · £150</a>
+        <a href="https://tidycal.com/erikakartaseva/45-mentoringmeeting" target="_blank" rel="noopener">Mentorystė · £4 000</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Vita Synergy LTD · Company Number: 15346047</span>
+      <span>Žvakės pavyzdžiuose: <a href="https://www.instagram.com/donvina_handmadecandles/" target="_blank" rel="noopener">@donvina_handmadecandles</a></span>
+    </div>
+  </div>
+</footer>
+
+<dialog id="dlg" aria-labelledby="dTitle">
+  <button class="close" id="dClose" aria-label="Uždaryti">×</button>
+  <div class="dlg">
+    <div class="dlg-img" id="dImg"></div>
+    <div class="dlg-body">
+      <h3 id="dTitle"></h3>
+      <p id="dDesc"></p>
+      <div id="dCmdBox">
+        <div class="copyrow"><button class="btn primary" id="dCopyCmd">Kopijuoti komandą</button></div>
+        <p id="dTip" style="font-size:.88rem;margin-top:10px"></p>
+      </div>
+      <div id="dMore" class="more">
+        <div class="lbl" id="dLbl">Nori tiksliau? Išsamesnis promptas</div>
+        <p class="more-note" id="dMoreNote">Jei trumpa komanda nedavė norimo rezultato, įklijuok šį promptą kartu su nuotrauka. Užduoties eilutę gali pakeisti savais žodžiais.</p>
+        <pre class="prompt" id="dPrompt"></pre>
+        <div class="copyrow" id="dCopy"><button class="btn" data-copy="dPrompt">Kopijuoti išsamų promptą</button></div>
+      </div>
+      <a id="dRel" class="plink" href="#" hidden></a>
+    </div>
+  </div>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const IMGDIR = 'img/komandos/';
+const IMG = new Proxy({}, {get: (_, k) => IMGDIR + String(k) + '.jpg'});
+const BLOCKS = [{"id": "portretai", "title": "Portretai ir profilio nuotraukos", "intro": "Nuotraukos svetainei, LinkedIn, pranešėjos anketai ar straipsniui. Rezultatas turi atrodyti kaip pas fotografą, o ne kaip piešinys.", "orig": ["K"], "keep": "veido bruožus, tapatybę ir natūralią odos tekstūrą", "cmds": [{"c": "/headshot", "d": "Dalykinis portretas iki pečių, ramus fonas", "img": "headshot", "more": ["headshot_b"], "pos": "center 25%"}, {"c": "/casualheadshot", "d": "Laisvesnis, šiltesnis portretas be kostiumo nuotaikos", "img": "casualheadshot", "more": ["casualheadshot_b"], "pos": "center 25%"}, {"c": "/founderportrait", "d": "Įmonės įkūrėjos portretas: drąsus, su charakteriu", "img": "founderportrait", "more": ["founderportrait_b"], "pos": "center 25%"}, {"c": "/speakerphoto", "d": "Pranešėjos nuotrauka renginio programai", "img": "speakerphoto", "more": ["speakerphoto_b"], "pos": "center 25%"}, {"c": "/editorialportrait", "d": "Žurnalinis portretas su stipria šviesa", "img": "editorialportrait", "more": ["editorialportrait_b"], "pos": "center 25%"}, {"c": "/studioify", "d": "Paprastą nuotrauką perkelia į fotostudiją", "img": "studioify", "more": ["studioify_b"], "pos": "center 25%"}, {"c": "/profilepic", "d": "Apkarpo ir sutvarko nuotrauką profilio apskritimui", "img": "profilepic", "more": ["profilepic_b"], "fit": "contain", "bg": "#0d0508"}, {"c": "/passportplus", "d": "Neutralus frontalus portretas švariame fone", "img": "passportplus", "more": ["passportplus_b"], "pos": "center 25%"}, {"c": "/bwportrait", "d": "Išraiškingas nespalvotas portretas", "img": "bwportrait", "more": ["bwportrait_b"], "pos": "center 25%"}]}, {"id": "variantai", "title": "Išbandyk prieš naujus pokyčius", "intro": "Šios komandos rodo kelis variantus viename vaizde. Kiek jų bus, ChatGPT nusprendžia pats, o jei nori konkretaus skaičiaus, parašyk. Patogu, kai nori pasimatuoti šukuoseną ar akinius, dar neidama pas kirpėją ar į optiką.", "orig": ["G"], "keep": "tą patį veidą, pozą ir šviesą visuose variantuose. Keisk tik prašomą dalyką", "cmds": [{"c": "/hairstyle", "d": "Skirtingos šukuosenos viename vaizde", "img": "hairstyle", "fit": "contain", "bg": "#ffffff"}, {"c": "/glasses", "d": "Skirtingi optinių akinių rėmeliai viename vaizde", "img": "glasses", "fit": "contain", "bg": "#ffffff"}, {"c": "/sunglasses", "d": "Skirtingi saulės akinių modeliai viename vaizde", "img": "sunglasses", "fit": "contain", "bg": "#ffffff"}, {"c": "/outfitpreview", "d": "Skirtingi aprangos deriniai tam pačiam žmogui", "img": "outfitpreview", "fit": "contain", "bg": "#ffffff"}]}, {"id": "zmones", "title": "Žmonės ir aplinka", "intro": "Kai reikia sujungti kelias nuotraukas ar pakeisti aplinką. Didžiausia klaida čia yra skirtinga šviesa: žmonės atrodo kaip iškirpti ir priklijuoti.", "orig": ["G"], "keep": "kiekvieno žmogaus tapatybę. Suderink šviesą, mastelį ir perspektyvą", "cmds": [{"c": "/together", "d": "Du žmonės iš atskirų nuotraukų viename kadre", "img": "together", "pos": "center 78%", "src": "Nuotraukos: įkeltos dvi, po vieną žmogų kiekvienoje", "tip": "Įkelk dvi nuotraukas, po vieną žmogų kiekvienoje, įklijuok /together ir išsiųsk."}, {"c": "/newbg", "d": "Pakeičia tik foną, žmogus lieka nepaliestas", "img": "newbg", "pos": "center 25%"}, {"c": "/lifestyle", "d": "Perkelia į natūralią gyvenimo sceną", "img": "lifestyle", "pos": "center 30%"}, {"c": "/addperson", "d": "Prideda žmogų ar augintinį į jau esamą nuotrauką", "img": "addperson", "pos": "center 40%"}, {"c": "/faceforward", "d": "Pasuka veidą labiau į kamerą", "img": "faceforward", "pos": "center 25%"}]}, {"id": "virsmai", "title": "Smagūs virsmai", "intro": "Tai, kas plinta socialiniuose tinkluose. Veidas lieka atpažįstamas, o visa kita gali būti kitokia: amžius, epocha, net medžiaga.", "orig": ["G", "K"], "keep": "atpažįstamus veido bruožus, plaukų spalvą ir šukuoseną", "cmds": [{"c": "/actionfigure", "d": "Kolekcinė figūrėlė dėžutėje su tavo aksesuarais", "img": "hero", "more": ["actionfigure_b"], "pos": "center 30%"}, {"c": "/brickfigure", "d": "Figūrėlė, sulipdyta iš žaislinių kaladėlių, be pakuotės", "img": "brickfigure", "more": ["brickfigure_b"], "pos": "center 30%"}, {"c": "/brickstory", "d": "Kaladėlių figūrėlė savo pasaulyje: darbo vieta, daiktai, augintinis", "img": "brickstory", "more": ["brickstory_b"], "pos": "center 35%"}, {"c": "/oldify", "d": "Kaip atrodysi po 30 metų", "img": "oldify", "more": ["oldify_b"], "pos": "center 25%"}, {"c": "/babyversion", "d": "Tavo vaikystės versija", "img": "babyversion", "more": ["babyversion_b"], "pos": "center 30%"}, {"c": "/diorama", "d": "Tu miniatiūriniame kambaryje po stiklo gaubtu", "img": "diorama", "more": ["diorama_b"], "pos": "center 45%"}, {"c": "/miniature", "d": "Tu mažytė didelio daikto pasaulyje", "img": "miniature", "more": ["miniature_b"], "pos": "center 45%"}, {"c": "/superhero", "d": "Originali superherojė, ne iš jokio filmo", "img": "superhero", "more": ["superhero_b"], "pos": "center 25%"}, {"c": "/royal", "d": "Karalienės portretas", "img": "royal", "more": ["royal_b"], "pos": "center 25%"}, {"c": "/astronaut", "d": "Astronautės kostiumu", "img": "astronaut", "more": ["astronaut_c"], "pos": "center 25%"}, {"c": "/renaissance", "d": "Renesanso epochos portretas", "img": "renaissance", "more": ["renaissance_b"], "pos": "center 25%"}, {"c": "/statue", "d": "Marmurinė skulptūra muziejuje", "img": "statue", "more": ["statue_b"], "pos": "center 35%"}, {"c": "/3dcartoon", "d": "3D animacinio filmo personažas", "img": "3dcartoon", "more": ["3dcartoon_b"], "pos": "center 30%"}, {"c": "/magazinecover", "d": "Žurnalo viršelis su tavo užrašais", "img": "magazinecover", "more": ["magazinecover_b"], "pos": "center 20%"}, {"c": "/filmposter", "d": "Originalaus filmo plakatas", "img": "filmposter", "more": ["filmposter_b"], "pos": "center 30%"}, {"c": "/polaroid", "d": "Momentinė Polaroid nuotrauka", "img": "polaroid_b", "more": ["polaroid"], "pos": "center 40%"}]}, {"id": "stiliai", "title": "Meno stiliai", "intro": "Ta pati nuotrauka, tik nupiešta. Geriausiai veikia su aiškiu portretu ir paprastu fonu.", "orig": ["G"], "keep": "siluetą ir atpažįstamus bruožus. Be atsitiktinio teksto", "cmds": [{"c": "/watercolor", "d": "Akvarelė", "img": "watercolor", "pos": "center 25%"}, {"c": "/oilportrait", "d": "Aliejinė tapyba", "img": "oilportrait", "pos": "center 25%"}, {"c": "/anime", "d": "Anime", "img": "anime", "pos": "center 25%"}, {"c": "/sketchportrait", "d": "Pieštuko eskizas", "img": "sketchportrait", "pos": "center 25%"}, {"c": "/comicportrait", "d": "Komiksas", "img": "comicportrait", "pos": "center 25%"}, {"c": "/popart", "d": "Pop art", "img": "popart", "pos": "center 25%"}, {"c": "/pixelart", "d": "Pikselių menas", "img": "pixelart", "pos": "center 25%"}, {"c": "/lineart", "d": "Švarus linijinis piešinys", "img": "lineart", "pos": "center 25%"}, {"c": "/papercut", "d": "Popieriaus karpinys", "img": "papercut", "pos": "center 25%"}, {"c": "/stainedglass", "d": "Vitražas", "img": "stainedglass", "pos": "center 25%"}]}, {"id": "sviesa", "title": "Šviesa ir atmosfera", "intro": "Keičiama tik šviesa ir nuotaika. Žmogus ar daiktas lieka toks pat, todėl šias komandas drąsiai galima jungti su kitomis.", "orig": ["K", "Z"], "keep": "objektą ir kompoziciją. Keisk tik šviesą ir nuotaiką", "cmds": [{"c": "/neonportrait", "d": "Neoninė šviesa"}, {"c": "/goldenhour", "d": "Šilta saulėlydžio šviesa"}, {"c": "/moody", "d": "Tamsi, atmosferinė nuotaika"}, {"c": "/highkey", "d": "Šviesus, orus kadras"}, {"c": "/backlit", "d": "Šviesa iš nugaros, švytintys kontūrai"}, {"c": "/candlelit", "d": "Žvakių šviesa", "need": "daikto ar interjero"}, {"c": "/bluehour", "d": "Mėlynoji valanda po saulėlydžio"}, {"c": "/snowfall", "d": "Krentantis sniegas"}, {"c": "/dappled", "d": "Šviesa, krentanti per lapus"}]}, {"id": "produktas", "title": "Produkto pateikimas", "intro": "Kai parduodi daiktą. Produktas turi likti lygiai toks, koks yra: forma, spalva, logotipas ir užrašai.", "orig": ["Z"], "keep": "produkto formą, spalvą, logotipą ir visus užrašus", "cmds": [{"c": "/premiumshowcase", "d": "Premium studija su minkšta šviesa"}, {"c": "/levitation", "d": "Produktas levituoja ore"}, {"c": "/podium", "d": "Ant reklaminio podiumo"}, {"c": "/marble", "d": "Ant marmuro paviršiaus"}, {"c": "/glassreflection", "d": "Ant tamsaus stiklo su atspindžiu"}, {"c": "/naturebackdrop", "d": "Gamtos fone"}, {"c": "/handheld", "d": "Laikomas rankoje"}, {"c": "/flatlay", "d": "Nufotografuotas iš viršaus su rekvizitu"}, {"c": "/whitebg", "d": "Švarus baltas fonas"}, {"c": "/marketplace", "d": "Pagrindinė nuotrauka el. parduotuvei"}, {"c": "/seasonal", "d": "Šventinėje ar sezoninėje aplinkoje"}, {"c": "/unboxing", "d": "Išpakavimo scena"}]}, {"id": "pasauliai", "title": "Kūrybiniai produkto pasauliai", "intro": "Ne kasdienei prekių nuotraukai, o tam, kad sustabdytum žmogų, slenkantį naujienų srautą.", "orig": ["Z"], "keep": "produkto formą ir atpažįstamumą", "cmds": [{"c": "/claymation", "d": "Plastilino animacija"}, {"c": "/chrome", "d": "Iš poliruoto chromo"}, {"c": "/icecarved", "d": "Ledo skulptūra"}, {"c": "/underwater", "d": "Po vandeniu"}, {"c": "/space", "d": "Nesvarumas kosmose"}, {"c": "/retro80s", "d": "80-ųjų estetika"}]}, {"id": "paaiskinimai", "title": "Paaiškinimai ir schemos", "intro": "Vaizdai, kurie ne gražina, o paaiškina. ChatGPT mėgsta išgalvoti skaičius, todėl visada duok tikrus duomenis arba prašyk palikti tuščias vietas.", "orig": ["Z"], "keep": "tik matomus arba mano pateiktus faktus. Jokių išgalvotų skaičių ar savybių", "cmds": [{"c": "/handwritten", "d": "Ranka rašytos pastabos ir rodyklės ant nuotraukos"}, {"c": "/anatomy", "d": "Sandara su išnašomis"}, {"c": "/labeled", "d": "Dalys pažymėtos etiketėmis"}, {"c": "/infographic", "d": "Infografika su tavo faktais"}, {"c": "/stepbystep", "d": "Procesas žingsniais"}, {"c": "/crosssection", "d": "Pjūvis, rodantis vidų"}, {"c": "/blueprint", "d": "Inžinerinis brėžinys"}, {"c": "/beforeafter", "d": "Prieš ir po"}, {"c": "/specs", "d": "Charakteristikų kortelė"}]}, {"id": "reklama", "title": "Reklama ir socialiniai tinklai", "intro": "Užbaigti vizualai su tekstu. Tekstą visada parašyk pati ir liepk jo nekeisti, kitaip ChatGPT prikurs šūkių.", "orig": ["Z", "K"], "keep": "produkto ar žmogaus išvaizdą. Tekstą naudok tik tokį, kokį parašiau", "cmds": [{"c": "/creativeads", "d": "Užbaigtas reklaminis vizualas su antrašte", "img": "creativeads", "pos": "center 40%"}, {"c": "/testimonialad", "d": "Reklama su kliento atsiliepimu"}, {"c": "/billboard", "d": "Reklama miesto stende"}, {"c": "/busstop", "d": "Reklama autobusų stotelėje"}, {"c": "/storyad", "d": "Stories formato reklama"}, {"c": "/reelcover", "d": "Reels viršelis"}, {"c": "/thumbnail", "d": "YouTube miniatiūra"}, {"c": "/quotecard", "d": "Citatos kortelė"}, {"c": "/linkedinbanner", "d": "LinkedIn viršelis"}, {"c": "/podcastcover", "d": "Podkasto viršelis"}]}, {"id": "pakuotes", "title": "Pakuotės ir maketai", "intro": "Pamatyk savo prekės ženklą ant daikto, kurio dar nėra. Tinka idėjai patikrinti prieš spausdinant.", "orig": ["Z"], "keep": "logotipą ir tekstą tiksliai tokius, kokie yra", "cmds": [{"c": "/packaging", "d": "Produkto pakuotė"}, {"c": "/giftbox", "d": "Dovanų dėžutė"}, {"c": "/postermockup", "d": "Plakatas ant sienos"}, {"c": "/phonemockup", "d": "Vaizdas telefono ekrane"}, {"c": "/tshirtmockup", "d": "Ant marškinėlių"}, {"c": "/businesscard", "d": "Vizitinė kortelė"}]}, {"id": "mada", "title": "Stilius", "intro": "Drabužiai ir įvaizdis. Veidas visada lieka tavo, o jei keiti tik foną ar kadrą, drabužio kirpimas, spalva ir medžiaga lieka tie patys.", "orig": ["S"], "keep": "drabužio kirpimą, spalvą, medžiagą ir veidą", "cmds": [{"c": "/outfitguide", "d": "Aprangos gidas: keli deriniai, spalvų paletė ir aksesuarai", "img": "outfitguide", "pos": "center 8%", "p": "/outfitguide\nParenk vizualų aprangos gidą, kuriame būtų:\n• originali nuotrauka kaip vienintelis veido ir išvaizdos pagrindas;\n• skirtingi aprangos deriniai, jų spalvos, kirpimai ir aksesuarai;\n• aiškiai parodyta, kokie drabužių deriniai siūlomi;\n• jokio veido keitimo ar atsitiktinių modelių."}, {"c": "/outfit", "d": "Įkeli savo nuotrauką ir rūbų nuotrauką, gauni save su tais rūbais", "img": "outfit", "more": ["outfit_b", "outfit_c"], "labels": ["Rezultatas", "Įkelti rūbai", "Įkelta nuotrauka"], "pos": "center 18%", "need": "rūbų nuotraukos", "tip": "Įkelk savo nuotrauką ir rūbų nuotrauką, įklijuok /outfit ir išsiųsk.", "p": "/outfit\nNuotraukos: pirmoje aš, antroje rūbai ir aksesuarai.\nUžduotis: aprenk mane šiais rūbais ir parodyk visą figūrą.\nIšsaugok: mano veidą, plaukus, kūno formą ir proporcijas. Rūbų kirpimą, spalvą, medžiagą ir aksesuarus perkelk tiksliai, nieko nepridėk.\nFormatas: vertikalus"}, {"c": "/lookbook", "d": "Kolekcijos lookbook kadras", "img": "lookbook", "pos": "center top"}, {"c": "/runway", "d": "Podiumo kadras", "img": "runway", "pos": "12% center"}, {"c": "/streetwear", "d": "Gatvės mados įvaizdis", "img": "streetwear", "pos": "left top"}, {"c": "/editorial", "d": "Mados žurnalo fotosesija", "img": "editorial", "pos": "center 20%"}, {"c": "/closeuptexture", "d": "Artimas audinio faktūros kadras", "img": "closeuptexture", "more": ["closeuptexture_b", "closeuptexture_c"], "pos": "center 30%"}, {"c": "/flatlayfashion", "d": "Apranga išdėliota iš viršaus"}]}, {"id": "interjeras", "title": "Interjeras", "intro": "Naujas stilius tame pačiame kambaryje. Sienos, langai ir durys lieka savo vietose.", "orig": [], "keep": "patalpos geometriją, langus ir duris", "cmds": [{"c": "/interiordesign", "d": "Naujas dizainas toje pačioje erdvėje"}, {"c": "/scandinavian", "d": "Skandinaviškas stilius"}, {"c": "/boho", "d": "Boho stilius"}, {"c": "/cozycorner", "d": "Jaukus kampelis"}, {"c": "/declutter", "d": "Pašalina netvarką"}, {"c": "/paintswap", "d": "Kita sienų spalva"}]}, {"id": "maistas", "title": "Maistas ir gėrimai", "intro": "Kavinėms, kepėjoms ir receptų tinklaraščiams. Patiekalas turi likti tas pats, keičiasi tik pateikimas ir šviesa.", "orig": [], "keep": "patiekalo sudėtį ir formą. Nepridėk ingredientų", "cmds": [{"c": "/foodshot", "d": "Profesionalus maisto kadras"}, {"c": "/darkmoody", "d": "Tamsi atmosferinė fotografija"}, {"c": "/flatlayfood", "d": "Iš viršaus"}, {"c": "/steamrise", "d": "Kylantys garai"}, {"c": "/coffeeart", "d": "Kava su latte piešiniu"}, {"c": "/cafescene", "d": "Kavinės scenoje"}]}, {"id": "gerinimas", "title": "Nuotraukos gerinimas", "intro": "Kai nuotrauka gera, bet ne tobula. Čia svarbiausia nepadaryti iš tavęs kito žmogaus: veidas, mimika ir šukuosena turi likti tokie patys.", "orig": ["K"], "keep": "veidą, mimiką, šukuoseną, aprangą ir kompoziciją. Jokio plastikinio efekto", "cmds": [{"c": "/proshot", "d": "Paprastą nuotrauką paverčia profesionaliu kadru"}, {"c": "/hdreal", "d": "Prastą ar suspaustą nuotrauką pagerina iki švaraus HD"}, {"c": "/restorephoto", "d": "Atkuria seną, išblukusią ar subraižytą nuotrauką", "need": "senos nuotraukos"}, {"c": "/colorize", "d": "Nuspalvina nespalvotą nuotrauką natūraliomis spalvomis", "need": "nespalvotos nuotraukos"}, {"c": "/lightfix", "d": "Sutvarko per tamsią ar per šviesią nuotrauką"}, {"c": "/colorfix", "d": "Tik natūrali spalvų korekcija, daugiau nieko"}, {"c": "/skinretouch", "d": "Lengvas retušas: dingsta spuogeliai, lieka poros ir tekstūra"}, {"c": "/cleanbg", "d": "Pašalina trukdančius daiktus fone, žmogų palieka"}, {"c": "/extendframe", "d": "Išplečia kadrą į šonus, kai nuotrauka per ankšta"}]}];
+const ORIG = {"G": "Gyva nuotrauka, be jokio apdorojimo", "K": "Dalykinė nuotrauka su kostiumu", "Z": "Žvakės, nufotografuotos telefonu ant stalo", "S": "Paprasta asmenukė telefonu namie"};
+const NEEDORIG = {"interjeras": "kambario", "maistas": "patiekalo ar kavos"};
+const REL = {"/cleanbg": {"id": "P11", "t": "Ištrink trukdantį daiktą"}, "/newbg": {"id": "P13", "t": "Naujas fonas, kuris atrodo tikras"}, "/extendframe": {"id": "P15", "t": "Išplėsk kadrą"}, "/lightfix": {"id": "P18", "t": "Pataisyk šviesą"}, "/restorephoto": {"id": "P21", "t": "Restauruok seną nuotrauką"}, "/colorize": {"id": "P22", "t": "Nuspalvink nespalvotą nuotrauką"}, "/headshot": {"id": "P23", "t": "Dalykinis portretas"}, "/lifestyle": {"id": "P24", "t": "Tas pats žmogus naujoje vietoje"}, "/outfit": {"id": "P25", "t": "Pasimatuok drabužį"}, "/oldify": {"id": "P31", "t": "Amžiaus pokytis"}, "/hairstyle": {"id": "P32", "t": "Šukuosenų palyginimas"}, "/3dcartoon": {"id": "P33", "t": "3D avataras"}, "/premiumshowcase": {"id": "P34", "t": "Pagrindinė produkto nuotrauka"}, "/marketplace": {"id": "P36", "t": "El. parduotuvės kortelė"}, "/handheld": {"id": "P37", "t": "Produktas rankoje"}, "/packaging": {"id": "P38", "t": "Pakuotės maketas"}, "/foodshot": {"id": "P40", "t": "Apetitą keliantis maistas"}, "/billboard": {"id": "P48", "t": "Tavo dizainas ant tikro stendo"}, "/tshirtmockup": {"id": "P49", "t": "Atributikos serija"}, "/flatlayfashion": {"id": "P50", "t": "Drabužiai iš viršaus"}, "/reelcover": {"id": "P51", "t": "Reels viršelis"}, "/thumbnail": {"id": "P52", "t": "YouTube miniatiūra"}, "/quotecard": {"id": "P56", "t": "Citatos kortelė"}, "/infographic": {"id": "P64", "t": "Infografika iš tavo faktų"}, "/stepbystep": {"id": "P65", "t": "Proceso schema"}, "/beforeafter": {"id": "P68", "t": "Prieš ir po"}, "/phonemockup": {"id": "P77", "t": "Programėlė telefone"}, "/crosssection": {"id": "P84", "t": "Pjūvis"}, "/anatomy": {"id": "P85", "t": "Išskaidytas vaizdas"}, "/blueprint": {"id": "P86", "t": "Brėžinys"}, "/comicportrait": {"id": "P92", "t": "Komikso puslapis"}, "/interiordesign": {"id": "P93", "t": "Kambario atnaujinimas"}, "/editorial": {"id": "P94", "t": "Kino kadras"}, "/goldenhour": {"id": "P99", "t": "Tas pats pastatas, keturi orai"}};
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+const plural = n => n%10===1&&n%100!==11 ? 'komanda' : (n%10===0||(n%100>=10&&n%100<=20)) ? 'komandų' : 'komandos';
+
+function promptFor(b, c){
+  if (c.p) return c.p;
+  return `${c.c}\n${c.src||'Nuotrauka: įkelta'}\nUžduotis: ${c.d}.\nIšsaugok: ${b.keep}.\nFormatas: kaip originalo`;
+}
+
+const blocksEl = document.getElementById('blocks');
+const chipsEl = document.getElementById('chips');
+let html = '', chips = '';
+BLOCKS.forEach((b, bi) => {
+  chips += `<a href="#b-${b.id}">${esc(b.title)}</a>`;
+  let cards = '';
+  b.orig.forEach(o => {
+    cards += `<button class="card orig" data-orig="${o}" data-search="originalas">
+      <div class="thumb"><img loading="lazy" decoding="async" src="${IMG[o]}" alt="Originali nuotrauka"></div>
+      <div class="meta"><b>originalas</b><span>${esc(ORIG[o])}</span></div></button>`;
+  });
+  if (!b.orig.length) {
+    cards += `<div class="card orig" style="cursor:default" data-search="originalas"><div class="thumb"><div class="ph"><b>?</b><small>Įkelk savo ${NEEDORIG[b.id]} nuotrauką</small></div></div>
+      <div class="meta"><b>originalas</b><span>Čia tinka tavo ${NEEDORIG[b.id]} nuotrauka</span></div></div>`;
+  }
+  b.cmds.forEach((c, ci) => {
+    const media = c.img
+      ? `<img loading="lazy" decoding="async" src="${IMG[c.img]}" alt="Pavyzdys: ${esc(c.c)}" style="object-position:${c.pos||'center'};${c.fit?`object-fit:${c.fit};background:${c.bg||'transparent'}`:''}">`
+      : `<div class="ph"><b>${esc(c.c)}</b><small>Pavyzdys ruošiamas</small></div>`;
+    cards += `<button class="card" data-b="${bi}" data-c="${ci}" data-search="${esc(norm(c.c+' '+c.d+' '+b.title))}">
+      <div class="thumb">${media}${c.more?`<span class="multi">${c.more.length+1} variantai</span>`:''}</div>
+      <div class="meta"><b>${esc(c.c)}</b><span>${esc(c.d)}</span>${c.need?`<em>Reikės ${esc(c.need)}</em>`:''}</div></button>`;
+  });
+  html += `<section class="block" id="b-${b.id}">
+    <div class="block-head"><h2>${esc(b.title)}</h2><span class="n">${b.cmds.length} ${plural(b.cmds.length)}</span></div>
+    <p class="sub">${esc(b.intro)}</p><div class="grid">${cards}</div></section>`;
+});
+blocksEl.innerHTML = html;
+chipsEl.innerHTML = chips;
+
+/* paieška */
+const q = document.getElementById('q'), empty = document.getElementById('empty');
+q.addEventListener('input', () => {
+  const t = norm(q.value.trim());
+  let total = 0;
+  document.querySelectorAll('.block').forEach(sec => {
+    let n = 0;
+    sec.querySelectorAll('.card:not(.orig)').forEach(card => {
+      const hit = !t || card.dataset.search.includes(t);
+      card.style.display = hit ? '' : 'none'; if (hit) n++;
+    });
+    sec.querySelectorAll('.card.orig').forEach(o => o.style.display = t ? 'none' : '');
+    sec.style.display = n ? '' : 'none'; total += n;
+  });
+  empty.style.display = total ? 'none' : 'block';
+});
+
+/* langas */
+const dlg = document.getElementById('dlg');
+let curCmd = '', dlgLabels = null;
+blocksEl.addEventListener('click', e => {
+  const card = e.target.closest('button.card'); if (!card) return;
+  if (card.dataset.orig) {
+    const o = card.dataset.orig;
+    dlgLabels = null; document.getElementById('dRel').hidden = true;
+    openDlg('originalas', ORIG[o] + '. Iš šios nuotraukos daromi pavyzdžiai, kad matytum, kas pasikeitė.', null, IMG[o], '');
+    return;
+  }
+  const b = BLOCKS[card.dataset.b], c = b.cmds[card.dataset.c];
+  const list = c.img ? [c.img, ...(c.more||[])].map(k => IMG[k]) : null;
+  dlgLabels = c.labels || null;
+  openDlg(c.c, c.d + (c.need ? `. Reikės ${c.need}.` : '.'), promptFor(b, c), list,
+    c.tip || `Įkelk nuotrauką į ChatGPT, įklijuok ${c.c} ir išsiųsk. Daugiau nieko rašyti nereikia.`);
+  const rel = document.getElementById('dRel');
+  if (REL[c.c]) { rel.hidden = false; rel.href = 'promptai.html#' + REL[c.c].id; rel.textContent = 'Detalesnis promptas su laukeliais: ' + REL[c.c].t; }
+});
+/* nuoroda tiesiai į komandą: komandos.html#k=headshot */
+function openFromHash(){
+  const m = location.hash.match(/^#k=(.+)$/); if (!m) return;
+  const name = '/' + decodeURIComponent(m[1]);
+  const card = [...blocksEl.querySelectorAll('button.card[data-b]')].find(el => BLOCKS[el.dataset.b].cmds[el.dataset.c].c === name);
+  if (card) { card.scrollIntoView({block:'center'}); card.click(); }
+}
+window.addEventListener('hashchange', openFromHash);
+openFromHash();
+function openDlg(title, desc, prompt, img, tip){
+  document.getElementById('dTitle').textContent = title;
+  document.getElementById('dDesc').textContent = desc;
+  const pr = document.getElementById('dPrompt');
+  pr.textContent = prompt || '';
+  document.getElementById('dMore').style.display = prompt ? '' : 'none';
+  document.getElementById('dCmdBox').style.display = prompt ? '' : 'none';
+  document.getElementById('dTip').textContent = tip;
+  curCmd = title;
+  const imgs = !img ? [] : Array.isArray(img) ? img : [img];
+  const box = document.getElementById('dImg');
+  box.innerHTML = imgs.length
+    ? `<img id="dMain" src="${imgs[0]}" alt="${esc(title)}">` + (imgs.length > 1
+      ? `<div class="vars">${imgs.map((s,i)=>`<button class="${i?'':'on'}" data-i="${i}">${dlgLabels&&dlgLabels[i]?esc(dlgLabels[i]):(i+1)+' variantas'}</button>`).join('')}</div>` : '')
+    : `<div class="ph"><b>${esc(title)}</b><small>Pavyzdys ruošiamas</small></div>`;
+  box.querySelectorAll('.vars button').forEach(bt => bt.onclick = () => {
+    document.getElementById('dMain').src = imgs[bt.dataset.i];
+    box.querySelectorAll('.vars button').forEach(x => x.classList.toggle('on', x === bt));
+  });
+  dlg.showModal();
+}
+document.getElementById('dClose').onclick = () => dlg.close();
+dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+
+/* kopijavimas */
+const toast = document.getElementById('toast');
+function say(t){ toast.textContent = t; toast.classList.add('on'); clearTimeout(say.t); say.t = setTimeout(() => toast.classList.remove('on'), 1600); }
+async function copy(text, msg){
+  try { await navigator.clipboard.writeText(text); }
+  catch { const ta = document.createElement('textarea'); ta.value = text; ta.style.position='fixed'; ta.style.opacity='0';
+    (dlg.open?dlg:document.body).appendChild(ta); ta.select(); try{document.execCommand('copy')}catch{} ta.remove(); }
+  say(msg || 'Nukopijuota');
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-copy]'); if (!b) return;
+  copy(document.getElementById(b.dataset.copy).textContent);
+});
+document.getElementById('dCopyCmd').onclick = () => copy(curCmd, 'Komanda nukopijuota');
+</script>
+</body>
+</html>

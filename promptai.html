@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>105 promptai vaizdams ChatGPT · Erika Karta</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="description" content="Nemokama promptų biblioteka vaizdams ChatGPT lietuviškai: portretai, produktai, reklama, socialiniai tinklai, schemos. Įrašyk savo žodžius ir nusikopijuok.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Erika Karta">
+<link rel="canonical" href="https://www.vita-synergy.com/promptai">
+<meta property="og:title" content="105 promptai vaizdams ChatGPT · Erika Karta">
+<meta property="og:description" content="Paruošti promptai lietuviškai. Įrašyk savo žodžius į laukelius, nusikopijuok ir įklijuok į ChatGPT.">
+<meta property="og:image" content="https://www.vita-synergy.com/img/komandos/hero.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --bg:#0D0D0D; --surface:#181014; --surface-2:#221219; --burgundy:#5C0E26; --ruby:#A4133C;
+  --pink:#D90F6A; --magenta:#b80d59; --cream:#FAF9F6; --muted:#B5A6AC;
+  --line:rgba(250,249,246,.1); --line-pink:rgba(217,15,106,.28); --radius:18px; --navh:68px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:150px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--bg);color:var(--cream);font-family:'Inter',sans-serif;font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased}
+::selection{background:var(--pink);color:#fff}
+h1,h2,h3{font-family:'Playfair Display',serif;font-weight:500;line-height:1.15;color:var(--cream)}
+.em{font-style:italic;color:var(--pink)}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--pink);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+.eyebrow{font-size:.76rem;letter-spacing:.22em;text-transform:uppercase;color:var(--pink);font-weight:600;margin-bottom:18px}
+.note{font-family:'Playfair Display',serif;font-style:italic;color:var(--pink)}
+
+/* nav (kaip visoje svetainėje) */
+.topnav{position:sticky;top:0;z-index:50;background:rgba(13,13,13,.9);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1100px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:var(--navh)}
+.logo{font-family:'Playfair Display',serif;font-size:1.2rem;letter-spacing:.04em}
+.logo i{font-style:italic;color:var(--pink)}
+.nav-links{display:flex;gap:28px;font-size:.9rem;color:var(--muted);font-weight:400}
+.nav-links a:hover,.nav-links a[aria-current]{color:var(--cream)}
+.nav-cta{font-size:.86rem;font-weight:500;color:#fff;background:var(--pink);padding:10px 20px;border-radius:99px;transition:background .2s ease;white-space:nowrap}
+.nav-cta:hover{background:var(--magenta)}
+@media(max-width:800px){.nav-links{display:none}}
+
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:99px;font:500 .95rem 'Inter',sans-serif;cursor:pointer;border:1.5px solid var(--ruby);background:transparent;color:var(--cream);transition:background .2s ease}
+.btn:hover{background:var(--ruby)}
+.btn.primary{background:var(--pink);border-color:var(--pink);color:#fff}
+.btn.primary:hover{background:var(--magenta);border-color:var(--magenta)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:center;padding:56px 0 80px}
+.hero-fig{position:relative;justify-self:center;width:min(340px,70vw)}
+.hero-fig img{position:relative;z-index:1;border-radius:var(--radius);width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center top}
+.hero-fig::after{content:"";position:absolute;inset:0;transform:translate(18px,18px);border:1.5px solid var(--ruby);border-radius:var(--radius);z-index:0}
+.hero-fig figcaption{position:absolute;z-index:2;left:-14px;bottom:28px;background:var(--bg);border:1px solid var(--line-pink);border-radius:12px;padding:8px 14px;font-size:.85rem;color:var(--muted)}
+.hero-fig figcaption b{font-weight:600;color:var(--pink)}
+.hero h1{font-size:clamp(2.3rem,5vw,3.6rem);font-weight:400;letter-spacing:-.01em;margin-bottom:18px}
+.lead{font-size:1.1rem;color:var(--muted);max-width:32em;margin-bottom:34px;font-weight:400}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+
+/* sections */
+section.band{padding:72px 0;border-top:1px solid var(--line)}
+section.band.alt{background:var(--surface)}
+h2{font-size:clamp(1.8rem,3.4vw,2.6rem);margin-bottom:14px}
+.sub{color:var(--muted);max-width:40em;margin-bottom:40px;font-weight:400}
+.explain{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.explain p{color:var(--muted);font-weight:400;margin-bottom:16px;max-width:34em}
+.explain p strong{color:var(--cream);font-weight:500}
+.chat{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:12px}
+.bubble{max-width:88%;padding:12px 16px;border-radius:16px;font-size:.95rem;font-weight:400}
+.bubble.me{align-self:flex-end;background:var(--pink);color:#fff;border-bottom-right-radius:4px;font-weight:600;font-size:1.05rem}
+.bubble.me small{display:block;font-weight:400;font-size:.75rem;opacity:.85}
+.bubble.ai{align-self:flex-start;background:var(--surface-2);border-bottom-left-radius:4px;color:var(--muted)}
+.bubble.ai b{color:var(--cream);font-weight:500}
+.chat .note{align-self:center;text-align:center;font-size:1.05rem}
+
+.steps{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:44px;counter-reset:s}
+.steps li{counter-increment:s;border-top:1.5px solid var(--ruby);padding-top:16px}
+.steps li::before{content:counter(s);display:block;font-family:'Playfair Display',serif;font-style:italic;font-size:2.2rem;line-height:1;color:var(--pink);margin-bottom:10px}
+.steps b{display:block;font-weight:500;margin-bottom:6px}
+.steps span{color:var(--muted);font-size:.93rem;font-weight:400}
+.template{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:30px}
+.template+.template{margin-top:20px}
+.template h3{font-size:1.35rem;margin-bottom:8px}
+.template p{color:var(--muted);font-size:.95rem;font-weight:400}
+pre.prompt{white-space:pre-wrap;word-break:break-word;font:400 .92rem/1.65 'Inter',sans-serif;background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:16px 18px;color:var(--cream)}
+pre.prompt .k{color:var(--pink);font-weight:600}
+.copyrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.why div{border-left:1.5px solid var(--pink);padding-left:20px}
+.why h3{font-size:1.2rem;margin-bottom:8px}
+.why p{color:var(--muted);font-size:.95rem;font-weight:400}
+.why p+p{margin-top:10px}
+.why .todo b{color:var(--cream);font-weight:500}
+.why code{font-family:'Inter',sans-serif;font-weight:500;color:var(--pink)}
+
+/* katalogo juosta */
+.toolbar{position:sticky;top:var(--navh);z-index:40;background:rgba(13,13,13,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);border-top:1px solid var(--line);padding:12px 0}
+.tb{display:flex;gap:14px;align-items:center}
+.search{flex:0 0 250px;position:relative}
+.search input{width:100%;padding:10px 14px 10px 40px;border-radius:99px;border:1px solid var(--line);background:var(--surface);color:var(--cream);font:400 .95rem 'Inter',sans-serif}
+.search input::placeholder{color:var(--muted)}
+.search input:focus{outline:none;border-color:var(--pink)}
+.search svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted)}
+.chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:2px}
+.chips::-webkit-scrollbar{display:none}
+.chips a{flex:0 0 auto;padding:7px 14px;border-radius:99px;border:1px solid var(--line);color:var(--muted);font-size:.85rem;font-weight:400;white-space:nowrap;transition:border-color .2s,color .2s}
+.chips a:hover{border-color:var(--pink);color:var(--cream)}
+
+/* blokai ir kortelės */
+.block{padding:60px 0 8px}
+.block-head{display:flex;gap:16px;align-items:baseline;flex-wrap:wrap;margin-bottom:8px}
+.block-head h2{margin:0}
+.block-head .n{font-family:'Playfair Display',serif;font-style:italic;color:var(--pink);font-size:1.15rem}
+.block .sub{margin-bottom:26px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:16px}
+.card{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:transform .2s ease,border-color .2s ease}
+.card:hover{transform:translateY(-3px);border-color:var(--ruby)}
+.card:focus-visible{outline:2px solid var(--pink);outline-offset:2px}
+.thumb{aspect-ratio:4/5;background:var(--surface-2);position:relative;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.ph{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:14px;background:repeating-linear-gradient(135deg,transparent 0 14px,rgba(217,15,106,.06) 14px 15px),var(--surface-2)}
+.ph b{font-family:'Playfair Display',serif;font-weight:500;font-size:1.1rem;line-height:1.15;color:var(--pink);overflow-wrap:anywhere}
+.ph small{color:var(--muted);font-size:.75rem;margin-top:6px}
+.meta{padding:12px 14px 15px}
+.meta b{display:block;font-weight:600;font-size:.95rem;color:var(--cream)}
+.meta span{display:block;color:var(--muted);font-size:.82rem;line-height:1.4;margin-top:3px;font-weight:400}
+.meta em{display:inline-block;font-style:normal;font-size:.72rem;margin-top:8px;padding:2px 9px;border-radius:99px;border:1px solid var(--line-pink);color:var(--pink)}
+.multi{position:absolute;top:8px;right:8px;background:rgba(13,13,13,.8);border:1px solid var(--line-pink);color:var(--cream);font-size:.7rem;font-weight:500;padding:3px 9px;border-radius:99px}
+.card.orig{border-color:var(--line-pink)}
+.card.orig .meta b{font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:1.25rem;color:var(--pink)}
+.empty{padding:60px 0;text-align:center;color:var(--muted);display:none}
+
+/* CTA */
+.final{padding:96px 0;text-align:center;border-top:1px solid var(--line);margin-top:72px;background:var(--surface)}
+.final h2{font-size:clamp(2rem,4.2vw,3rem);font-weight:400;max-width:18em;margin:0 auto 18px}
+.final p{color:var(--muted);max-width:34em;margin:0 auto 32px;font-weight:400}
+
+/* langas */
+dialog{border:1px solid var(--line);padding:0;border-radius:var(--radius);max-width:min(940px,calc(100vw - 24px));width:100%;background:var(--surface);color:var(--cream);margin:auto}
+dialog::backdrop{background:rgba(0,0,0,.72);backdrop-filter:blur(3px)}
+.dlg{display:grid;grid-template-columns:5fr 6fr}
+.dlg-img{background:var(--surface-2);min-height:300px;position:relative}
+.dlg-img img{width:100%;height:100%;max-height:80vh;object-fit:contain}
+.dlg-body{padding:32px 30px 28px;display:flex;flex-direction:column;gap:12px}
+.dlg-body h3{font-size:2rem;font-weight:500;color:var(--pink);word-break:break-word}
+.dlg-body p{color:var(--muted);font-weight:400}
+.dlg-body .lbl{font-weight:600;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cream);margin-top:6px}
+.close{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--bg);color:var(--cream);font-size:1.3rem;cursor:pointer;z-index:2}
+.more{border-top:1px solid var(--line);padding-top:16px;margin-top:4px;display:flex;flex-direction:column;gap:10px}
+.more .lbl{margin-top:0}
+.more-note{font-size:.88rem}
+.vars{position:absolute;left:12px;bottom:12px;display:flex;gap:6px;flex-wrap:wrap}
+.vars button{border:1px solid var(--line);border-radius:99px;padding:6px 12px;font:500 .78rem 'Inter',sans-serif;background:rgba(13,13,13,.85);color:var(--cream);cursor:pointer}
+.vars button.on{background:var(--pink);border-color:var(--pink);color:#fff}
+.plink{font-size:.85rem;color:var(--muted);border-bottom:1px solid var(--line-pink);align-self:flex-start}
+.plink:hover{color:var(--pink)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);opacity:0;background:var(--cream);color:var(--bg);padding:10px 20px;border-radius:99px;font-weight:500;transition:.2s;pointer-events:none;z-index:100}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+/* footer (kaip visoje svetainėje) */
+footer{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.9rem;color:var(--muted);font-weight:400}
+.foot-grid{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;margin-bottom:36px}
+.foot-grid h4{font-family:'Inter',sans-serif;font-weight:600;color:var(--cream);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:14px}
+.foot-grid a{display:block;margin-bottom:8px;transition:color .2s}
+.foot-grid a:hover{color:var(--pink)}
+.legal{border-top:1px solid var(--line);padding-top:24px;font-size:.8rem;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.legal a:hover{color:var(--pink)}
+
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;gap:48px;padding-top:40px}
+  .hero-fig{order:2}
+  .explain,.template{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .why{grid-template-columns:1fr}
+  .tb{flex-direction:column;align-items:stretch;gap:10px}
+  .search{flex:none}
+  .dlg{grid-template-columns:1fr}
+  .dlg-img img{max-height:52vh}
+}
+@media (max-width:520px){
+  .wrap{padding-left:16px;padding-right:16px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .steps{grid-template-columns:1fr}
+  .template{padding:20px}
+  .dlg-body{padding:24px 18px}
+  .hero-fig figcaption{left:-6px}
+}
+
+/* promptų puslapis */
+.hero.p-hero{grid-template-columns:1.05fr .95fr}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.vs > div{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+.vs h3{font-size:1.35rem;margin-bottom:6px}
+.vs .ex{display:inline-block;font-weight:600;color:var(--pink);margin-bottom:12px}
+.vs p{color:var(--muted);font-size:.95rem;font-weight:400;margin-bottom:14px}
+.vs a{color:var(--cream);font-weight:500;border-bottom:1px solid var(--line-pink)}
+.vs a:hover{color:var(--pink)}
+.steps.three{grid-template-columns:repeat(3,1fr);margin-bottom:0}
+
+.pgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.pcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px 24px 18px;display:flex;flex-direction:column;gap:12px;scroll-margin-top:150px}
+.pcard:target{border-color:var(--pink)}
+.ptop{display:flex;gap:10px;align-items:center;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.pid{color:var(--pink);font-weight:600}
+.pcard h3{font-size:1.4rem}
+.pmeta{display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:.88rem}
+.pmeta dt{color:var(--cream);font-weight:600;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:2px}
+.pmeta dd{color:var(--muted);font-weight:400;line-height:1.5}
+.plbl{font-size:.82rem;color:var(--muted);font-weight:400}
+.ptext{white-space:pre-wrap;word-break:break-word;font-size:.9rem;line-height:1.85;background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:14px 16px;color:var(--cream);font-weight:400}
+.fld{font:500 .86rem 'Inter',sans-serif;color:#fff;background:rgba(217,15,106,.16);border:none;border-bottom:1.5px dashed var(--pink);border-radius:6px 6px 2px 2px;padding:1px 6px;margin:0 1px;min-width:4ch;max-width:100%;vertical-align:baseline}
+.fld::placeholder{color:#F28AB8;opacity:1}
+.fld:focus{outline:none;background:rgba(217,15,106,.3);border-bottom-style:solid}
+.fld.filled{background:rgba(250,249,246,.08);border-bottom:1.5px solid var(--ruby)}
+.pact{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.pact .btn{padding:10px 20px;font-size:.88rem}
+.plink{font-size:.85rem;color:var(--muted);border-bottom:1px solid var(--line-pink)}
+.plink:hover{color:var(--pink)}
+.pclear{all:unset;cursor:pointer;font-size:.85rem;color:var(--muted)}
+.pclear:hover{color:var(--cream)}
+details{border-top:1px solid var(--line);padding-top:10px;font-size:.88rem}
+summary{cursor:pointer;color:var(--muted);list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+ ";color:var(--pink);font-weight:600}
+details[open] summary::before{content:"– "}
+details p{color:var(--muted);font-weight:400;margin-top:8px}
+details p b{color:var(--cream);font-weight:500}
+.hero-demo{position:relative}
+.hero-demo::after{content:"";position:absolute;inset:0;transform:translate(16px,16px);border:1.5px solid var(--ruby);border-radius:var(--radius);z-index:0}
+.hero-demo .pcard{position:relative;z-index:1;background:var(--surface)}
+.hero-demo .tag{position:absolute;z-index:2;top:-14px;right:20px;background:var(--pink);color:#fff;font-size:.75rem;font-weight:500;padding:4px 12px;border-radius:99px}
+@media (max-width:900px){
+  .hero.p-hero{grid-template-columns:1fr}
+  .vs,.pgrid{grid-template-columns:minmax(0,1fr)}
+  .steps.three{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  .pmeta{grid-template-columns:1fr}
+  .pcard{padding:20px 16px 16px}
+}
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-in">
+    <a class="logo" href="index.html">ERIKA <i>KARTA</i></a>
+    <div class="nav-links">
+      <a href="index.html">Pradžia</a>
+      <a href="index.html#paslaugos">Paslaugos</a>
+      <a href="komandos.html">Komandos</a>
+      <a href="promptai.html" aria-current="page">Promptai</a>
+    </div>
+    <a class="nav-cta" href="https://tidycal.com/erikakartaseva/30minute-meetingerika" target="_blank" rel="noopener">Nemokamas pokalbis</a>
+  </div>
+</nav>
+
+<header class="wrap hero p-hero">
+  <div>
+    <p class="eyebrow">ChatGPT · promptų biblioteka</p>
+    <h1>105 promptai vaizdams <span class="em">ChatGPT</span></h1>
+    <p class="lead">Kai vieno žodžio komandos nebeužtenka. Paruošti promptai lietuviškai: įrašai savo žodžius į rožinius laukelius, nusikopijuoji ir įklijuoji į ChatGPT. Nemokamai, be registracijos.</p>
+    <div class="btns">
+      <a class="btn primary" href="#katalogas">Žiūrėti promptus</a>
+      <a class="btn" href="#kaip">Kaip naudoti</a>
+    </div>
+  </div>
+  <div class="hero-demo" id="demo"><span class="tag">Pabandyk čia</span></div>
+</header>
+
+<section class="band alt" id="skirtumas">
+  <div class="wrap">
+    <p class="eyebrow">Ką rinktis</p>
+    <h2>Komanda ar promptas?</h2>
+    <p class="sub">Abu veikia. Skiriasi tik tuo, kiek sprendimų paliekama ChatGPT.</p>
+    <div class="vs">
+      <div>
+        <h3>Komanda</h3>
+        <span class="ex">/headshot</span>
+        <p>Vienas žodis. Greita ir smagu, bet detales ChatGPT sprendžia pats: kokia šviesa, koks fonas, ar keisti šukuoseną. Tinka, kai nori greitai išbandyti idėją.</p>
+        <a href="komandos.html">Žiūrėti komandas su pavyzdžiais</a>
+      </div>
+      <div>
+        <h3>Promptas</h3>
+        <span class="ex">Dalykinis portretas + tavo laukeliai</span>
+        <p>Pilnas aprašymas su tavo duomenimis: ką keisti, ką išsaugoti, kokio formato reikia. Užtrunka minutę ilgiau, bet rezultatas tikslesnis ir lengviau pakartojamas.</p>
+        <a href="#katalogas">Žiūrėti promptus</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="kaip">
+  <div class="wrap">
+    <p class="eyebrow">Instrukcija</p>
+    <h2>Kaip naudoti</h2>
+    <p class="sub">Trys žingsniai ir paruoštas promptas.</p>
+    <ol class="steps three">
+      <li><b>Rask užduotį</b><span>Pasirink kategoriją arba įrašyk paieškoje, ko reikia: „fonas“, „produktas“, „karuselė“.</span></li>
+      <li><b>Įrašyk savo žodžius</b><span>Rožiniai laukeliai yra tavo duomenys. Jei kurio nereikia, palik tuščią ir ChatGPT lange ištrink tą eilutę.</span></li>
+      <li><b>Kopijuok ir įklijuok</b><span>Jei promptas dirba su nuotrauka, pirma ją įkelk. Kai įkeli kelias, rašyk „1 nuotrauka“, „2 nuotrauka“.</span></li>
+    </ol>
+  </div>
+</section>
+
+<div class="toolbar" id="katalogas">
+  <div class="wrap tb">
+    <label class="search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="q" type="search" placeholder="Ieškoti: fonas, produktas…" aria-label="Ieškoti prompto">
+    </label>
+    <nav class="chips" id="chips" aria-label="Kategorijos"></nav>
+  </div>
+</div>
+
+<main class="wrap" id="blocks"></main>
+<p class="empty wrap" id="empty">Tokio prompto neradau. Pabandyk kitą žodį, pavyzdžiui, „portretas“, „fonas“ arba „reklama“.</p>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Gražūs vizualai yra pradžia. Klientus atveda <span class="em">sistema</span>.</h2>
+    <p>Jei nori, kad tavo turinys ne tik gražiai atrodytų, bet ir pardavinėtų, pradėkime nuo nemokamo 30 minučių pokalbio.</p>
+    <div class="btns" style="justify-content:center"><a class="btn primary" href="https://tidycal.com/erikakartaseva/30minute-meetingerika" target="_blank" rel="noopener">Registruotis nemokamam pokalbiui</a><a class="btn" href="index.html#svetaine">Noriu išmokti susikurti tokį puslapį</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Erika Karta</h4>
+        <a href="index.html#poziuris">Požiūris</a>
+        <a href="index.html#paslaugos">Paslaugos</a>
+        <a href="index.html#rezultatai">Rezultatai</a>
+        <a href="index.html#blogas">Straipsniai</a>
+        <a href="index.html#apie">Apie mane</a>
+      </div>
+      <div>
+        <h4>ChatGPT vizualai</h4>
+        <a href="komandos.html">Komandos su pavyzdžiais</a>
+        <a href="promptai.html">Promptų biblioteka</a>
+      </div>
+      <div>
+        <h4>Susisiek</h4>
+        <a href="https://www.instagram.com/erika.marketingas/" target="_blank" rel="noopener">Instagram · @erika.marketingas</a>
+        <a href="https://t.me/ErikaKarta" target="_blank" rel="noopener">Telegram · ErikaKarta</a>
+        <a href="https://www.facebook.com/erikakarta.uk" target="_blank" rel="noopener">Facebook · Erika Karta UK</a>
+        <a href="https://www.youtube.com/@erikakarta" target="_blank" rel="noopener">YouTube · @erikakarta</a>
+        <a href="https://www.tiktok.com/@erika.karta" target="_blank" rel="noopener">TikTok · @erika.karta</a>
+      </div>
+      <div>
+        <h4>Paslaugos</h4>
+        <a href="https://tidycal.com/erikakartaseva/30minute-meetingerika" target="_blank" rel="noopener">Nemokamas pokalbis</a>
+        <a href="konsultacija.html">Strateginė sesija · £150</a>
+        <a href="https://tidycal.com/erikakartaseva/45-mentoringmeeting" target="_blank" rel="noopener">Mentorystė · £4 000</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Vita Synergy LTD · Company Number: 15346047</span>
+    </div>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const CATS = [{"id": "planas", "title": "Pradžia ir planavimas", "intro": "Kaip suformuluoti užduotį, kad gautum tai, ko nori, iš pirmo karto. Šie promptai padeda galvoti prieš generuojant.", "check": "Prieš siųsdama perskaityk promptą: ar visi laukeliai užpildyti ir ar eilutės viena kitai neprieštarauja.", "fail": "Išmesk antraeiles detales ir tikslink po vieną neaiškią vietą."}, {"id": "redagavimas", "title": "Redagavimas ir fonas", "intro": "Taškiniai pataisymai jau turimame vaizde: pakeisti, ištrinti, perdažyti, išplėsti, sutvarkyti šviesą.", "check": "Palygink su originalu: ar pasikeitė tik tai, ko prašei?", "fail": "Grįžk prie originalo ir daryk vieną pakeitimą per kartą."}, {"id": "zmones", "title": "Žmonės ir portretai", "intro": "Portretai, pozos, emocijos, drabužių matavimas ir tas pats veidas visoje serijoje.", "check": "Palygink veidą, proporcijas, rankas ir pirštus su originalia nuotrauka.", "fail": "Pradėk iš naujo nuo originalios nuotraukos ir vienu metu keisk mažiau dalykų."}, {"id": "produktai", "title": "Produktai ir reklama", "intro": "Prekių nuotraukos, el. parduotuvių kortelės, pakuotės, maistas ir kosmetika.", "check": "Priartink ir patikrink formą, logotipą, kiekvieną užrašą ir medžiagą.", "fail": "Pirma gauk tikslų produktą neutraliame fone, o sceną pridėk atskiru žingsniu."}, {"id": "socialiniai", "title": "Socialiniai tinklai", "intro": "Reels ir YouTube viršeliai, karuselės, plakatai, citatos ir lipdukai.", "check": "Pažiūrėk telefone: ar tekstas be klaidų ir skaitomas, ar niekas svarbaus nenukirpta.", "fail": "Sutrumpink tekstą ir palik vieną pagrindinį akcentą."}, {"id": "schemos", "title": "Schemos ir mokymai", "intro": "Infografikos, proceso schemos, kontroliniai sąrašai ir palyginimai. Čia svarbiausia, kad ChatGPT neprikurtų faktų.", "check": "Sutikrink kiekvieną skaičių, žodį ir rodyklę su savo duomenimis.", "fail": "Supaprastink vaizdą ir palik tik tai, ką gali patikrinti."}, {"id": "uxui", "title": "Svetainės, programėlės ir maketai", "intro": "Ekranai, nukreipimo puslapiai, maketai telefone ir kompiuteryje, logotipų idėjos ir ikonos.", "check": "Sutikrink struktūrą, tekstus ir ar ekranai neiškreipti.", "fail": "Pirma patvirtink nespalvotą struktūrą, o stilių pridėk atskiru žingsniu."}, {"id": "technika", "title": "Techninės vizualizacijos", "intro": "Pjūviai, išskaidyti vaizdai, brėžiniai, izometrija ir planai. Tinka produktams aiškinti ir mokymams.", "check": "Sutikrink kiekvieną dalį, užrašą ir matmenį su savo duomenimis.", "fail": "Sumažink dalių skaičių ir paprašyk tuščių vietų vietoj išgalvotų skaičių."}, {"id": "kuryba", "title": "Stiliai ir kūryba", "intro": "Stiliaus perkėlimas, eskizai, komiksai, interjerai ir kino kadrai.", "check": "Ar išliko kompozicija ir svarbiausi elementai?", "fail": "Pirma gauk teisingą kompoziciją, o stilių keisk atskiru žingsniu."}, {"id": "serijos", "title": "Serijos ir prekės ženklas", "intro": "Kai reikia ne vieno vaizdo, o visos serijos, kuri atrodo kaip viena visuma.", "check": "Sudėk kadrus greta: ar jie atrodo kaip viena serija?", "fail": "Pirma patvirtink vieną pagrindinį kadrą ir tik tada kurk likusius."}];
+const P = [{"cat": "planas", "t": "Universalus užsakymas", "got": "Aiškus užsakymas, kurį galima iš karto siųsti generavimui.", "need": "Žinoti, kam ir kur reikia vaizdo.", "p": "Sukurk [VAIZDO TIPAS], skirtą [KUR BUS NAUDOJAMA].\nKas kadre: [KAS ARBA KAS YRA KADRE].\nKas vyksta: [SCENA].\nKompozicija: [PLANAS, KAMPAS, KUR PALIKTI VIETOS TEKSTUI].\nStilius: [FOTOGRAFIJA / ILIUSTRACIJA / 3D].\nSpalvos: [SPALVOS].\nŠviesa ir nuotaika: [ŠVIESA, PAROS METAS, NUOTAIKA].\nFormatas: [1:1 / 4:5 / 9:16 / 16:9].\nNekeisk ir nepridėk: [KO NELIESTI].", "check": "Nereikalingas eilutes ištrink, o ne palik tuščias.", "id": "P01"}, {"cat": "planas", "t": "Tegul promptą parašo pats ChatGPT", "got": "Vienas apgalvotas galutinis promptas po trumpo pokalbio.", "need": "Sudėtinga užduotis ir šiek tiek kantrybės atsakyti į klausimus.", "p": "Būk mano meno vadovas. Noriu sukurti [KĄ NORI SUKURTI].\nPrieš kurdamas užduok man ne daugiau kaip 5 svarbiausius klausimus: kam skirtas vaizdas, kas jį matys, kur jis bus publikuojamas, kokių pavyzdžių turiu ir ko negalima keisti.\nTada parašyk vieną galutinį promptą tokia tvarka: tikslas, objektas, scena, kompozicija, stilius, šviesa, tekstas, formatas, ką išsaugoti, ko vengti.\nVaizdo negeneruok, kol nepatvirtinsiu prompto.", "id": "P02"}, {"cat": "planas", "t": "Trys kryptys prieš kuriant", "got": "Trys skirtingos vizualinės kryptys, iš kurių renkiesi prieš eikvodama generacijas.", "need": "Viena idėja.", "p": "Mano idėja: [IDĖJA].\nPasiūlyk 3 skirtingas vizualines kryptis: saugią komercinę, drąsią žurnalinę ir minimalistinę prabangią.\nKiekvienai parašyk idėją, kompoziciją, spalvas, šviesą, pagrindinį vaizdą ir paruoštą promptą.\nKol kas nieko negeneruok ir faktų nekeisk.", "id": "P03"}, {"cat": "planas", "t": "Išanalizuok patikusį vaizdą", "got": "Supranti, iš ko sudarytas patikęs vaizdas, ir gauni promptą savo temai.", "need": "Vaizdas, kurį gali naudoti kaip pavyzdį.", "p": "Išanalizuok įkeltą vaizdą ir aprašyk, kaip pasiekti panašų efektą. Logotipų, užrašų ir išskirtinių autoriaus elementų nekopijuok.\nIšskaidyk į: objektą, kompoziciją, kameros kampą, stilių, spalvas, šviesą, medžiagas, foną, šriftų charakterį ir nuotaiką.\nTada parašyk naują promptą mano temai: [MANO TEMA].", "check": "Tai būdas suprasti techniką, o ne nukopijuoti svetimą darbą.", "id": "P04"}, {"cat": "planas", "t": "Keisk vieną, saugok visa kita", "got": "Tikslus redagavimo promptas, kuriame aiškiai atskirta, ką keisti ir ko neliesti.", "need": "Vaizdas, kurį nori pataisyti.", "p": "Redaguok įkeltą vaizdą.\nKEISK TIK: [VIENAS PAKEITIMAS].\nNIEKO NEKEISK: veido, pozos, kadro, kameros kampo, šviesos, šešėlių, spalvų, fono ir tekstūrų.\nDRAUDŽIAMA: pridėti naujų daiktų, teksto, logotipų ar keisti kompoziciją.\nJei pakeitimo neįmanoma padaryti nesugadinus kitų dalių, pirma pasakyk man.", "check": "Tai pagrindinis šablonas, kai taisai vaizdą keliais žingsniais.", "id": "P05"}, {"cat": "planas", "t": "Kokybės patikra", "got": "Tikrų klaidų sąrašas ir trumpas promptas svarbiausiai klaidai ištaisyti.", "need": "Sugeneruotas vaizdas, kuriuo nesi patenkinta.", "p": "Prieš kurdamas naują versiją, patikrink paskutinį vaizdą:\n• ar jis atitinka užduotį;\n• ar teisingas objektų skaičius;\n• ar tekstas parašytas be klaidų;\n• ar rankos, pirštai ir veidai atrodo natūraliai;\n• ar teisinga perspektyva, šešėliai ir atspindžiai;\n• ar išliko originalo detalės ir logotipas.\nIšvardyk tik tikras klaidas. Tada pasiūlyk trumpą promptą, kuris ištaiso vieną svarbiausią klaidą ir nieko kito nekeičia.", "check": "Taisyk po vieną klaidą per kartą.", "id": "P06"}, {"cat": "planas", "t": "Iš trumpos idėjos į pilną promptą", "got": "Išsami tavo idėjos versija ir sąrašas, ką ChatGPT pridėjo.", "need": "Viena trumpa idėja.", "p": "Mano trumpa idėja: [IDĖJA].\nPaversk ją išsamiu promptu vaizdui: pridėk kompoziciją, planą, kampą, aplinką, medžiagas, šviesą, spalvas, nuotaiką ir ko vengti. Pridėk tik pagrįstas detales.\nPirma parodyk promptą. Atskirai išvardyk 5 sprendimus, kuriuos pridėjai, kad galėčiau juos pakeisti.", "check": "Neleisk ChatGPT tyliai sugalvoti svarbių dalykų: peržiūrėk jo 5 sprendimus.", "id": "P07"}, {"cat": "planas", "t": "Devyni variantai pagal planą", "got": "9 variantai, kuriuose keičiasi tik tai, ką nori palyginti.", "need": "Užduotis ir ką nori palyginti.", "p": "Sukurk 9 variantų lentelę užduočiai: [OBJEKTAS AR UŽDUOTIS].\nKeičiasi: 3 kompozicijos × 3 šviesos tipai. Visa kita lieka fiksuota: [KAS NESIKEIČIA].\nPirma parodyk lentelę su trumpais variantų pavadinimais, tada parašyk 9 atskirus promptus.\nParametrų tarp variantų nemaišyk.", "check": "Patogu, kai nori sąmoningai išsirinkti, o ne spėlioti.", "id": "P08"}, {"cat": "planas", "t": "Kelios nuotraukos, kiekviena savo darbui", "got": "ChatGPT supranta, ką imti iš kiekvienos nuotraukos, ir jų nemaišo.", "need": "Kelios sunumeruotos nuotraukos.", "p": "Įkėliau kelias nuotraukas, kiekviena turi savo darbą.\n1 nuotrauka: imk tik veidą ir išvaizdą.\n2 nuotrauka: imk tik produktą, jo formą, spalvas ir logotipą.\n3 nuotrauka: imk tik kompoziciją ir laisvas vietas.\n4 nuotrauka: imk tik šviesą, spalvas ir tekstūrą.\nSukurk [REZULTATAS], skirtą [KAM SKIRTA].\nIš 3 ir 4 nuotraukų žmonių, prekės ženklų, teksto ir daiktų nekelk. Prieš kurdamas trumpai pakartok, ką imsi iš kiekvienos nuotraukos.", "check": "Nereikalingas eilutes ištrink, jei nuotraukų turi mažiau.", "id": "P09"}, {"cat": "redagavimas", "t": "Pakeisk vieną daiktą", "got": "Ta pati scena, tik su pakeistu daiktu.", "need": "Nuotrauka ir aiškiai įvardytas pakeitimas.", "p": "Pakeisk tik [DAIKTAS] į [NAUJAS DAIKTAS].\nIšsaugok jo dydį, vietą, perspektyvą, šviesos kryptį, šešėlį ir ryškumą.\nVisa kita palik kaip originale: kompoziciją, foną, žmones, spalvas, kadrą ir tekstą.", "id": "P10"}, {"cat": "redagavimas", "t": "Ištrink trukdantį daiktą", "got": "Švari nuotrauka be trukdžio, su natūraliai atkurtu fonu.", "need": "Nuotrauka su nereikalingu daiktu ar žmogumi.", "p": "Pašalink iš nuotraukos [KĄ PAŠALINTI] ir natūraliai atkurk foną, kuris buvo už jo.\nNekeisk šalia esančių daiktų, veidų, teksto, kadro, šviesos ir spalvų.\nNieko nedėk į jo vietą.", "rel": "/cleanbg", "check": "Įvardyk, kokių šalia esančių dalykų negalima liesti.", "id": "P11"}, {"cat": "redagavimas", "t": "Perdažyk be perdarymo", "got": "Tas pats daiktas nauja spalva, be formos ir medžiagos pokyčių.", "need": "Nuotrauka ir tiksli nauja spalva, geriausia HEX kodas.", "p": "Pakeisk spalvą tik [DAIKTAS AR DETALĖ] iš [DABARTINĖ SPALVA] į [NAUJA SPALVA ARBA HEX KODAS].\nIšsaugok medžiagą, tekstūrą, blizgesį, šešėlius, formą ir logotipą.\nFono, kompozicijos ir kitų spalvų nekeisk.", "check": "Prekės ženklo spalvos HEX kodą kartok kiekviename naujame pokalbyje.", "id": "P12"}, {"cat": "redagavimas", "t": "Naujas fonas, kuris atrodo tikras", "got": "Objektas naujoje aplinkoje, lyg ten ir būtų fotografuotas.", "need": "Dvi nuotraukos: objekto ir naujos aplinkos.", "p": "Perkelk pagrindinį objektą iš 1 nuotraukos į 2 nuotraukos aplinką. Objekto neperdaryk.\nSuderink mastelį, horizontą, perspektyvą, šviesos kryptį ir šiltumą, šešėlius, atspindžius ir ryškumo gylį.\nSenąjį foną pašalink visiškai. Iš 2 nuotraukos nekelk pašalinių daiktų ar žmonių.", "rel": "/newbg", "check": "Kai įkeli kelias nuotraukas, visada vadink jas numeriais.", "id": "P13"}, {"cat": "redagavimas", "t": "Fonas be fono (PNG)", "got": "Objektas su permatomu fonu, kurį gali dėti bet kur.", "need": "Objektas bet kokiame fone.", "p": "Atskirk [OBJEKTAS] ir padaryk foną visiškai permatomą.\nKraštai švarūs ir natūralūs, išsaugok plonus plaukelius ir permatomas detales.\nObjektas visas kadre, centre.\nBe languoto fono, be balto ar spalvoto pagrindo, be rėmelio, teksto ir šešėlio. Išsaugok kaip PNG.", "check": "Atidaryk rezultatą ant juodo ir ant balto fono. Jei matosi baltas apvadas, paprašyk jį pašalinti.", "id": "P14"}, {"cat": "redagavimas", "t": "Išplėsk kadrą", "got": "Platesnis ar aukštesnis kadras, kuriame naujos dalys atrodo natūraliai.", "need": "Nuotrauka ir reikiamas formatas.", "p": "Išplėsk vaizdą iki [FORMATAS] formato, originalią dalį palik nepakeistą.\nDapiešk erdvę [KURIA KRYPTIMI], tęsdamas perspektyvą, aplinką, tekstūras, šviesą ir ryškumo gylį.\nPagrindinio žmogaus ar objekto nemažink ir nekarpyk. Naujų prasmingų daiktų nepridėk.", "rel": "/extendframe", "check": "Patogu, kai kvadratinę nuotrauką reikia paversti Stories formatu.", "id": "P15"}, {"cat": "redagavimas", "t": "Pataisyk tekstą paveikslėlyje", "got": "Pakeista viena eilutė, o visas dizainas lieka toks pat.", "need": "Vaizdas su klaidingu ar pasenusiu tekstu.", "p": "Pakeisk tik tekstą „[SENAS TEKSTAS]“ į „[NAUJAS TEKSTAS]“.\nAtkartok originalaus teksto stilių: raidžių dydį, plotį, spalvą, kontūrą, šešėlį, vietą ir perspektyvą.\nNaujas tekstas turi būti parašytas tiksliai, be papildomų žodžių. Visus vaizdus ir kitą tekstą palik nepakeistus.", "check": "Patikrink kiekvieną raidę, ypač lietuviškas ą, č, ę, ė, į, š, ų, ū, ž.", "id": "P16"}, {"cat": "redagavimas", "t": "Nuimk plastikinį DI efektą", "got": "Natūralesnis vaizdas be plastikinės odos ir per ryškių spalvų.", "need": "Vaizdas, kuris atrodo „per daug DI“.", "p": "Išsaugok siužetą ir kompoziciją, bet padaryk vaizdą panašų į tikrą, neapdorotą nuotrauką: neutralus baltos balansas, natūrali oda su poromis ir smulkiais netobulumais, tikroviška šviesa, lengvas fotoaparato triukšmas ir natūralus ryškumas.\nPašalink plastikinę odą, per stiprų HDR, idealią simetriją, oranžinius ir žalsvai mėlynus atspalvius, kino švytėjimą ir blizgų DI poliravimą.", "check": "Naudok kaip paskutinį žingsnį, kai visa kita jau gerai.", "id": "P17"}, {"cat": "redagavimas", "t": "Pataisyk šviesą", "got": "Ta pati nuotrauka su gražiai sutvarkyta šviesa.", "need": "Per tamsi, per šviesi ar nelygiai apšviesta nuotrauka.", "p": "Pataisyk tik nuotraukos apšvietimą: pridėk natūralios šviesos iš [KRYPTIS], sušvelnink perdegusias vietas ir praskaidrink per tamsius šešėlius, išsaugok apimtį ir tikrą tekstūrą.\nNekeisk veido, odos, drabužių, fono, kompozicijos, daiktų spalvų ir paros meto.\nBe grožio retušo, švytėjimo, HDR ir naujų šviesos šaltinių, kurių scenoje negali būti.", "rel": "/lightfix", "id": "P18"}, {"cat": "redagavimas", "t": "Išversk tekstą paveikslėlyje", "got": "Tas pats dizainas, tik lietuviškai.", "need": "Vaizdas su tekstu kita kalba.", "p": "Išversk visą įskaitomą tekstą paveikslėlyje iš [KALBA] į lietuvių kalbą.\nPirma išrašyk originalias eilutes ir vertimą, kad galėčiau patikrinti.\nKai patvirtinsiu, pakeisk tik tekstą: išdėstymas, dydžiai, šriftų stilius, ikonos, vaizdai ir prekės ženklų pavadinimai lieka tokie patys.\nNieko nesutrumpink ir nepridėk.", "check": "Patikrink kiekvieną raidę, ypač lietuviškas ą, č, ę, ė, į, š, ų, ū, ž.", "id": "P19"}, {"cat": "redagavimas", "t": "Nuimk atspindžius ir blizgesį", "got": "Stiklas, ekranas ar pakuotė be trukdančių atspindžių.", "need": "Nuotrauka su atspindžiais.", "p": "Sumažink tik nepageidaujamus atspindžius ir blizgesį ant [STIKLAS / EKRANAS / PAKUOTĖ].\nIšsaugok medžiagą, formą, permatomumą ir natūraliai reikalingus atspindžius. Paslėptas detales atkurk tik iš to, kas matosi.\nUžrašų, logotipo, spalvos, aplinkos, šviesos ir kadro nekeisk.\nRezultatas neturi atrodyti matinis ar iškirptas.", "id": "P20"}, {"cat": "redagavimas", "t": "Restauruok seną nuotrauką", "got": "Sena nuotrauka be įbrėžimų ir dėmių, bet su epochos dvasia.", "need": "Sena ar pažeista nuotrauka.", "p": "Restauruok šią seną nuotrauką: pašalink įbrėžimus, dėmes, dulkes, įlenkimus ir išblukimą, atkurk ryškumą ir kontrastą.\nVeidus, išraiškas, drabužius ir foną palik tokius pačius, nieko nepiešk iš naujo.\nIšsaugok natūralų grūdėtumą ir epochos nuotaiką.\nRezultatas: [SPALVOTAS / NESPALVOTAS].", "rel": "/restorephoto", "check": "Palygink veidus su originalu: restauruotas žmogus turi likti tas pats.", "id": "P21"}, {"cat": "redagavimas", "t": "Nuspalvink nespalvotą nuotrauką", "got": "Natūralios spalvos be istorijos perpiešimo.", "need": "Nespalvota nuotrauka.", "p": "Nuspalvink šią nespalvotą nuotrauką spalvomis, būdingomis: [METAI IR VIETA].\nIšsaugok veidus, išraiškas, drabužius, pastatus, grūdėtumą ir šviesos piešinį.\nOdos, audinių ir aplinkos spalvos santūrios ir fotografiškos.\nVeidų neretušuok, scenos nemodernizuok, daiktų nepridėk ir nepaversk šiuolaikiniu HDR vaizdu.", "rel": "/colorize", "check": "Paklausk ChatGPT, kurias spalvas jis spėjo, o kurias žinojo.", "id": "P22"}, {"cat": "zmones", "t": "Dalykinis portretas", "got": "Profesionalus portretas, kuriame tave atpažįsta.", "need": "Aiški tavo nuotrauka, kurioje gerai matosi veidas.", "p": "Sukurk tikrovišką dalykinį portretą žmogaus iš nuotraukos.\nIšsaugok atpažįstamumą, amžių, veido proporcijas, akių spalvą, šukuoseną ir natūralią odos tekstūrą.\nKadras iki krūtinės, ramus užtikrintas žvilgsnis į kamerą. Apranga: [APRANGA]. Fonas: [FONAS].\nMinkšta šviesa iš šono 45° kampu, natūralios spalvos, 85 mm objektyvo efektas, šiek tiek išsiliejęs fonas.\nBe plastikinės odos ir veido formos keitimo. Formatas 4:5.", "rel": "/headshot", "check": "Jei ChatGPT pakeičia akių spalvą, parašyk ją tiesiai, pvz., „mėlynos akys“.", "id": "P23"}, {"cat": "zmones", "t": "Tas pats žmogus naujoje vietoje", "got": "Tu kitoje vietoje, lyg nuotrauka ten ir būtų daryta.", "need": "Tavo nuotrauka ir vietos nuotrauka.", "p": "Perkelk žmogų iš 1 nuotraukos į 2 nuotraukos vietą taip, lyg nuotrauka būtų ten ir daryta.\nIšsaugok veidą, amžių, kūno sudėjimą, aprangą ir šukuoseną.\nSuderink mastelį, perspektyvą, horizontą, šviesą, šešėlius, atspindžius ir spalvų šiltumą.\nIš 2 nuotraukos nekelk kitų žmonių.", "rel": "/lifestyle", "id": "P24"}, {"cat": "zmones", "t": "Pasimatuok drabužį", "got": "Tu su pasirinktu drabužiu, be veido ir kūno pokyčių.", "need": "Tavo nuotrauka ir drabužio nuotrauka.", "p": "Aprenk žmogų iš 1 nuotraukos drabužiu iš 2 nuotraukos.\nIšsaugok žmogaus veidą, kūno sudėjimą, pozą ir foną.\nIšsaugok drabužio kirpimą, medžiagą, raštą, spalvą, siūles ir logotipą.\nDrabužis turi gulėti natūraliai, su tikroviškomis klostėmis ir šešėliais. Amžiaus ir kūno proporcijų nekeisk.", "rel": "/outfit", "id": "P25"}, {"cat": "zmones", "t": "Perimk pozą", "got": "Tu patikusioje pozoje, be kito žmogaus bruožų.", "need": "Tavo nuotrauka ir nuotrauka su norima poza.", "p": "1 nuotraukoje yra žmogus, 2 nuotraukoje yra poza, kurią noriu perimti.\nPastatyk žmogų iš 1 nuotraukos tiksliai į 2 nuotraukos pozą: kūno kryptis, rankos, kojos, galva ir svorio centras.\nIšsaugok 1 nuotraukos veidą, kūno sudėjimą, aprangą ir šukuoseną. 2 nuotraukos žmogaus išvaizdos ir drabužių nekelk.\nFonas: [FONAS].", "id": "P26"}, {"cat": "zmones", "t": "Emocijų lapas", "got": "Devynios tavo emocijos viename vaizde, patogu Reels viršeliams.", "need": "Aiškus tavo portretas.", "p": "Sukurk 3×3 tinklelį su tuo pačiu žmogumi iš nuotraukos, tuo pačiu kampu.\nEmocijos: ramybė, džiaugsmas, nuostaba, abejonė, ryžtas, liūdesys, juokas, susimąstymas, pasitikėjimas.\nVeidą, šukuoseną, aprangą, šviesą, foną ir mastelį palik vienodus. Keičiasi tik veido išraiška. Be užrašų.", "fail": "Jei veidas „plaukia“, prašyk po dvi emocijas per kartą.", "id": "P27"}, {"cat": "zmones", "t": "Veido inkaras serijai", "got": "Tas pats žmogus visuose serijos kadruose.", "need": "Viena gera nuotrauka, kuri bus pagrindas.", "p": "Įsimink žmogų iš nuotraukos visai šio pokalbio serijai.\nIšvaizda: [VEIDO FORMA], [AKYS], [NOSIS], [LŪPOS], [YPATINGI BRUOŽAI], [ŠUKUOSENA], [AMŽIUS].\nVisada esantis aksesuaras: [AKSESUARAS].\nKiekviename kitame kadre išsaugok šiuos bruožus, kūno proporcijas ir odos spalvą.\nKeisti galima tik: [SCENA / VEIKSMAS / KAMPAS].", "check": "Šį bloką kartok kiekviename serijos prompte.", "id": "P28"}, {"cat": "zmones", "t": "Personažo lapas", "got": "Tu iš visų pusių viename lape, kaip animacijos personažas.", "need": "Aiški tavo nuotrauka visu ūgiu.", "p": "Pagal įkeltą nuotrauką sukurk personažo lapą: 4×3 tinklelis švariame neutraliame fone. Visuose langeliuose tas pats žmogus.\nParodyk: visą ūgį iš priekio, iš nugaros ir pusiau šonu; iki juosmens iš priekio, pusiau šonu ir profiliu; veidą iš priekio, pusiau šonu ir profiliu; stambiai akis, nosį ir lūpas.\nIšsaugok veidą, proporcijas, aprangą, šviesą ir stilių. Be teksto ir logotipų.", "fail": "Jei nepavyksta visi 12, prašyk 6 svarbiausių kampų.", "id": "P29"}, {"cat": "zmones", "t": "Perimk emociją", "got": "Tavo veidas su norima išraiška, be svetimų bruožų.", "need": "Tavo nuotrauka ir nuotrauka su norima emocija.", "p": "1 nuotraukoje esu aš, 2 nuotraukoje yra veido išraiška, kurią noriu perimti.\nIšsaugok mano veidą, aprangą, pozą ir šviesą, bet perkelk išraišką: [EMOCIJOS APRAŠYMAS].\n2 nuotraukos žmogaus bruožų nekopijuok. Formatas: [FORMATAS].", "check": "Kuo tiksliau aprašai emociją žodžiais, tuo mažiau veidai susimaišo.", "id": "P30"}, {"cat": "zmones", "t": "Amžiaus pokytis", "got": "Tu vyresnė ar jaunesnė, bet vis tiek atpažįstama.", "need": "Aiškus tavo portretas.", "p": "Parodyk tą patį žmogų [PO KIEK METŲ ARBA KIEK METŲ JAUNESNĮ].\nIšsaugok atpažįstamą veido sandarą, akis, nosį, žandikaulio liniją ir būdingus bruožus.\nAmžiaus pokyčiai odai, plaukams ir laikysenai tikroviški, be karikatūros.\nApranga: [APRANGA]. Kompozicija, objektyvas, šviesa ir fonas tokie patys.", "rel": "/oldify", "id": "P31"}, {"cat": "zmones", "t": "Šukuosenų palyginimas", "got": "Kelios šukuosenos viename vaizde, veidas visur tas pats.", "need": "Portretas iš priekio.", "p": "Sukurk palyginimo tinklelį su [KIEK] šukuosenomis žmogui iš nuotraukos: [ŠUKUOSENŲ SĄRAŠAS].\nVeidas, amžius, išraiška, makiažas, apranga, fonas, kamera ir šviesa visur vienodi.\nKeičiasi tik plaukai: tikroviška plaukų linija, apimtis, tekstūra ir šešėliai.\nBe užrašų ir galvos formos keitimo.", "rel": "/hairstyle", "fail": "Jei veidas pradeda keistis, prašyk šukuosenų po vieną, o ne tinkleliu.", "id": "P32"}, {"cat": "zmones", "t": "3D avataras", "got": "Tavo 3D personažas profiliui ar prekės ženklui.", "need": "Aiškus tavo portretas.", "p": "Sukurk 3D avatarą žmogaus iš nuotraukos [STILIUS] stiliumi.\nIšsaugok atpažįstamumą, šukuoseną, akių spalvą, pagrindinius bruožus ir aksesuarą: [AKSESUARAS].\nPoza: [POZA]. Medžiaga: [MEDŽIAGA]. Minkšta studijos šviesa, švarus fonas: [FONO SPALVA], visas personažas kadre.\nBe teksto ir amžiaus keitimo.", "rel": "/3dcartoon", "id": "P33"}, {"cat": "produktai", "t": "Pagrindinė produkto nuotrauka", "got": "Prabangi reklaminė nuotrauka, kaip didelės kampanijos.", "need": "Produkto nuotrauka paprastame fone.", "p": "Sukurk prabangią reklaminę produkto nuotrauką iš įkelto vaizdo.\nIšsaugok tikslią pakuotės formą, etiketę, logotipą, tekstą, spalvas ir medžiagą. Produktas yra pagrindinis objektas.\nKampas: [KAMPAS]. Paviršius: [PAVIRŠIUS]. Fonas: [FONAS]. Rekvizitas: [KELI DAIKTAI]. Šviesa: [ŠVIESA].\nTikroviški atspindžiai ir šešėlis po produktu. Vieta tekstui: [KUR].\nFormatas: [FORMATAS]. Jokio papildomo prekės ženklo.", "rel": "/premiumshowcase", "id": "P34"}, {"cat": "produktai", "t": "Perimk patikusios fotosesijos stilių", "got": "Tavo produktas patikusios reklamos stiliumi, be svetimo prekės ženklo.", "need": "Produkto nuotrauka ir patikusios reklamos pavyzdys.", "p": "1 nuotraukoje yra mano produktas, 2 nuotraukoje yra patikusi reklaminė fotosesija.\nAtkurk 2 nuotraukos pastatymą su mano produktu. Produktas lieka visiškai nepakeistas.\nPerimk tik kompoziciją, paviršių, rekvizitą, šviesą, spalvas ir nuotaiką.\nSvetimo logotipo, pakuotės ir teksto nekopijuok.", "id": "P35"}, {"cat": "produktai", "t": "El. parduotuvės kortelė", "got": "Paruošta prekės kortelė su produktu ir privalumais.", "need": "Produkto nuotrauka ir trys tikri privalumai.", "p": "Sukurk vertikalią 4:5 prekės kortelę, skirtą [KUR PARDUODI].\nProduktas iš nuotraukos didelis, matomas visas, šiek tiek pasuktas.\nTikslus pavadinimas: „[PAVADINIMAS]“.\nTrys privalumai: „[1 PRIVALUMAS]“, „[2 PRIVALUMAS]“, „[3 PRIVALUMAS]“.\nŽenkliukas: „[ŽENKLIUKAS]“.\nAiški hierarchija, saugios paraštės, didelis kontrastas, tekstas neuždengia produkto.\nIšsaugok pakuotę ir visus jos užrašus. Nepridėk savybių, kurių nenurodžiau.", "rel": "/marketplace", "id": "P36"}, {"cat": "produktai", "t": "Produktas rankoje", "got": "Tikroviškas kadras su produktu rankoje, be keistų pirštų.", "need": "Produkto nuotrauka.", "p": "Sukurk reklaminį kadrą: žmogus natūraliai laiko produktą iš nuotraukos [KAIP IR KUR].\nPakuotė lieka nepakeista, pirštai anatomiškai teisingi ir neuždengia logotipo.\nSuderink produkto dydį su ranka, šešėlius, ryškumą ir šviesą.\nVeidas: [MATOSI / NEMATOMAS]. Formatas: [FORMATAS].", "rel": "/handheld", "id": "P37"}, {"cat": "produktai", "t": "Pakuotės maketas", "got": "Plokščias dizainas virsta tikroviška pakuote.", "need": "Pakuotės dizainas ir pakuotės tipas.", "p": "Uždėk įkeltą dizainą ant [DĖŽUTĖ / MAIŠELIS / STIKLAINIS].\nDizainas ir tekstas turi likti tikslūs, neištempti.\nAtsižvelk į formą, lenkimus, siūles, išlinkimą, medžiagos tekstūrą, atspindžius ir šešėlius.\nKampas: [KAMPAS]. Fonas: [FONAS].\nNaujo teksto nepridėk ir dizaino nekeisk.", "rel": "/packaging", "check": "Spaudai vis tiek reikės tikro dizainerio maketo. Šis vaizdas skirtas idėjai pamatyti.", "id": "P38"}, {"cat": "produktai", "t": "Visa produktų linija", "got": "Švarus katalogo vaizdas su visais variantais.", "need": "Vienas produktas ir jo variantų sąrašas.", "p": "Sukurk švarų katalogo vaizdą iš [KIEK] to paties produkto variantų: [VARIANTŲ SĄRAŠAS].\nVisuose kadruose vienoda forma, mastelis, vieta, kampas, fonas ir šviesa.\nKeičiasi tik [SPALVA / DYDIS / SKONIS].\nEtiketes, logotipus ir variantų pavadinimus atkartok tiksliai.\nVienodi tarpai, be papildomo dekoro ir išgalvotų variantų.", "id": "P39"}, {"cat": "produktai", "t": "Apetitą keliantis maistas", "got": "Reklaminė maisto nuotrauka su tikroviška tekstūra.", "need": "Patiekalo ar produkto nuotrauka.", "p": "Sukurk profesionalią reklaminę [PATIEKALAS AR PRODUKTAS] nuotrauką.\nParodyk natūralius ingredientus, tikrovišką drėgmę, temperatūrą ir tekstūrą.\nKampas: [KAMPAS]. Paviršius: [PAVIRŠIUS]. Rekvizitas: [KELI DAIKTAI]. Šviesa: [ŠVIESA].\nJei yra pakuotė, išsaugok jos formą.\nApetitiška, bet tikroviška: be plastikinio maisto, perteklinių garų, išgalvotų ingredientų ir teksto.", "rel": "/foodshot", "id": "P40"}, {"cat": "produktai", "t": "Prabangi kosmetika", "got": "Grožio kampanijos lygio kosmetikos nuotrauka.", "need": "Kosmetikos produkto nuotrauka.", "p": "Sukurk aukščiausios klasės [KOSMETIKOS PRODUKTAS] nuotrauką.\nIndelis, etiketė ir atspalvis turi likti tikslūs.\nAplinka: [AKMUO / STIKLAS / VANDUO], švelnus spalvų perėjimas fone, valdomi atspindžiai, švarūs kraštai, stambi [INGREDIENTAS] tekstūra, šviesa kaip grožio kampanijoje.\nFormatas 4:5, viršuje vieta tekstui. Jokių medicininių pažadų.", "id": "P41"}, {"cat": "produktai", "t": "Penkių kortelių serija", "got": "Penkios vieno produkto kortelės, kurios atrodo kaip komplektas.", "need": "Produkto nuotrauka ir informacija apie jį.", "p": "Suplanuok 5 atskiras produkto [PRODUKTAS] korteles:\n1) pagrindinė nuotrauka švariame fone;\n2) svarbiausios detalės stambus planas;\n3) produktas naudojamas;\n4) privalumų infografika;\n5) dydžiai ir komplektacija.\nNustatyk vienodą foną, spalvas, šriftus, paraštes ir šviesą. Tada parašyk 5 atskirus promptus, kiekviename pakartodamas tikslius pakuotės ir teksto reikalavimus.", "check": "Jei reikia atskirų failų, neprašyk visko viename paveikslėlyje.", "id": "P42"}, {"cat": "produktai", "t": "Gėrimo reklama", "got": "Gaivus reklaminis kadras su purslais ir ledu.", "need": "Butelio ar skardinės nuotrauka.", "p": "Sukurk prabangų [GĖRIMO PAVADINIMAS] reklaminį vizualą.\nButelis ar skardinė iš nuotraukos didelis, šaltas, su natūraliais rasos lašeliais.\nAplink tikroviški purslai, ledas ir [VAISIUS AR INGREDIENTAS], parodantys skonį.\nFonas: [SPALVOS]. Šviesa iš nugaros, labai ryški pakuotės detalė.\nTiksli antraštė: „[TEKSTAS]“.\nEtiketės nekeisk, papildomų logotipų ir išgalvotų savybių nepridėk.", "id": "P43"}, {"cat": "produktai", "t": "Prekė parduotuvės lentynoje", "got": "Tavo produktas tikroviškoje lentynoje tarp kitų prekių.", "need": "Pakuotės nuotrauka.", "p": "Pastatyk pakuotę iš nuotraukos ant tikroviškos lentynos: [PARDUOTUVĖ AR INTERJERAS].\nProduktas lieka tikslus ir įskaitomas. Tikroviškas mastelis, perspektyva, šviesa, atspindžiai ir šešėlis.\nKaimyninės prekės neutralios, be įskaitomų prekės ženklų.\nTavo produktas išsiskiria, bet vaizdas atrodo kaip tikra nuotrauka, o ne 3D modelis.", "id": "P44"}, {"cat": "produktai", "t": "Visi produktai vienoje nuotraukoje", "got": "Bendras linijos kadras, kuriame kiekvienas produktas atpažįstamas.", "need": "Kiekvieno produkto nuotrauka.", "p": "Sukurk vieną bendrą šių produktų nuotrauką: [PRODUKTŲ SĄRAŠAS]. Fonas: [FONAS].\nKiekvieno produkto forma, medžiaga, dangtelis, etiketė, logotipas ir tikras dydis išlieka.\nPagrindinis produktas [KURIS] centre, kiti aplink ir neuždengia svarbių užrašų.\nViena šviesos schema, tikroviški šešėliai ir atspindžiai.\nNieko nedubliuok, pakuočių nemaišyk, naujų variantų nekurk ir teksto nepridėk.", "fail": "Jei produktai maišosi, pirma sudėk juos po du, tada visus kartu.", "id": "P45"}, {"cat": "produktai", "t": "Produktas iš visų pusių", "got": "8 kampai viename lape, lyg produktas suktųsi.", "need": "Produkto nuotraukos iš kelių pusių.", "p": "Sukurk vieną 4×2 lapą su produktu [PRODUKTAS] iš 8 pusių kas 45°: priekis, priekis dešinėje, dešinė, nugara dešinėje, nugara, nugara kairėje, kairė, priekis kairėje.\nVisur vienoda forma, mastelis, kameros aukštis, objektyvas, fonas ir šviesa, produktas visas kadre.\nNematomų pusių detalių neišgalvok, jei jų nėra mano nuotraukose. Be užrašų.", "id": "P46"}, {"cat": "produktai", "t": "Reklamos siužetinė linija", "got": "9 kadrų reklamos planas, prieš filmuojant ar kuriant video.", "need": "Produktas ir reklamos idėja.", "p": "Sukurk [TRUKMĖ] sekundžių [PRODUKTAS] reklamos siužetinę liniją iš 9 kadrų: problema, atsiranda produktas, pagrindinis veiksmas, savybės įrodymas, emocinis rezultatas, galutinis produkto kadras.\nKiekviename kadre vienas svarbus momentas, skirtingi planai, tas pats herojus, produktas, vieta ir šviesa.\nPirma parašyk vieno sakinio idėją, tada sukurk 3×3 lapą be papildomo teksto.", "id": "P47"}, {"cat": "produktai", "t": "Tavo dizainas ant tikro stendo", "got": "Tavo reklama tikroje gatvės nuotraukoje.", "need": "Stendo nuotrauka ir tavo dizainas.", "p": "1 nuotraukoje yra tikras reklaminis stendas, 2 nuotraukoje yra mano dizainas.\nPakeisk stende esantį vaizdą mano dizainu. Dizainas tiksliai prisitaiko prie stendo kampų, perspektyvos ir paviršiaus, su tikrais atspindžiais, šešėliais ir susidėvėjimu.\nJei kas nors stovi priešais stendą, palik tai priekyje.\nViskas už stendo ribų lieka nepakeista: aplinka, žmonės, paros metas ir spalvos.", "rel": "/billboard", "id": "P48"}, {"cat": "produktai", "t": "Atributikos serija", "got": "Marškinėliai, džemperis ir krepšys su tavo logotipu.", "need": "Logotipas ir prekės ženklo spalvos.", "p": "Sukurk vieningą prekės ženklo [PAVADINIMAS] atributikos maketų seriją: marškinėliai, džemperis, medžiaginis krepšys ir [PAPILDOMAS DAIKTAS].\n1 nuotrauka yra tikslus logotipas, 2 nuotrauka yra spalvos ar raštas.\nLogotipo neperpiešk, raidžių, proporcijų ir spalvų nekeisk.\nTikroviški audiniai, spauda, klostės ir dydis, viena studija ir vienoda šviesa.\nKiekvienas daiktas atskirame kadre, be naujų šūkių.", "rel": "/tshirtmockup", "id": "P49"}, {"cat": "produktai", "t": "Drabužiai iš viršaus", "got": "Žurnalinis aprangos kadras iš viršaus.", "need": "Drabužių ir aksesuarų nuotraukos.", "p": "Sukurk prabangų kadrą iš viršaus: [DRABUŽIAI IR AKSESUARAI] ant [PAVIRŠIUS].\nŽiūrima griežtai iš viršaus, subalansuota žurnalinė kompozicija, natūralios klostės ir audinio tekstūra, minkšta kryptinė šviesa ir tikroviški šešėliai.\nKirpimas, raštai, furnitūra ir logotipai kaip nuotraukose.\nVisi daiktai matomi visi, be manekeno, rankų, teksto ir atsitiktinių aksesuarų. Formatas 4:5.", "rel": "/flatlayfashion", "id": "P50"}, {"cat": "socialiniai", "t": "Reels viršelis", "got": "Viršelis, kuris gerai atrodo ir Reels sraute, ir profilio tinklelyje.", "need": "Tavo nuotrauka ir Reels tema.", "p": "Sukurk vertikalų 9:16 Reels viršelį temai „[TEMA]“.\nPagrindinis vaizdas: žmogus iš nuotraukos, emocija: [EMOCIJA].\nTikslus tekstas: „[2–5 ŽODŽIAI]“, labai didelis, viršutiniame trečdalyje.\nSvarbūs elementai turi tilpti į centrinę dalį, nes profilio tinklelyje viršelis apkarpomas.\nDidelis kontrastas, jokio kito teksto.", "rel": "/reelcover", "id": "P51"}, {"cat": "socialiniai", "t": "YouTube miniatiūra", "got": "Miniatiūra, kuri aiški net mažame telefono ekrane.", "need": "Įrašo tema ir, jei nori, tavo nuotrauka.", "p": "Sukurk YouTube miniatiūrą 16:9 vaizdo įrašui „[TEMA]“.\nPagrindinis objektas: [ŽMOGUS / REZULTATAS / DAIKTAS].\nVaizdas turi būti aiškus net mažame telefono ekrane: vienas akcentas, didelis kontrastas, stambios formos.\nTikslus tekstas: „[2–4 ŽODŽIAI]“, labai didelis, jokio kito teksto.\nApatiniame dešiniajame kampe nieko svarbaus nedėk, ten bus įrašo trukmė.", "rel": "/thumbnail", "id": "P52"}, {"cat": "socialiniai", "t": "Karuselės planas", "got": "Visa karuselė: mintys, dizaino taisyklės ir promptas kiekvienai skaidrei.", "need": "Tekstas ar faktai, iš kurių darai karuselę.", "p": "Būk karuselių redaktorius ir meno vadovas.\nIš šios medžiagos: [TEKSTAS AR FAKTAI] paruošk [KIEK] skaidrių karuselę: kabliukas, problema, 3–5 naudingos mintys, pavyzdys, išvada, kvietimas veikti. Viena mintis vienai skaidrei.\nTada nustatyk dizaino sistemą: 4:5 formatas, tinklelis, paraštės, spalvos su HEX kodais, šriftai, fonas, paskyros vardas, skaidrių numeriai.\nGaliausiai parašyk atskirą promptą kiekvienai skaidrei su tiksliu tekstu ir pakartotomis dizaino taisyklėmis.", "id": "P53"}, {"cat": "socialiniai", "t": "Viena karuselės skaidrė", "got": "Skaidrė, kuri tiksliai atitinka visos karuselės stilių.", "need": "Karuselės dizaino taisyklės ir skaidrės tekstas.", "p": "Sukurk [NUMERIS]/[IŠ VISO] karuselės skaidrę 4:5 formatu.\nTiksli antraštė: „[ANTRAŠTĖ]“.\nTikslus tekstas: „[TEKSTAS]“.\nPagrindinis vaizdas: [SCENA AR METAFORA].\nDizaino sistema: fonas [FONO HEX], akcentas [AKCENTO HEX], paraštės [DYDIS], šriftai [APRAŠYMAS], apačioje paskyra „[PASKYRA]“, numeris [NUMERIS]/[IŠ VISO].\nJokio papildomo teksto, dizaino sistemos nekeisk.", "check": "Kiekvieną skaidrę kurk atskirai, o ne prašyk visų viename vaizde.", "id": "P54"}, {"cat": "socialiniai", "t": "Renginio plakatas", "got": "Plakatas su aiškia data, vieta ir kvietimu.", "need": "Tikslūs renginio duomenys.", "p": "Sukurk vertikalų renginio „[PAVADINIMAS]“ plakatą.\nTikslus tekstas: pavadinimas „[PAVADINIMAS]“, data „[DATA]“, vieta „[VIETA]“, kvietimas „[KVIETIMAS]“.\nHierarchija: pavadinimas, pagrindinis vaizdas, data ir vieta, kvietimas.\nStilius: [STILIUS]. Spalvos: [SPALVOS]. Didelis kontrastas, saugios paraštės.\nNepridėk pranešėjų, rėmėjų ar faktų, kurių nenurodžiau.", "id": "P55"}, {"cat": "socialiniai", "t": "Citatos kortelė", "got": "Švari citatos kortelė įrašui ar Stories.", "need": "Citata ir, jei nori, fono nuotrauka.", "p": "Sukurk 4:5 citatos kortelę Instagram įrašui.\nTiksli citata: „[CITATA]“. Autorius: [VARDAS].\nFonas: [FONAS ARBA ĮKELTA NUOTRAUKA]. Spalvos: [SPALVOS].\nCitata didelė ir lengvai skaitoma telefone, daug tuščios erdvės, apačioje mažai „[PASKYRA]“.\nJokio papildomo teksto ir dekoro.", "rel": "/quotecard", "id": "P56"}, {"cat": "socialiniai", "t": "Lipdukų rinkinys", "got": "12 lipdukų su tavimi vienu stiliumi.", "need": "Aiškus tavo portretas.", "p": "Pagal įkeltą nuotrauką sukurk 12 lipdukų rinkinį vienu stiliumi: džiaugsmas, sveikinimas, ačiū, idėja, darbas, nuovargis, pergalė, nuostaba, sutinku, atsisakau, laukiu, šventė.\nIšsaugok veidą, šukuoseną, aprangą ir spalvas.\nStoras švarus kontūras, permatomas fonas, kiekvienas lipdukas atskiras, nenukirptas, be teksto.", "id": "P57"}, {"cat": "socialiniai", "t": "Trys viršelio idėjos", "got": "Trys skirtingi viršelio variantai, kuriuos galima testuoti.", "need": "Įrašo tema.", "p": "Temai „[TEMA]“ pasiūlyk 3 skirtingas YouTube ar Reels viršelio idėjas. Kol kas nieko negeneruok.\nA: stiprus rezultatas. B: konfliktas ar palyginimas. C: smalsumas.\nKiekvienai idėjai: kompozicija, 2–4 žodžių tekstas, pagrindinis vaizdas, emocija ir spalvų kontrastas.\nKai išsirinksiu, parašyk vieną tikslų promptą.", "id": "P58"}, {"cat": "socialiniai", "t": "Vientisa karuselė", "got": "Dvi skaidrės, kurių vaizdas tęsiasi per sujungimą.", "need": "Karuselės planas ir tekstai.", "p": "Sukurk vientisą karuselės skaidrių [NUMERIS] ir [KITAS NUMERIS] panoramą: bendras dydis 2160×1350, pjūvio linija tiksliai per vidurį.\nKiekviena pusė turi gerai atrodyti ir atskirai, o fonas, šviesa, tekstūros ir didelės formos tęsiasi per sujungimą.\nVeidų, teksto, logotipų ir svarbių detalių nedėk arčiau nei 80 px nuo pjūvio linijos.\nKairėje tekstas: „[KAIRĖS TEKSTAS]“. Dešinėje: „[DEŠINĖS TEKSTAS]“.", "check": "Prieš keldama sudėk abi puses greta ir patikrink sujungimą.", "id": "P59"}, {"cat": "socialiniai", "t": "Skrajutė", "got": "Skrajutė su aiškiu pasiūlymu ir kontaktais.", "need": "Tikslūs tekstai ir kontaktai.", "p": "Sukurk [A4 / 4:5] skrajutę: [VERSLAS AR AKCIJA].\nTiksli antraštė: „[ANTRAŠTĖ]“. Pasiūlymas: „[PASIŪLYMAS]“. Sąlygos: „[SĄLYGOS]“. Kontaktai: „[KONTAKTAI]“.\nVienas pagrindinis vaizdas, švarus tinklelis, ryškus kvietimas veikti, taisyklingos lietuviškos raidės.\nKainų, nuolaidų ir pažadų, kurių nenurodžiau, nepridėk.", "id": "P60"}, {"cat": "socialiniai", "t": "Vizualas įrašui", "got": "Vienas vaizdas, kuris perteikia įrašo mintį.", "need": "Įrašo tema.", "p": "Sukurk vertikalų 4:5 vizualą įrašui tema: [TEMA].\nPerteik vieną mintį per [METAFORA AR SCENA], neperpasakok viso teksto.\nAntraštė iki 5 žodžių: „[ANTRAŠTĖ]“.\nStilius: [STILIUS]. Stambios formos, saugios paraštės, gerai skaitoma telefone.\nBe kvietimo veikti, papildomo teksto ir logotipų.", "id": "P61"}, {"cat": "socialiniai", "t": "Reels siužetinė linija", "got": "Reels planas kadras po kadro prieš filmuojant.", "need": "Reels scenarijus.", "p": "Sukurk 3×3 siužetinę liniją [TRUKMĖ] sekundžių vertikaliam Reels pagal scenarijų: [SCENARIJUS].\nKiekvienas kadras yra atskiras veiksmas, skaitoma iš kairės į dešinę.\nHerojus, apranga, produktas, vieta ir spalvos visur tie patys.\nBendras, vidutinis ir stambus planas, vaizdas iš akių ir detalė naudojami prasmingai.\nPo kiekvienu kadru trumpas veiksmo aprašas, be dialogų ir papildomų personažų.", "id": "P62"}, {"cat": "socialiniai", "t": "Miniatiūra iš tavo eskizo", "got": "Tavo ranka nupieštas planas virsta YouTube miniatiūra.", "need": "Paprastas eskizas ir tavo nuotrauka.", "p": "Mano eskizas yra tikslus YouTube miniatiūros 16:9 planas.\nKur eskize pažymėjau veidą, įdėk mano veidą iš nuotraukos su emocija: [EMOCIJA].\nKur pažymėjau rezultatą, įdėk: [OBJEKTAS].\nKur pažymėjau tekstą, parašyk tiksliai: „[2–4 ŽODŽIAI]“.\nIšsaugok blokų dydžius ir vietas, didelis kontrastas, aišku net mažame ekrane. Be papildomo teksto.", "rel": "/thumbnail", "id": "P63"}, {"cat": "schemos", "t": "Infografika iš tavo faktų", "got": "Infografika, kurioje yra tik tavo patikrinti faktai.", "need": "Patikrinti faktai ir tekstai.", "p": "Sukurk vertikalią 4:5 infografiką pagal šiuos patikrintus faktus: [FAKTAI].\nStruktūra: antraštė, 5 sunumeruoti blokai, schema centre, išvada apačioje.\nTikslūs tekstai: [TEKSTAI].\nDidelis kontrastas, vienodos ikonos, stambus šriftas.\nNepridėk statistikos, logotipų ar šaltinių, kurių nėra mano duomenyse.", "rel": "/infographic", "id": "P64"}, {"cat": "schemos", "t": "Proceso schema", "got": "Aiški schema su žingsniais ir rodyklėmis.", "need": "Proceso žingsniai ir jų eiga.", "p": "Sukurk švarią proceso schemą: [PROCESAS].\nŽingsniai: [ŽINGSNIŲ SĄRAŠAS].\nKryptis iš kairės į dešinę, vienodo dydžio blokai, rodyklės nesikerta, sprendimai ir klaidos pažymėti atskira spalva.\nTrumpi tikslūs užrašai lietuviškai. Baltas fonas, 16:9, be dekoro.", "rel": "/stepbystep", "id": "P65"}, {"cat": "schemos", "t": "Kontrolinis sąrašas", "got": "Vieno puslapio sąrašas, kurį galima atsispausdinti.", "need": "Punktų tekstai.", "p": "Sukurk vieno puslapio vizualų kontrolinį sąrašą „[PAVADINIMAS]“ iš [KIEK] punktų.\nKiekvienas punktas: trumpas veiksmažodis, vienos eilutės paaiškinimas ir paprasta ikona.\nSkyriai: [SKYRIAI].\nAiški hierarchija, langeliai pažymėjimui, A4 vertikalus formatas, baltas fonas spausdinimui.\nTikslus tekstas: [TEKSTAS]. Papildomų patarimų nepridėk.", "id": "P66"}, {"cat": "schemos", "t": "Palyginimo lentelė", "got": "Vizuali lentelė, kurioje lengva palyginti du variantus.", "need": "Du variantai, kriterijai ir duomenys.", "p": "Sukurk vizualią palyginimo lentelę: [A] prieš [B].\nKriterijai: [KRITERIJŲ SĄRAŠAS].\nNaudok tik šiuos duomenis: [DUOMENYS]. Jei duomenų nėra, rašyk „nėra duomenų“.\nNugalėtojo neskelbk, jei nenurodžiau taisyklės.\nTiksli antraštė, 16:9, didelis tekstas, kontrastingi stulpeliai ir trumpa išvada apačioje.", "id": "P67"}, {"cat": "schemos", "t": "Prieš ir po", "got": "Palyginimas, kuriame skirtumas matosi iš karto.", "need": "Aprašymas arba dvi nuotraukos: „prieš“ ir „po“.", "p": "Sukurk „prieš ir po“ palyginimą 4:5 formatu.\nKairėje: [KAIP BUVO]. Dešinėje: [KAIP TAPO].\nAbiejose pusėse vienodas kampas, mastelis ir šviesa, kad skirtumas matytųsi iš karto.\nViršuje maži užrašai „Prieš“ ir „Po“, jokio kito teksto.\nRezultato nepagražink labiau, nei nurodžiau.", "rel": "/beforeafter", "id": "P68"}, {"cat": "schemos", "t": "Diagrama iš tavo duomenų", "got": "Tiksli diagrama, kurioje skaičiai sutampa su tavo duomenimis.", "need": "Lentelė ar duomenys.", "p": "Naudok tik pridėtus duomenis. Pirma patikrink reikšmes ir išrašyk jas lentele.\nTada sukurk šiuolaikišką [DIAGRAMOS TIPAS] diagramą 16:9 formatu. Fonas: [FONO SPALVA], akcentas: [AKCENTO SPALVA].\nTiksli antraštė „[ANTRAŠTĖ]“, ašių pavadinimai ir reikšmės lietuviškai.\nNeapvalink be nurodymo ir neprikurk trūkstamų duomenų.\nApačioje mažai: „Šaltinis: [ŠALTINIS]“.", "id": "P69"}, {"cat": "schemos", "t": "DI sistemos schema", "got": "Aiški schema, kaip sujungti tavo įrankiai ir agentai.", "need": "Komponentų sąrašas ir kaip jie susiję.", "p": "Sukurk techninę [SISTEMA] architektūros schemą.\nSluoksniai: sąsaja, valdymas, modeliai ar agentai, įrankiai ir API, duomenys, stebėsena.\nDuomenų srautus parodyk rodyklėmis, saugumo ribas pažymėk atskirai.\nTikslūs komponentų pavadinimai: [KOMPONENTŲ SĄRAŠAS]. Servisų neišgalvok.\nŠvarus verslo schemų stilius, 16:9, aiškus tekstas.", "id": "P70"}, {"cat": "schemos", "t": "PDF į skaidres", "got": "4 skaidrės, kurios trumpai perteikia PDF turinį.", "need": "PDF dokumentas.", "p": "Perskaityk pridėtą PDF ir paruošk 4 savarankiškas skaidres: 1) pagrindinė idėja; 2) metodas; 3) rezultatai ir ribos; 4) praktinė nauda.\nKiekvienoje: trumpa antraštė, ne daugiau kaip 45 žodžiai, viena schema ar metafora, vienoda tipografija.\nPirma parodyk tekstą su PDF puslapių numeriais, o kai patvirtinsiu, sukurk vaizdus.\nFaktų už PDF ribų nepridėk.", "id": "P71"}, {"cat": "schemos", "t": "Paaiškink, kaip tai veikia", "got": "Schema, kuri sudėtingą dalyką paaiškina paprastai.", "need": "Ką nori paaiškinti ir kam.", "p": "Vizualiai paaiškink, kaip veikia [TECHNOLOGIJA AR PROCESAS], auditorijai: [KAM].\nParodyk 5 nuoseklius etapus su suprantama metafora ir trumpais užrašais.\nTikslūs terminai: [TERMINAI].\nPirma pateik patikrintą planą, tada sukurk schemą. Ribų neslėpk ir nesupaprastink iki netiesos.", "id": "P72"}, {"cat": "schemos", "t": "Mokomasis lapas", "got": "Vieno lapo mokymo medžiaga su klausimais pasitikrinti.", "need": "Šaltinis, auditorija ir pamokos tikslas.", "p": "Sukurk mokomąjį lapą „[TEMA]“ auditorijai: [KAM]. Pamokos tikslas: [TIKSLAS].\nNaudok tik faktus iš: [ŠALTINIS].\nStruktūra: vienas pagrindinis principas, proceso schema iš [KIEK] žingsnių, sužymėta iliustracija, blokas „kodėl tai svarbu“ ir trys klausimai pasitikrinti.\nKo šaltinyje nėra, žymėk „šaltinyje nenurodyta“.\nPo generavimo atskirai sutikrink kiekvieną faktą ir rodyklę.", "id": "P73"}, {"cat": "schemos", "t": "Atvirukas spaudai", "got": "Atvirukas, paruoštas spausdinti, su tiksliu tekstu.", "need": "Tekstas, dydis ir proga.", "p": "Sukurk spausdinimui skirtą atviruką: [ŠVENTĖ AR PROGA]. Formatas: [DYDIS], saugios paraštės: [MM].\nTikslus užrašas: „[TEKSTAS]“. Sudėtingą žodį parašyk raidėmis: [R-A-I-D-Ė-S].\nMotyvas: [MOTYVAS]. Spalvos: [SPALVOS]. Šrifto charakteris: [CHARAKTERIS].\nVisas tekstas saugioje zonoje, didelis kontrastas, daug tuščios vietos.\nDatų, parašų ir palinkėjimų, kurių nenurodžiau, nepridėk.", "check": "Prieš spausdindama patikrink kiekvieną raidę ir kraštus.", "id": "P74"}, {"cat": "uxui", "t": "Iš eskizo į svetainės dizainą", "got": "Tavo puslapio eskizas virsta tvarkingu dizainu.", "need": "Puslapio eskizas ir patinkančio stiliaus pavyzdys.", "p": "1 vaizdas yra mano puslapio eskizas, 2 vaizdas yra stiliaus pavyzdys.\nPaversk eskizą užbaigtu dizainu, griežtai išlaikydamas 1 vaizdo struktūrą, blokų tvarką, tekstus ir hierarchiją.\nIš 2 vaizdo imk tik spalvas, šriftų charakterį, kampų apvalumą, šešėlius ir mygtukų stilių. Turinio ir prekės ženklo nekopijuok.\nFormatas: [KOMPIUTERIS / TELEFONAS].", "id": "P75"}, {"cat": "uxui", "t": "Ranka pieštas programėlės ekranas", "got": "Tvarkingas programėlės ekranas iš popieriaus eskizo.", "need": "Nufotografuotas eskizas.", "p": "Paversk mano ranka pieštą eskizą tvarkingu ekranu programėlei: [PROGRAMĖLĖS TIPAS].\nIšlaikyk blokų vietas ir rodyklių bei užrašų prasmę.\nStilius: [STILIUS]. Platforma: [IPHONE / ANDROID / SVETAINĖ]. Aiškus kontrastas.\nTikslūs tekstai: [TEKSTAI].\nFunkcijų, kurių nėra eskize, nepridėk.", "id": "P76"}, {"cat": "uxui", "t": "Programėlė telefone", "got": "Tavo ekranas tikroviškame telefone pristatymui ar reklamai.", "need": "Ekrano nuotrauka.", "p": "Įdėk įkeltą programėlės ekrano nuotrauką į tikroviško išmaniojo telefono ekraną.\nEkranas ir tekstas lieka tikslūs, neiškreipti.\nKampas: [KAMPAS]. Korpusas: [MEDŽIAGA AR SPALVA]. Fonas: [FONAS]. Studijos šviesa, tikroviški atspindžiai ir šešėliai.\nGamintojo logotipo ir naujų ekrano elementų nepridėk.", "rel": "/phonemockup", "id": "P77"}, {"cat": "uxui", "t": "Svetainė keliuose įrenginiuose", "got": "Pristatymo vaizdas su tavo svetaine kompiuteryje ir telefone.", "need": "Svetainės ekrano nuotraukos.", "p": "Sukurk pristatymo vaizdą iš mano svetainės kompiuterio ir telefono ekrano nuotraukų: nešiojamas kompiuteris priekyje šiek tiek kampu, šalia telefonas.\nEkranai lieka tikslūs, tekstas neperpieštas.\nŠvari [ŠVIESI / TAMSI] studija, minkšti šešėliai, 16:9, kairėje vieta antraštei.\nPapildomų ekranų nepridėk.", "id": "P78"}, {"cat": "uxui", "t": "Nukreipimo puslapio pirmas ekranas", "got": "Vizuali pirmo ekrano koncepcija pagal tavo pasiūlymą.", "need": "Pasiūlymas, auditorija ir mygtuko tekstas.", "p": "Sukurk nukreipimo puslapio pirmojo ekrano vizualinę koncepciją: [PRODUKTAS AR PASLAUGA].\nAuditorija: [KAM]. Pasiūlymas: „[PASIŪLYMAS]“. Mygtukas: „[MYGTUKO TEKSTAS]“.\nStruktūra: meniu, stipri antraštė, paantraštė, mygtukas, vienas pagrindinis vaizdas, trys pasitikėjimo ženklai.\nStilius: [STILIUS]. Spalvos: [SPALVOS]. Plotis 1440 px.\nIšgalvotų atsiliepimų, skaičių ir klientų logotipų nepridėk.", "id": "P79"}, {"cat": "uxui", "t": "Perdaryk skaidrę", "got": "Ta pati informacija, bet aiškesnė ir gražesnė skaidrė.", "need": "Skaidrė ir, jei nori, stiliaus pavyzdys.", "p": "Perdaryk šią skaidrę nekeisdamas faktų ir formuluočių.\nPagerink hierarchiją, lygiavimą, paraštes, kontrastą ir skaitomumą, pridėk tik tinkamas paprastas ikonas.\nStilių imk iš 2 vaizdo: spalvos, šriftai, tinklelis ir dekoro kalba. Formatas 16:9.\nSvarbių duomenų nesutrumpink ir naujų nepridėk.", "id": "P80"}, {"cat": "uxui", "t": "Logotipo idėjos", "got": "6 logotipo kryptys, iš kurių renkiesi.", "need": "Pavadinimas ir prekės ženklo savybės.", "p": "Sukurk 6 nespalvotas logotipo idėjas prekės ženklui „[PAVADINIMAS]“ viename tinklelyje.\nPrekės ženklo esmė: [3 SAVYBĖS]. Venk šių štampų: [KO VENGTI].\nPaprasta geometrija, atpažįstamas siluetas net mažame dydyje, be perėjimų ir maketų.\nKai išsirinksiu, paruošk švarią versiją permatomame fone ir užrašą su tiksliu pavadinimu.", "check": "Galutinį logotipą vis tiek reikės perbraižyti vektoriumi dizainerio programoje.", "id": "P81"}, {"cat": "uxui", "t": "Ikonų rinkinys", "got": "Ikonos, kurios atrodo kaip viena šeima.", "need": "Ikonų sąrašas ir spalva.", "p": "Sukurk [KIEK] ikonų rinkinį: [IKONŲ SĄRAŠAS].\nVienoda sistema: dydis [24 / 32] px, tas pats tinklelis, linijos storis 2 px, vienodi apvalinimai ir vizualinis svoris.\nStilius: [KONTŪRINIS / UŽPILDYTAS]. Spalva: [SPALVA]. Permatomas fonas.\nKiekviena ikona atskirai, be teksto, šešėlių ir stilių maišymo.", "id": "P82"}, {"cat": "uxui", "t": "Svetainės vizualų rinkinys", "got": "Penki svetainės vaizdai vienu stiliumi.", "need": "Ką siūlai ir kokio stiliaus nori.", "p": "Sukurk vizualų rinkinį svetainei: [PRODUKTAS AR PASLAUGA].\nPirma aprašyk FIKSUOTA bloką: spalvos, šviesa, medžiagos, perspektyva, fonas ir detalumas.\nTada paruošk 5 atskirus promptus: 1) pagrindinis 16:9 vaizdas su vieta antraštei; 2) kvadratinis privalumo vaizdas; 3) horizontali darbo eigos iliustracija; 4) pasitikėjimo vaizdas; 5) fonas kvietimui veikti.\nTas pats stilius, skirtingos kompozicijos. Sąsajos teksto, logotipų ir mygtukų nepiešk, kurk po vieną.", "id": "P83"}, {"cat": "technika", "t": "Pjūvis", "got": "Vaizdas, kuris parodo, kas yra viduje.", "need": "Objekto nuotrauka ir jo dalių sąrašas.", "p": "Sukurk [OBJEKTAS] pjūvio vizualizaciją, kuri parodo vidų.\nIšorė iš nuotraukos lieka atpažįstama, pjūvis švarus ir logiškas.\nPažymėk svarbiausias dalis trumpais užrašais: [DALIŲ SĄRAŠAS].\nŠvarus fonas, techninės iliustracijos stilius, 4:5. Neišgalvok dalių, kurių nenurodžiau.", "rel": "/crosssection", "id": "P84"}, {"cat": "technika", "t": "Išskaidytas vaizdas", "got": "Visos produkto dalys atitrauktos viena nuo kitos.", "need": "Objekto nuotrauka ir dalių sąrašas.", "p": "Sukurk išskaidytą [OBJEKTAS] vaizdą: visos dalys atitrauktos viena nuo kitos išilgai vienos ašies, tvarkingai ir lygiais tarpais.\nDalys: [DALIŲ SĄRAŠAS].\nKiekviena dalis tiksli, plonos linijos veda prie trumpų užrašų.\nNeutralus fonas, studijos šviesa, 16:9. Papildomų varžtų ir detalių neišgalvok.", "rel": "/anatomy", "id": "P85"}, {"cat": "technika", "t": "Brėžinys", "got": "Techninis brėžinys iš kelių pusių.", "need": "Objekto nuotrauka ir, jei turi, matmenys.", "p": "Paversk [OBJEKTAS] iš nuotraukos inžineriniu brėžiniu: vaizdas iš priekio, šono ir viršaus, baltos linijos mėlyname fone, matmenų linijos.\nMatmenys: [MATMENYS].\nJei matmenų nenurodžiau, palik tuščias vietas, o ne skaičius iš galvos.\nŠvarus techninis stilius, be dekoro.", "rel": "/blueprint", "id": "P86"}, {"cat": "technika", "t": "Izometrinis vaizdas", "got": "Tvarkinga 3D iliustracija iš viršaus kampu.", "need": "Objekto ar erdvės aprašymas.", "p": "Sukurk izometrinę iliustraciją: [OBJEKTAS AR ERDVĖ], 30° kampu.\nŠvarios linijos, vienodas detalumas, spalvos: [SPALVOS], minkšti šešėliai, neutralus fonas.\nParodyk: [KĄ PARODYTI].\nBe perspektyvos iškraipymų. Užrašai tik šie: [UŽRAŠAI].", "id": "P87"}, {"cat": "technika", "t": "Buto planas", "got": "Aiškus buto ar biuro planas iš viršaus.", "need": "Patalpų sąrašas ir matmenys arba eskizas.", "p": "Pagal mano aprašymą ar eskizą sukurk aiškų buto planą iš viršaus.\nPatalpos ir matmenys: [PATALPOS IR MATMENYS].\nDurys, langai ir baldai sutartiniais ženklais, patalpų pavadinimai lietuviškai.\nŠvarus nespalvotas stilius su vienu akcentu: [SPALVA].\nPatalpų ir matmenų, kurių nenurodžiau, nepridėk.", "check": "Tai iliustracija, ne statybinis brėžinys.", "id": "P88"}, {"cat": "kuryba", "t": "Perkelk stilių", "got": "Tavo vaizdas kito vaizdo stiliumi, be jo turinio.", "need": "Tavo vaizdas ir stiliaus pavyzdys.", "p": "1 nuotrauką perkurk 2 nuotraukos vizualine kalba.\nIšsaugok 1 nuotraukos siužetą, žmogų, pozą, objektų skaičių, kompoziciją ir jų išsidėstymą.\nIš 2 nuotraukos imk tik spalvas, šviesą, tekstūrą, linijų charakterį ir atlikimo būdą.\nPersonažų, teksto ir išskirtinių 2 nuotraukos elementų nekopijuok.", "id": "P89"}, {"cat": "kuryba", "t": "Iš eskizo į nuotrauką", "got": "Tavo ranka pieštas eskizas virsta tikroviška nuotrauka.", "need": "Eskizas, net ir labai paprastas.", "p": "Paversk mano eskizą tikroviška nuotrauka.\nIšsaugok kompoziciją, objektų vietą ir dydį, kameros kryptį ir tuščias vietas.\nObjektai: [APRAŠYMAS]. Medžiagos: [MEDŽIAGOS]. Šviesa: [ŠVIESA]. Vieta: [VIETA].\nFormatas: [FORMATAS]. Nepridėk daiktų, kurių nėra eskize.", "id": "P90"}, {"cat": "kuryba", "t": "Spalvinimo knygelė vaikams", "got": "Spalvinimo lapas su švariais kontūrais.", "need": "Bet kokia nuotrauka ar piešinys.", "p": "Paversk vaizdą vaikiškos spalvinimo knygelės iliustracija: švarūs uždari juodi vienodo storio kontūrai baltame fone, didelės aiškios sritys.\nBe pilkų atspalvių, šešėlių, perėjimų, tekstūrų ir smulkių detalių.\nIšsaugok atpažįstamą kompoziciją ir visus pagrindinius objektus.\nA4 vertikalus formatas, saugios paraštės.", "id": "P91"}, {"cat": "kuryba", "t": "Komikso puslapis", "got": "Komikso puslapis, kuriame personažai visuose kadruose vienodi.", "need": "Siužetas ir replikos.", "p": "Sukurk komikso puslapį iš [KIEK] kadrų pagal siužetą: [SIUŽETAS].\nPersonažų veidai, apranga ir daiktai visuose kadruose vienodi.\nSkirtingi planai ir kompozicijos, skaitoma iš viršaus į apačią.\nTikslios replikos lietuviškai: [REPLIKOS PAGAL KADRUS].\nFormatas 3:4, švarūs rėmeliai, be papildomo teksto.", "rel": "/comicportrait", "fail": "Jei personažai skiriasi, kurk kadrus atskirai ir sudėk vėliau.", "id": "P92"}, {"cat": "kuryba", "t": "Kambario atnaujinimas", "got": "Tavo kambarys po remonto, be sienų kilnojimo.", "need": "Kambario nuotrauka.", "p": "Parodyk, kaip atrodytų šis kambarys po remonto [STILIUS] stiliumi.\nGriežtai išsaugok patalpos geometriją, langus, duris, angas, lubų aukštį, kameros vietą ir perspektyvą.\nKeisk tik apdailą, baldus, šviestuvus ir dekorą: [SĄRAŠAS].\nMedžiagos ir šviesa tikroviškos. Sienų nekilnok, kambario nedidink, langų nepridėk.", "rel": "/interiordesign", "id": "P93"}, {"cat": "kuryba", "t": "Kino kadras", "got": "Žurnalinis kadras su kino nuotaika.", "need": "Tavo nuotrauka arba scenos aprašymas.", "p": "Sukurk kino kadrą: [KAS] [KUR].\nPoza: [POZA]. Planas: [PLANAS]. Objektyvas: [35 / 50 / 85 MM]. Šviesa: [ŠVIESA]. Spalvos: [SPALVOS].\nNatūrali audinių ir odos tekstūra, nuotaika: [NUOTAIKA], žurnalinė kompozicija, tikroviška fotografija.\nBe plastikinio retušo, perteklinių aksesuarų ir teksto.", "rel": "/editorial", "id": "P94"}, {"cat": "kuryba", "t": "Vaikiškos knygos atvartas", "got": "Iliustruotas atvartas su vieta tekstui.", "need": "Knygos tekstas ir herojus.", "p": "Sukurk 2:1 vaikiškos knygos atvartą pagal tekstą: [TEKSTAS].\nIliustracija su tuo pačiu herojumi, vienoda palete ir stiliumi.\nPalik švarias vietas tekstui, bet paties teksto negeneruok.\nAmžius: [AMŽIUS]. Nuotaika: [NUOTAIKA].\nBe bauginančių detalių ir papildomų personažų.", "id": "P95"}, {"cat": "kuryba", "t": "Naktinė nuotrauka su blykste", "got": "Gyvas, tarsi telefonu naktį darytas kadras.", "need": "Tavo nuotrauka ir scenos idėja.", "p": "Sukurk tikrovišką naktinę nuotrauką su blykste: [SIUŽETAS].\nKieta tiesioginė blykstė, greitai tamsėjanti šviesa, tamsus natūralus fonas, vietiniai atspindžiai, lengvas triukšmas ir šiek tiek netobulas kadras.\nIšsaugok žmogaus iš nuotraukos atpažįstamumą.\nBe kino spalvų, grožio retušo ir minkštos studijos šviesos.", "id": "P96"}, {"cat": "kuryba", "t": "Kiemo ar sklypo idėja", "got": "Kaip galėtų atrodyti tavo kiemas ar terasa.", "need": "Kiemo ar sklypo nuotrauka.", "p": "Pagal nuotrauką sukurk sklypo vizualizaciją.\nIšsaugok ribas, pastatus, takelius, reljefą, didelius medžius ir kameros vietą.\nPridėk tik [TERASA / VEJA / GĖLYNAI / SODINIAI] su augalais, tinkančiais: [KLIMATAS AR REGIONAS].\nTikroviškas mastelis, metų laikas: [METŲ LAIKAS], natūrali šviesa. Kaimynų pastatų nekeisk.", "id": "P97"}, {"cat": "kuryba", "t": "Istorinė scena", "got": "Epochos scena be anachronizmų.", "need": "Vieta, metai ir įvykis.", "p": "Sukurk istorinę sceną: [VIETA, METAI, ĮVYKIS].\nLaikykis patvirtintų epochos drabužių, architektūros, įrankių, transporto ir medžiagų.\nPlanas: [PLANAS]. Šviesa: [ŠVIESA]. Stilius: [DOKUMENTINIS / ILIUSTRACINIS].\nPrieš generuodamas parašyk dvi eilutes: kas patvirtinta, o kas yra vizualinė prielaida.\nJokių šiuolaikinių daiktų, anachroniškų užrašų ir išgalvotų istorinių asmenų.", "id": "P98"}, {"cat": "kuryba", "t": "Tas pats pastatas, keturi orai", "got": "Tas pats kadras saulėje, sniege, sutemose ir saulėlydyje.", "need": "Pastato nuotrauka.", "p": "Parodyk pastatą iš nuotraukos keturiais variantais tame pačiame kadre: 1) ryški saulė; 2) apsiniaukusi diena su sniegu; 3) mėlynoji valanda; 4) auksinis saulėlydis.\nPrieš kurdamas išrašyk pastato detales: langų ir durų skaičių, stogo formą, šviestuvus ir kitus išskirtinius elementus.\nKeičiasi tik šviesa, oras ir nuotaika. Pastatas lieka toks pat, nieko neperstatyk ir nepridėk.", "rel": "/goldenhour", "check": "Palygink langų skaičių ir stogo formą visose keturiose versijose.", "id": "P99"}, {"cat": "kuryba", "t": "Spalvos iš patikusio kadro", "got": "Tavo nuotrauka su patikusio kadro spalvų nuotaika.", "need": "Tavo nuotrauka ir spalvų pavyzdys.", "p": "1 nuotrauka yra mano kadras, 2 nuotrauka yra tik spalvų pavyzdys.\nPerkelk iš 2 nuotraukos tik spalvų toną, kontrastą, baltos balansą ir šešėlių bei šviesų atspalvius.\nTurinio, daiktų, kompozicijos, šviesos krypties ir tekstūrų iš 2 nuotraukos nekelk.\nVeidų, odos spalvos ir produkto spalvų neiškraipyk.", "id": "P100"}, {"cat": "serijos", "t": "Prekės ženklo nuotaikų lenta", "got": "Vizuali prekės ženklo kryptis vienoje lentoje.", "need": "Prekės ženklo aprašymas ir auditorija.", "p": "Sukurk struktūruotą prekės ženklo „[PAVADINIMAS]“ nuotaikų lentą auditorijai: [KAM SKIRTA].\nBlokai: spalvų paletė su HEX kodais, medžiagos ir tekstūros, fotografijos stilius, šviesa, šriftų charakteris, formos, raštai ir trys vizualiniai motyvai.\nNuotaika: [3 SAVYBĖS].\nKiekvienas blokas trumpai pasirašytas, elementai nesikartoja.\nLogotipo nekurk ir konkrečių kūrinių nekopijuok.", "check": "Naudok kaip vizualinę užduotį prieš kurdama visą seriją.", "id": "P101"}, {"cat": "serijos", "t": "Vienas stilius visai serijai", "got": "Kelios scenos, kurios atrodo kaip viena serija.", "need": "Serijos tema ir scenų sąrašas.", "p": "Nustatyk vizualines taisykles visai serijai: [SERIJOS TEMA].\nPirmiausia aprašyk FIKSUOTA bloką: spalvos, šviesa, medžiagos, perspektyva, fonas, detalumas ir šriftai.\nTada paruošk [KIEK] atskirus promptus skirtingoms scenoms: [SCENŲ SĄRAŠAS].\nKiekviename prompte pakartok FIKSUOTA bloką žodis žodin. Kurk po vieną vaizdą.", "id": "P102"}, {"cat": "serijos", "t": "Vienas vaizdas, visi formatai", "got": "Tas pats vizualas įrašui, Stories ir YouTube.", "need": "Vienas patvirtintas pagrindinis vaizdas.", "p": "Iš įkelto pagrindinio vaizdo paruošk versijas skirtingiems formatams: 1:1 ir 4:5 įrašams, 9:16 Stories ir Reels, 16:9 YouTube.\nKiekvienoje versijoje išsaugok pagrindinį objektą, spalvas, šviesą ir tekstą.\nNekarpyk veido ar produkto, o trūkstamą erdvę natūraliai dapiešk.\nKurk po vieną formatą, pradėk nuo [PIRMAS FORMATAS].", "id": "P103"}, {"cat": "serijos", "t": "Grįžk prie švaraus originalo", "got": "Naudingas pakeitimas perkeltas ant švaraus originalo, be susikaupusių iškraipymų.", "need": "Originalas ir paskutinė versija.", "p": "1 nuotrauka yra švarus originalas. 2 nuotrauka yra paskutinė versija su naudingu pakeitimu, bet joje per daug pasikeitė veidas ar detalės.\nSukurk naują versiją nuo originalo: iš 2 nuotraukos perkelk tik [VIENAS NAUDINGAS PAKEITIMAS].\nIš 1 nuotraukos visiškai atkurk veidą ar produktą, formą, kadrą, kamerą, šviesą, foną, spalvas, tekstūras ir visą tekstą.\nAtsitiktinių abiejų nuotraukų detalių nemaišyk.", "check": "Padeda, kai po kelių taisymų veidas ar produktas pradeda „plaukti“.", "id": "P104"}, {"cat": "serijos", "t": "Šešių įrašų serija profiliui", "got": "Šeši įrašai, kurie profilio tinklelyje atrodo kaip visuma.", "need": "Serijos tema ir įrašų temos.", "p": "Suplanuok 6 įrašų seriją Instagram profiliui tema: [TEMA], kad tinklelyje jie atrodytų kaip viena visuma.\nPirma nustatyk FIKSUOTA bloką: spalvos su HEX kodais, šviesa, fonas, šriftai ir kadravimas.\nTada parašyk 6 atskirus promptus šioms temoms: [ĮRAŠŲ TEMOS].\nKiekviename pakartok FIKSUOTA bloką. Kurk po vieną.", "id": "P105"}];
+const DEMO = "P23";
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+const catById = Object.fromEntries(CATS.map(c => [c.id, c]));
+
+const w = s => (Math.max(s.length, 4) * 0.56 + 1.1).toFixed(2) + 'em';
+function fieldHTML(name){
+  const ph = name.toLowerCase().replace(/hex/g,'HEX').replace(/(\d)\s*mm/g,'$1 mm');
+  return `<input class="fld" data-name="${esc(name)}" placeholder="${esc(ph)}" style="width:${w(ph)}" aria-label="${esc(ph)}">`;
+}
+function promptHTML(text){
+  return text.split(/(\[[^\]]+\])/).map(part => {
+    const m = part.match(/^\[([^\]]+)\]$/);
+    return m ? fieldHTML(m[1]) : esc(part);
+  }).join('');
+}
+function cardHTML(p, extraId){
+  const c = catById[p.cat];
+  return `<article class="pcard" ${extraId ? '' : `id="${p.id}"`} data-search="${esc(norm(p.t+' '+p.got+' '+p.need+' '+c.title+' '+p.p+' '+(p.rel||'')))}">
+    <div class="ptop"><span class="pid">${p.id}</span><span>${esc(c.title)}</span></div>
+    <h3>${esc(p.t)}</h3>
+    <dl class="pmeta"><div><dt>Ką gausi</dt><dd>${esc(p.got)}</dd></div><div><dt>Ko reikės</dt><dd>${esc(p.need)}</dd></div></dl>
+    <div class="plbl">Promptas. Rožinius laukelius pakeisk savais žodžiais.</div>
+    <div class="ptext">${promptHTML(p.p)}</div>
+    <div class="pact">
+      <button class="btn primary" data-copyp>Kopijuoti promptą</button>
+      <button class="pclear" data-clear>Išvalyti laukelius</button>
+      ${p.rel ? `<a class="plink" href="komandos.html#k=${encodeURIComponent(p.rel.slice(1))}">Pavyzdys: ${esc(p.rel)}</a>` : ''}
+    </div>
+    <details><summary>Kaip patikrinti ir ką daryti, jei nepavyko</summary>
+      <p><b>Patikrink:</b> ${esc(p.check || c.check)}</p>
+      <p><b>Jei nepavyko:</b> ${esc(p.fail || c.fail)}</p>
+    </details>
+  </article>`;
+}
+
+/* katalogas */
+let html = '', chips = '';
+CATS.forEach(c => {
+  const list = P.filter(p => p.cat === c.id);
+  chips += `<a href="#c-${c.id}">${esc(c.title)} · ${list.length}</a>`;
+  html += `<section class="block" id="c-${c.id}">
+    <div class="block-head"><h2>${esc(c.title)}</h2><span class="n">${list.length} ${list.length%10===1&&list.length%100!==11?'promptas':(list.length%10===0||(list.length%100>=10&&list.length%100<=20))?'promptų':'promptai'}</span></div>
+    <p class="sub">${esc(c.intro)}</p><div class="pgrid">${list.map(p => cardHTML(p)).join('')}</div></section>`;
+});
+document.getElementById('blocks').innerHTML = html;
+document.getElementById('chips').innerHTML = chips;
+document.getElementById('demo').insertAdjacentHTML('beforeend', cardHTML(P.find(p => p.id === DEMO), true));
+
+/* laukeliai: plotis ir sinchronizavimas kortelėje */
+function fit(inp){ inp.style.width = w(inp.value || inp.placeholder); inp.classList.toggle('filled', !!inp.value.trim()); }
+document.addEventListener('input', e => {
+  const inp = e.target.closest('.fld'); if (!inp) return;
+  const card = inp.closest('.pcard');
+  card.querySelectorAll(`.fld[data-name="${CSS.escape(inp.dataset.name)}"]`).forEach(o => { if (o !== inp) o.value = inp.value; fit(o); });
+  fit(inp);
+});
+
+function cardText(card){
+  let out = '';
+  card.querySelector('.ptext').childNodes.forEach(n => {
+    if (n.nodeType === 3) out += n.textContent;
+    else if (n.classList && n.classList.contains('fld')) out += n.value.trim() || `[${n.dataset.name}]`;
+  });
+  return out;
+}
+
+/* kopijavimas */
+const toast = document.getElementById('toast');
+function say(t){ toast.textContent = t; toast.classList.add('on'); clearTimeout(say.t); say.t = setTimeout(() => toast.classList.remove('on'), 1800); }
+async function copy(text, msg){
+  try { await navigator.clipboard.writeText(text); }
+  catch { const ta = document.createElement('textarea'); ta.value = text; ta.style.position='fixed'; ta.style.opacity='0';
+    document.body.appendChild(ta); ta.select(); try{document.execCommand('copy')}catch{} ta.remove(); }
+  say(msg || 'Nukopijuota');
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-copyp]');
+  if (b) {
+    const card = b.closest('.pcard');
+    const empty = [...card.querySelectorAll('.fld')].filter(f => !f.value.trim()).length;
+    copy(cardText(card), empty ? `Nukopijuota. Neužpildyta laukelių: ${empty}` : 'Nukopijuota');
+    return;
+  }
+  const c = e.target.closest('[data-clear]');
+  if (c) c.closest('.pcard').querySelectorAll('.fld').forEach(f => { f.value = ''; fit(f); });
+});
+
+/* paieška */
+const q = document.getElementById('q'), emptyEl = document.getElementById('empty');
+q.addEventListener('input', () => {
+  const t = norm(q.value.trim());
+  let total = 0;
+  document.querySelectorAll('#blocks .block').forEach(sec => {
+    let n = 0;
+    sec.querySelectorAll('.pcard').forEach(card => {
+      const hit = !t || card.dataset.search.includes(t);
+      card.style.display = hit ? '' : 'none'; if (hit) n++;
+    });
+    sec.style.display = n ? '' : 'none'; total += n;
+  });
+  emptyEl.style.display = total ? 'none' : 'block';
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /registracija.html
+
+Sitemap: https://www.vita-synergy.com/sitemap.xml

@@ -1,13 +1,12 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <!DOCTYPE html>
 <html lang="lt">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Erika Karta — Social Media Pardavimų Strategė | Vita Synergy</title>
-<meta name="description" content="Padedu ekspertams paversti socialinius tinklus stabiliu klientų srautu per aiškią sistemą — be cirkų, trendų ir dirbtinio linksminimo. 40 000 GBP per metus be komandos ir be reklamos.">
+<title>Erika Karta | Socialinių tinklų pardavimų strategė</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="description" content="Socialinių tinklų pardavimų strategė ir mentorė ekspertams: turinys, kuris atveda klientų be cirkų ir trendų. ~40 000 GBP su 20 klientų, be reklamos.">
 <link rel="canonical" href="https://www.vita-synergy.com/">
 <meta name="robots" content="index, follow">
 <meta property="og:title" content="Erika Karta — Social Media Pardavimų Strategė">
@@ -178,6 +177,18 @@ nav{position:sticky;top:0;z-index:50;background:rgba(13,13,13,.9);backdrop-filte
 .about p strong{color:var(--cream);font-weight:500}
 .about p.small{font-size:.92rem}
 
+.soon-product{border-top:1px solid var(--line)}
+.soon-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+@media(max-width:860px){.soon-grid{grid-template-columns:1fr;gap:36px}}
+.soon-product h2{font-size:clamp(1.8rem,3.4vw,2.6rem);margin-bottom:18px}
+.soon-product .sub{color:var(--muted);margin-bottom:18px;font-weight:400;max-width:34em}
+.soon-product .btn{margin-top:10px}
+.soon-product .btn-note strong{color:var(--cream);font-weight:600}
+.soon-list{list-style:none;counter-reset:s;border-left:1px solid var(--line-pink);padding-left:28px}
+.soon-list li{counter-increment:s;position:relative;padding:0 0 20px}
+.soon-list li::before{content:counter(s);position:absolute;left:-44px;top:-2px;width:30px;height:30px;border-radius:50%;background:var(--bg);border:1px solid var(--ruby);color:var(--pink);font-size:.8rem;font-weight:600;display:grid;place-items:center}
+.soon-list b{display:block;font-weight:500;color:var(--cream)}
+.soon-list span{color:var(--muted);font-size:.93rem;font-weight:400}
 .final{text-align:center;padding:80px 24px;background:radial-gradient(ellipse 70% 90% at 50% 115%,rgba(217,15,106,.14),transparent),var(--bg);}
 .final h2{font-size:clamp(2rem,4.4vw,3.1rem);max-width:18em;margin:0 auto 18px;font-weight:400}
 .final p{color:var(--muted);margin-bottom:38px;font-weight:400}
@@ -201,6 +212,9 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.9rem;colo
       <a href="#rezultatai">Rezultatai</a>
       <a href="#blogas">Straipsniai</a>
       <a href="#apie">Apie mane</a>
+      <a href="instagram-algoritmas.html">Instagram gidas</a>
+      <a href="komandos.html">Komandos</a>
+      <a href="promptai.html">Promptai</a>
     </nav>
     <a class="nav-cta" href="https://tidycal.com/erikakartaseva/30minute-meetingerika" rel="noopener">Nemokama konsultacija</a>
   </div>
@@ -209,9 +223,9 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.9rem;colo
 <header class="hero">
   <div class="wrap hero-grid">
     <div>
-      <p class="eyebrow">Erika Karta · Social media pardavimų sistemų strategė</p>
+      <p class="eyebrow">Erika Karta · Pardavimų sistemos ir DI</p>
       <h1>Tau nereikia tapti <span class="em">pramoga</span>, kad turinys generuotų klientus.</h1>
-      <p class="lead">Padedu ekspertams paversti socialinius tinklus stabiliu klientų srautu per aiškią sistemą — be cirkų, trendų ir dirbtinio linksminimo.</p>
+      <p class="lead">Padedu ekspertams paversti socialinius tinklus stabiliu klientų srautu per aiškią sistemą — be cirkų, trendų ir dirbtinio linksminimo. O dirbtinis intelektas šią sistemą padaro greitesnę: mažiau rankinio darbo, daugiau laiko klientams.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="https://tidycal.com/erikakartaseva/30minute-meetingerika" rel="noopener">Nemokamas diagnostinis pokalbis</a>
         <a class="btn btn-ghost" href="#poziuris">Kaip dirbu</a>
@@ -230,8 +244,8 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.9rem;colo
         <a href="https://www.youtube.com/@erikakarta" target="_blank" rel="noopener" title="YouTube">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
         </a>
-        <a href="https://www.linkedin.com/in/erikakarta" target="_blank" rel="noopener" title="LinkedIn">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        <a href="https://www.tiktok.com/@erika.karta" target="_blank" rel="noopener" title="TikTok">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M15 2.5v12.5a4.5 4.5 0 11-4.5-4.5"/><path d="M15 2.5c.5 3 2.6 5.1 6 5.4"/></svg>
         </a>
       </div>
     </div>
@@ -316,13 +330,13 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.9rem;colo
     <h2>Ką sako žmonės, <span class="em">apie darbą kartu</span></h2>
     <p class="sub">Tikri žinučių screenshot'ai — be redagavimo.</p>
     <div class="rev-grid">
-      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas.png" alt="Atsiliepimas" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas5.jpg" alt="Atsiliepimas" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas6.jpg" alt="Atsiliepimas" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas2.png" alt="Atsiliepimas" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas3.jpg" alt="Atsiliepimas" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas4.png" alt="Atsiliepimas" loading="lazy"></div>
-      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas1.png" alt="Atsiliepimas" loading="lazy"></div>
+      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas.png" alt="Klientės atsiliepimas apie darbą su Erika Karta" loading="lazy"></div>
+      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas5.jpg" alt="Klientės atsiliepimas apie darbą su Erika Karta" loading="lazy"></div>
+      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas6.jpg" alt="Klientės atsiliepimas apie darbą su Erika Karta" loading="lazy"></div>
+      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas2.png" alt="Klientės atsiliepimas apie darbą su Erika Karta" loading="lazy"></div>
+      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas3.jpg" alt="Klientės atsiliepimas apie darbą su Erika Karta" loading="lazy"></div>
+      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas4.png" alt="Klientės atsiliepimas apie darbą su Erika Karta" loading="lazy"></div>
+      <div class="rev-card"><img src="img/reviews/bendri/Atsiliepimas1.png" alt="Klientės atsiliepimas apie darbą su Erika Karta" loading="lazy"></div>
     </div>
     <div class="rev-more">
       <a href="atsiliepimai.html">Daugiau atsiliepimų →</a>
@@ -336,10 +350,25 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.9rem;colo
     <h2>Skaityk ir pritaikyk</h2>
     <p class="sub">Be vandens ir be magijos pažadų — tik tai, kas realiai veikia pardavimuose per socialinius tinklus.</p>
     <div class="posts">
+      <a class="post" href="instagram-algoritmas.html">
+        <p class="meta">Instagram · Algoritmas 2026</p>
+        <h3>Kaip Instagram sprendžia, kam parodyti tavo įrašą</h3>
+        <p>9 patikrintos 2026 m. taisyklės su konkrečiais veiksmais, planas 7 dienoms ir 2 minučių paskyros patikra.</p>
+      </a>
       <a class="post" href="straipsnis-sistema.html">
         <p class="meta">Sistema · Piltuvėlis</p>
         <h3>Sistema, kuri chaotišką turinį paverčia klientais</h3>
         <p>Kodėl peržiūros nėra verslas, kas yra ledkalnio taisyklė ir 6 lygiai, ant kurių stovi prognozuojami pardavimai.</p>
+      </a>
+      <a class="post" href="komandos.html">
+        <p class="meta">ChatGPT · Vizualai</p>
+        <h3>125 komandos vaizdams ChatGPT su tikrais pavyzdžiais</h3>
+        <p>Įkelk nuotrauką, parašyk vieną žodį ir gauk portretą, reklamą ar produkto kadrą. Kiekviena komanda su pavyzdžiu ir promptu, kurį nusikopijuosi vienu paspaudimu.</p>
+      </a>
+      <a class="post" href="promptai.html">
+        <p class="meta">ChatGPT · Promptai</p>
+        <h3>105 promptai vaizdams ChatGPT lietuviškai</h3>
+        <p>Kai vieno žodžio komandos nebeužtenka: paruošti promptai su laukeliais, kuriuos užpildai savo žodžiais ir nusikopijuoji.</p>
       </a>
       <div class="post soon">
         <p class="meta">Netrukus</p>
@@ -347,6 +376,27 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.9rem;colo
         <p>Pardavimas, kuris nesijaučia kaip pardavimas — ir kodėl tai yra galingiausia strategija.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="soon-product" id="svetaine">
+  <div class="wrap soon-grid">
+    <div>
+      <p class="eyebrow">Netrukus · Mini programa</p>
+      <h2>Svetainė nuo nulio <span class="em">su DI</span></h2>
+      <p class="sub">Žingsnis po žingsnio susikursi savo svetainę su dirbtiniu intelektu: nuo auditorijos ir pasiūlymo iki tekstų, dizaino ir paleidimo. Be programuotojo, o talpinimas nekainuoja nieko.</p>
+      <p class="sub">Šią svetainę ir komandų katalogą sukūriau būtent taip. Išmokusi galėsi kurti ne tik sau, bet ir klientams.</p>
+      <a class="btn btn-primary" href="https://t.me/ErikaKarta" target="_blank" rel="noopener">Noriu būti pirmoji</a>
+      <p class="btn-note">Parašyk man Telegram žodį <strong>SVETAINĖ</strong>, ir pirmoji sužinosi, kada startuojame.</p>
+    </div>
+    <ol class="soon-list">
+      <li><b>Verslo pagrindas ir auditorija</b><span>Kam rašai, ką siūlai ir kuo skiriesi nuo konkurentų.</span></li>
+      <li><b>Pozicionavimas ir struktūra</b><span>Kokie puslapiai reikalingi ir kas juose turi būti.</span></li>
+      <li><b>Tekstai ir dizainas su DI</b><span>Tekstai, kurie parduoda, ir dizainas, kuris nėra šablonas.</span></li>
+      <li><b>Kontaktai, mokėjimai, teisiniai puslapiai</b><span>Užklausų forma, mokėjimo nuorodos ir privalomi puslapiai.</span></li>
+      <li><b>Paleidimas</b><span>GitHub, domenas ir svetainė internete.</span></li>
+      <li><b>Po paleidimo</b><span>Google, analitika, saugumas ir kaip taisyti pačiai.</span></li>
+    </ol>
   </div>
 </section>
 
@@ -362,6 +412,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.9rem;colo
       <p>Mano patirtis online versle sukurta ne iš vadovėlių, o per realius praradimus ir sugrįžimus. Per vieną mėnesį tarptautinėje rinkoje nuo nulio užauginau daugiau nei 200 žmonių komandą. Prasidėjus geopolitiniams neramumams, „Meta" per vieną dieną užblokavo mano puslapius — praradau apie 200 000 auditoriją.</p>
       <p><strong>Aš žinau, ką reiškia pradėti nuo absoliutaus nulio. Ir aš tai padariau.</strong></p>
       <p>Savo sistemą patikrinau sunkiausiomis sąlygomis: viena, be komandos, be reklamos biudžetų, sugeneravau <strong>~40 000 GBP vos su 20 klientų</strong> — naudodama aiškią turinio ir pardavimų sistemą.</p>
+      <p>Paskutiniu metu savo sistemą stiprinu dirbtiniu intelektu. DI įrankius ir agentus naudoju kasdien: turiniui, analizei ir net svetainėms. Šią svetainę, ChatGPT komandų katalogą ir klientės svetainę sukūriau pati, su DI, be programuotojo.</p>
       <p class="small">Verslas nėra smėlio dėžė, o aš nesu darželio auklėtoja, kuri bėgioja iš paskos. Bet jei esi pasiruošusi statyti veikiančią sistemą — aš būsiu šalia kiekviename žingsnyje.</p>
     </div>
   </div>
@@ -387,12 +438,22 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.9rem;colo
         <a href="#apie">Apie mane</a>
       </div>
       <div>
+        <h4>Nemokami gidai</h4>
+        <a href="instagram-algoritmas.html">Instagram algoritmas 2026</a>
+        <a href="straipsnis-sistema.html">Pardavimų sistema</a>
+      </div>
+      <div>
+        <h4>ChatGPT vizualai</h4>
+        <a href="komandos.html">Komandos su pavyzdžiais</a>
+        <a href="promptai.html">Promptų biblioteka</a>
+      </div>
+      <div>
         <h4>Susisiek</h4>
         <a href="https://www.instagram.com/erika.marketingas/" target="_blank" rel="noopener">Instagram · @erika.marketingas</a>
         <a href="https://t.me/ErikaKarta" target="_blank" rel="noopener">Telegram · ErikaKarta</a>
         <a href="https://www.facebook.com/erikakarta.uk" target="_blank" rel="noopener">Facebook · Erika Karta UK</a>
         <a href="https://www.youtube.com/@erikakarta" target="_blank" rel="noopener">YouTube · @erikakarta</a>
-        <a href="https://www.linkedin.com/in/erikakarta" target="_blank" rel="noopener">LinkedIn · Erika Karta</a>
+        <a href="https://www.tiktok.com/@erika.karta" target="_blank" rel="noopener">TikTok · @erika.karta</a>
       </div>
       <div>
         <h4>Paslaugos</h4>
@@ -410,3 +471,5 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.9rem;colo
 
 </body>
 </html>
+
+</body></html>
