@@ -151,6 +151,13 @@ pre.prompt .k{color:var(--pink);font-weight:600}
 .soon-list li::before{content:counter(s);position:absolute;left:-44px;top:-2px;width:30px;height:30px;border-radius:50%;background:var(--bg);border:1px solid var(--ruby);color:var(--pink);font-size:.8rem;font-weight:600;display:grid;place-items:center}
 .soon-list b{display:block;font-weight:500;color:var(--cream)}
 .soon-list span{color:var(--muted);font-size:.93rem;font-weight:400}
+.teaser{display:block;margin-top:26px;padding:16px 20px;border:1px solid var(--line-pink);border-radius:14px;background:rgba(217,15,106,.07);color:var(--cream);font-weight:400;line-height:1.5;text-decoration:none;transition:background .2s ease}
+.teaser:hover{background:rgba(217,15,106,.15)}
+.teaser span{display:block;margin-top:6px;color:var(--pink);font-weight:500;font-size:.92rem}
+.opts{list-style:none;margin:0 0 18px;padding:0;color:var(--muted);font-weight:400}
+.opts li{position:relative;padding-left:22px;margin-bottom:8px}
+.opts li::before{content:"–";position:absolute;left:0;color:var(--pink)}
+#svetaine{scroll-margin-top:calc(var(--navh) + 10px)}
 .final{padding:96px 0;text-align:center;border-top:1px solid var(--line);margin-top:72px;background:var(--surface)}
 .final h2{font-size:clamp(2rem,4.2vw,3rem);font-weight:400;max-width:18em;margin:0 auto 18px}
 .final p{color:var(--muted);max-width:34em;margin:0 auto 32px;font-weight:400}
@@ -240,6 +247,7 @@ dialog.noimg .dlg-img{display:none}
       <a class="btn primary" href="#katalogas">Žiūrėti komandas</a>
       <a class="btn" href="#kaip">Kaip naudoti</a>
     </div>
+    <a class="teaser" href="#svetaine">Ar žinojai, kad tokią svetainę gali susikurti pats per vieną vakarą be programuotojo? <span>Sužinok kaip →</span></a>
   </div>
 </header>
 
@@ -333,12 +341,19 @@ Kiekvienai naujai komandai:
 <section class="soon-product" id="svetaine">
   <div class="wrap soon-grid">
     <div>
-      <p class="eyebrow">Netrukus · Mini programa</p>
-      <h2>Susikurk tokį puslapį <span class="em">su DI</span></h2>
-      <p class="sub">Šį komandų katalogą sukūriau su dirbtiniu intelektu, be programuotojo. Mini programoje žingsnis po žingsnio išmoksi susikurti tokius interaktyvius puslapius: katalogus, gidus, testus ar skaičiuokles savo tema.</p>
-      <p class="sub">Tokį puslapį gali naudoti klientams pritraukti, auditorijai auginti, kaip dovaną už prenumeratą arba kurti kitiems ir už tai imti atlygį.</p>
-      <a class="btn primary" href="https://t.me/ErikaKarta" target="_blank" rel="noopener">Parašyti Erikai Telegram</a>
-      <p class="btn-note">Parašyk žodį <strong>SVETAINĖ</strong>, ir atsakysiu asmeniškai: kada startuojame ir kiek kainuoja.</p>
+      <p class="eyebrow">Netrukus · Mokymai</p>
+      <h2>Ar žinojai, kad svetainę gali susikurti <span class="em">per vieną vakarą</span> be programuotojo?</h2>
+      <p class="sub">Dauguma DI naudoja tik tekstams ar paveikslėliams. Bet su juo gali sukurti ir tikrą svetainę: katalogą, gidą, testą ar skaičiuoklę.</p>
+      <p class="sub">Tokių puslapių reikia kiekvienam verslui. Jie sudomina lankytoją, išlaiko jį ilgiau ir paverčia klientu. Įmonės už tokius puslapius moka, o dauguma vis dar nežino, kad juos galima pasidaryti patiems.</p>
+      <p class="sub">Tai reiškia dvi galimybes:</p>
+      <ul class="opts">
+        <li>susikurti puslapį savo verslui ir nemokėti programuotojui;</li>
+        <li>išmokti kurti kitiems ir pasiūlyti tai kaip mokamą paslaugą.</li>
+      </ul>
+      <p class="sub">Šį komandų katalogą sukūriau pati, su DI, be programuotojo.</p>
+      <p class="sub">Todėl renku nedidelę grupę mokymams. Juose žingsnis po žingsnio parodysiu, kaip susikurti tokį puslapį: nuo idėjos iki veikiančios svetainės su savo domenu.</p>
+      <a class="btn primary" href="https://t.me/ErikaKarta" target="_blank" rel="noopener">Parašyti Telegram @ErikaKarta</a>
+      <p class="btn-note">👉 Parašyk žodį <strong>SVETAINĖ</strong> į Telegram @ErikaKarta, ir atsiųsiu informaciją apie mokymų pradžią ir kainą.</p>
     </div>
     <ol class="soon-list">
       <li><b>Idėja, kuri pritraukia</b><span>Kokį puslapį verta sukurti, kad žmonės jį išsisaugotų ir dalintųsi.</span></li>
