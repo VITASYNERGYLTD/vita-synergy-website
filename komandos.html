@@ -138,6 +138,19 @@ pre.prompt .k{color:var(--pink);font-weight:600}
 .empty{padding:60px 0;text-align:center;color:var(--muted);display:none}
 
 /* CTA */
+.soon-product{padding:80px 0;border-top:1px solid var(--line)}
+.soon-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+@media(max-width:860px){.soon-grid{grid-template-columns:1fr;gap:36px}}
+.soon-product h2{font-size:clamp(1.8rem,3.4vw,2.6rem);margin-bottom:18px;font-weight:400}
+.soon-product .sub{color:var(--muted);margin-bottom:18px;font-weight:400;max-width:34em}
+.soon-product .btn{margin-top:10px}
+.btn-note{font-size:.82rem;color:var(--muted);margin-top:14px;font-weight:400}
+.btn-note strong{color:var(--cream);font-weight:600}
+.soon-list{list-style:none;counter-reset:s;border-left:1px solid var(--line-pink);padding-left:28px;margin-left:16px}
+.soon-list li{counter-increment:s;position:relative;padding:0 0 20px}
+.soon-list li::before{content:counter(s);position:absolute;left:-44px;top:-2px;width:30px;height:30px;border-radius:50%;background:var(--bg);border:1px solid var(--ruby);color:var(--pink);font-size:.8rem;font-weight:600;display:grid;place-items:center}
+.soon-list b{display:block;font-weight:500;color:var(--cream)}
+.soon-list span{color:var(--muted);font-size:.93rem;font-weight:400}
 .final{padding:96px 0;text-align:center;border-top:1px solid var(--line);margin-top:72px;background:var(--surface)}
 .final h2{font-size:clamp(2rem,4.2vw,3rem);font-weight:400;max-width:18em;margin:0 auto 18px}
 .final p{color:var(--muted);max-width:34em;margin:0 auto 32px;font-weight:400}
@@ -317,11 +330,32 @@ Kiekvienai naujai komandai:
 <main class="wrap" id="blocks"></main>
 <p class="empty wrap" id="empty">Tokios komandos neradau. Pabandyk kitą žodį, pavyzdžiui, „portretas“, „fonas“ arba „reklama“.</p>
 
+<section class="soon-product" id="svetaine">
+  <div class="wrap soon-grid">
+    <div>
+      <p class="eyebrow">Netrukus · Mini programa</p>
+      <h2>Susikurk tokį puslapį <span class="em">pati</span></h2>
+      <p class="sub">Šį komandų katalogą sukūriau su dirbtiniu intelektu, be programuotojo. Mini programoje žingsnis po žingsnio išmoksi susikurti tokius interaktyvius puslapius: katalogus, gidus, testus ar skaičiuokles savo tema.</p>
+      <p class="sub">Tokį puslapį gali naudoti klientams pritraukti, auditorijai auginti, kaip dovaną už prenumeratą arba kurti kitiems ir už tai imti atlygį.</p>
+      <a class="btn primary" href="https://t.me/ErikaKarta" target="_blank" rel="noopener">Noriu būti pirmoji</a>
+      <p class="btn-note">Parašyk man Telegram žodį <strong>SVETAINĖ</strong>, ir pirmoji sužinosi, kada startuojame.</p>
+    </div>
+    <ol class="soon-list">
+      <li><b>Idėja, kuri pritraukia</b><span>Kokį puslapį verta sukurti, kad žmonės jį išsisaugotų ir dalintųsi.</span></li>
+      <li><b>Turinys ir struktūra</b><span>Kas jame turi būti, kad žmogus greitai rastų, ko ieško.</span></li>
+      <li><b>Dizainas su DI</b><span>Kad atrodytų kaip tavo prekės ženklas, o ne šablonas.</span></li>
+      <li><b>Interaktyvumas</b><span>Paieška, filtrai, mygtukai „kopijuoti“, testai ir skaičiuoklės.</span></li>
+      <li><b>Paleidimas</b><span>Puslapis internete su tavo domenu. Talpinimas nekainuoja nieko.</span></li>
+      <li><b>Kaip iš to uždirbti</b><span>Kaip puslapį paversti klientų srautu arba paslauga kitiems.</span></li>
+    </ol>
+  </div>
+</section>
+
 <section class="final">
   <div class="wrap">
     <h2>Gražūs vizualai yra pradžia. Klientus atveda <span class="em">sistema</span>.</h2>
     <p>Jei nori, kad tavo turinys ne tik gražiai atrodytų, bet ir pardavinėtų, pradėkime nuo nemokamo 30 minučių pokalbio.</p>
-    <div class="btns" style="justify-content:center"><a class="btn primary" href="https://tidycal.com/erikakartaseva/30minute-meetingerika" target="_blank" rel="noopener">Registruotis nemokamam pokalbiui</a><a class="btn" href="index.html#svetaine">Noriu išmokti susikurti tokį puslapį</a></div>
+    <div class="btns" style="justify-content:center"><a class="btn primary" href="https://tidycal.com/erikakartaseva/30minute-meetingerika" target="_blank" rel="noopener">Registruotis nemokamam pokalbiui</a><a class="btn" href="#svetaine">Noriu išmokti susikurti tokį puslapį</a></div>
   </div>
 </section>
 
