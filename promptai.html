@@ -44,6 +44,8 @@ img{max-width:100%;display:block}
 .logo i{font-style:italic;color:var(--pink)}
 .nav-links{display:flex;gap:28px;font-size:.9rem;color:var(--muted);font-weight:400}
 .nav-links a:hover,.nav-links a[aria-current]{color:var(--cream)}
+.nav-links a.nav-free{color:var(--pink);font-weight:500}
+@media(max-width:800px){.nav-open .nav-links a.nav-free{color:var(--pink)}}
 .nav-cta{font-size:.86rem;font-weight:500;color:#fff;background:var(--pink);padding:10px 20px;border-radius:99px;transition:background .2s ease;white-space:nowrap}
 .nav-cta:hover{background:var(--magenta)}
 @media(max-width:800px){.nav-links{display:none}}
@@ -266,8 +268,9 @@ details p b{color:var(--cream);font-weight:500}
     <div class="nav-links">
       <a href="index.html">Pradžia</a>
       <a href="index.html#paslaugos">Paslaugos</a>
-      <a href="komandos.html">ChatGPT trumpos komandos</a>
-      <a href="promptai.html" aria-current="page">Promptai</a>
+      <a href="index.html#rezultatai">Rezultatai</a>
+      <a href="index.html#apie">Apie mane</a>
+      <a class="nav-free" href="nemokamai.html" aria-current="page">Nemokamai</a>
     </div>
     <a class="nav-cta" href="https://tidycal.com/erikakartaseva/30minute-meetingerika" target="_blank" rel="noopener">Nemokamas pokalbis</a>
     <button class="nav-burger" type="button" aria-label="Meniu" aria-expanded="false" onclick="var n=this.closest('.nav-in').parentElement;var o=n.classList.toggle('nav-open');this.setAttribute('aria-expanded',o);this.textContent=o?'\u2715':'\u2630'">&#9776;</button>
@@ -355,9 +358,12 @@ details p b{color:var(--cream);font-weight:500}
         <a href="index.html#apie">Apie mane</a>
       </div>
       <div>
-        <h4>ChatGPT vizualai</h4>
-        <a href="komandos.html">Komandos su pavyzdžiais</a>
+        <h4>Nemokamai</h4>
+        <a href="nemokamai.html">Visa nemokama medžiaga</a>
+        <a href="claude-mokykla.html">Claude nuo nulio</a>
+        <a href="komandos.html">ChatGPT komandos</a>
         <a href="promptai.html">Promptų biblioteka</a>
+        <a href="instagram-algoritmas.html">Instagram algoritmas 2026</a>
       </div>
       <div>
         <h4>Susisiek</h4>
