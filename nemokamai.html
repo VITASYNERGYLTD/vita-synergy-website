@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nemokamai · Erika Karta</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="description" content="Nemokami gidai, įrankiai ir paruoštos komandos: Claude ir ChatGPT nuo nulio, DI įrankiai verslui, komandos vaizdams ir socialinių tinklų gidai.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Erika Karta">
+<link rel="canonical" href="https://www.vita-synergy.com/nemokamai">
+<meta property="og:title" content="Nemokamai · Erika Karta">
+<meta property="og:description" content="Nemokami gidai, įrankiai ir paruoštos komandos: Claude ir ChatGPT nuo nulio, DI įrankiai verslui, komandos vaizdams ir socialinių tinklų gidai.">
+<meta property="og:image" content="https://www.vita-synergy.com/erika-karta.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Layout: Erika Karta brand (tamsus fonas, Playfair + Inter, rožinis akcentas). Antraštė, šuolių eilutė, keturios kortelių grupės. */
+:root{
+  --bg:#0D0D0D; --surface:#181014; --surface-2:#221219; --burgundy:#5C0E26; --ruby:#A4133C;
+  --pink:#D90F6A; --magenta:#b80d59; --cream:#FAF9F6; --muted:#B5A6AC; --emerald:#5EB89A;
+  --line:rgba(250,249,246,.1); --line-pink:rgba(217,15,106,.28); --radius:18px;
+  color-scheme:dark;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--bg);color:var(--cream);font-family:'Inter',sans-serif;font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased}
+::selection{background:var(--pink);color:#fff}
+h1,h2,h3{font-family:'Playfair Display',serif;font-weight:500;line-height:1.15;color:var(--cream)}
+.em{font-style:italic;color:var(--pink)}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--pink);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+.eyebrow{font-size:.76rem;letter-spacing:.22em;text-transform:uppercase;color:var(--pink);font-weight:600;margin-bottom:18px}
+
+.topnav{position:sticky;top:0;z-index:50;background:rgba(13,13,13,.9);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1100px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.logo{font-family:'Playfair Display',serif;font-size:1.2rem;letter-spacing:.04em;color:var(--cream);text-decoration:none}
+.logo i{font-style:italic;color:var(--pink)}
+.nav-links{display:flex;gap:28px;font-size:.9rem;color:var(--muted);font-weight:400;align-items:center}
+.nav-links a{color:inherit;text-decoration:none}
+.nav-links a:hover,.nav-links a[aria-current]{color:var(--cream)}
+.nav-links a.nav-free{color:var(--pink);font-weight:500}
+.nav-links a.nav-free[aria-current]{color:var(--pink)}
+.nav-cta{font-size:.86rem;font-weight:500;color:#fff;background:var(--pink);padding:10px 20px;border-radius:99px;transition:background .2s ease;white-space:nowrap;text-decoration:none}
+.nav-cta:hover{background:var(--magenta)}
+@media(max-width:800px){.nav-links{display:none}}
+.nav-burger{display:none;background:none;border:1px solid var(--line);color:var(--cream);border-radius:10px;width:42px;height:40px;font-size:1.25rem;line-height:1;cursor:pointer;flex:none}
+@media(max-width:800px){
+ .nav-in{flex-wrap:wrap;gap:10px}
+ .nav-burger{display:inline-flex;align-items:center;justify-content:center}
+ .nav-links{position:static;background:none;border:0;backdrop-filter:none}
+ .nav-open .nav-links{display:flex;flex-direction:column;align-items:stretch;gap:0;order:10;width:100%;padding:6px 0 2px}
+ .nav-open .nav-links a{padding:13px 2px;border-top:1px solid var(--line);font-size:1rem;color:var(--cream)}
+ .nav-open .nav-links a.nav-free{color:var(--pink)}
+}
+@media(max-width:480px){.nav-in{padding-left:16px;padding-right:16px}.logo{font-size:1.02rem}.nav-cta{padding:8px 12px;font-size:.76rem}}
+footer.site{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.9rem;color:var(--muted);font-weight:400}
+footer.site .fwrap{max-width:1100px;margin:0 auto;padding:0 24px}
+.foot-grid{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;margin-bottom:36px}
+.foot-grid h4{font-family:'Inter',sans-serif;font-weight:600;color:var(--cream);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:14px}
+.foot-grid a{display:block;margin-bottom:8px;transition:color .2s;color:var(--muted);text-decoration:none}
+.foot-grid a:hover{color:var(--pink)}
+.legal{border-top:1px solid var(--line);padding-top:24px;font-size:.8rem;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:480px){footer.site .fwrap{padding-left:16px;padding-right:16px}}
+
+.hero{padding:64px 0 36px}
+.hero h1{font-size:clamp(2.3rem,6vw,3.7rem);font-weight:400;letter-spacing:-.01em;margin-bottom:16px;max-width:15em}
+.hero .lead{font-size:1.1rem;color:var(--muted);font-weight:400;max-width:36em}
+.jump{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.jump a{display:inline-flex;align-items:center;gap:10px;font-size:.9rem;font-weight:500;color:var(--cream);border:1px solid var(--line);background:var(--surface);padding:10px 18px;border-radius:99px;text-decoration:none;transition:border-color .2s}
+.jump a:hover{border-color:var(--ruby)}
+.jump a b{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;color:var(--pink)}
+.group{padding:48px 0;border-top:1px solid var(--line)}
+.group h2{font-size:clamp(1.7rem,3.4vw,2.4rem);margin-bottom:10px}
+.group .sub{color:var(--muted);font-weight:400;max-width:40em;margin-bottom:32px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:900px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.cards{grid-template-columns:1fr}}
+.card{position:relative;display:flex;flex-direction:column;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;color:var(--cream);text-decoration:none;transition:transform .25s ease,border-color .25s ease;min-width:0}
+a.card:hover{transform:translateY(-4px);border-color:var(--ruby)}
+.card .tag{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--pink);background:rgba(217,15,106,.12);padding:6px 14px;border-radius:99px;margin-bottom:16px}
+.card .tag.vid{color:var(--emerald);background:rgba(94,184,154,.12)}
+.card .tag.muted{color:var(--muted);background:var(--line)}
+.card .meta{font-size:.84rem;color:var(--pink);font-weight:500;margin-bottom:8px}
+.card h3{font-size:1.32rem;margin-bottom:10px}
+.card p{color:var(--muted);font-size:.94rem;font-weight:400;margin-bottom:22px;flex:1}
+.card .go{font-size:.9rem;font-weight:500;color:var(--cream);border:1.5px solid var(--ruby);padding:10px 20px;border-radius:99px;transition:background .2s ease}
+a.card:hover .go{background:var(--ruby)}
+.card.soon{background:transparent;border-style:dashed}
+.card.soon h3{color:var(--muted)}
+.card.soon .go{border-color:var(--line);color:var(--muted)}
+.card.feat{grid-column:1/-1;border:2px solid var(--pink);background:linear-gradient(135deg,var(--surface-2),var(--surface) 60%);padding:36px 34px 36px 120px}
+.card.feat h3{font-size:clamp(1.6rem,3.6vw,2.3rem);font-weight:400}
+.card.feat p{font-size:1.02rem;max-width:40em}
+.card.feat .go{background:var(--pink);border-color:var(--pink);color:#fff}
+a.card.feat:hover .go{background:var(--magenta);border-color:var(--magenta)}
+.card.feat.soon{border-style:dashed;border-color:var(--line-pink)}
+.card.feat.soon h3{color:var(--cream)}
+.card.feat.soon .go{background:transparent;border-color:var(--line-pink);color:var(--pink)}
+.play{position:absolute;left:34px;top:38px;width:60px;height:60px;border-radius:50%;background:var(--pink);display:grid;place-items:center}
+.play::after{content:"";margin-left:5px;border-left:18px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent}
+@media(max-width:600px){.card.feat{padding:100px 24px 28px}.play{left:24px;top:24px}}
+.final{border-top:1px solid var(--line);padding:64px 0;text-align:center}
+.final h2{font-size:clamp(1.7rem,3.4vw,2.4rem);margin-bottom:14px}
+.final p{color:var(--muted);font-weight:400;max-width:34em;margin:0 auto 28px}
+.btn{display:inline-block;padding:15px 30px;border-radius:99px;font-weight:500;font-size:.96rem;background:var(--pink);color:#fff;text-decoration:none;transition:background .2s}
+.btn:hover{background:var(--magenta)}
+@media(max-width:480px){.wrap{padding-left:16px;padding-right:16px}}
+</style>
+</head>
+<body>
+<nav class="topnav">
+  <div class="nav-in">
+    <a class="logo" href="index.html">ERIKA <i>KARTA</i></a>
+    <div class="nav-links">
+      <a href="index.html">Pradžia</a>
+      <a href="index.html#paslaugos">Paslaugos</a>
+      <a href="index.html#rezultatai">Rezultatai</a>
+      <a href="index.html#apie">Apie mane</a>
+      <a class="nav-free" href="nemokamai.html" aria-current="page">Nemokamai</a>
+    </div>
+    <a class="nav-cta" href="https://tidycal.com/erikakartaseva/30minute-meetingerika" target="_blank" rel="noopener">Nemokamas pokalbis</a>
+    <button class="nav-burger" type="button" aria-label="Meniu" aria-expanded="false" onclick="var n=this.closest('.nav-in').parentElement;var o=n.classList.toggle('nav-open');this.setAttribute('aria-expanded',o);this.textContent=o?'\u2715':'\u2630'">&#9776;</button>
+  </div>
+</nav>
+<main>
+<section class="hero"><div class="wrap">
+<p class="eyebrow">Nemokamai</p>
+<h1>Viskas, ką gali <span class="em">pasiimti nemokamai</span></h1>
+<p class="lead">Gidai, įrankiai ir paruoštos komandos dirbtiniam intelektui ir socialiniams tinklams. Pasirink, ko reikia šiandien.</p>
+<div class="jump"><a href="#pirmi-zingsniai"><b>01</b>Dirbtinis intelektas: pirmi žingsniai</a><a href="#irankiai"><b>02</b>Įrankiai</a><a href="#kopijuok"><b>03</b>Kopijuok ir naudok</a><a href="#gidai"><b>04</b>Socialinių tinklų gidai</a></div>
+</div></section>
+<section class="group" id="pirmi-zingsniai"><div class="wrap"><h2>Dirbtinis intelektas: pirmi žingsniai</h2><p class="sub">Pradėk nuo nulio. Nereikia jokios patirties: žiūrėk, skaityk ir iškart išbandyk su savo užduotimis.</p><div class="cards"><div class="card feat soon"><span class="play" aria-hidden="true"></span><span class="tag vid">Video pamoka</span><span class="meta">Nemokama praktinė pamoka · 30 min</span><h3>100 Reels idėjų per 30 minučių</h3><p>Sužinok, kaip su Claude ir Apify išanalizuoti konkurentų Instagram turinį, atrasti auditorijos problemas ir pagal analizę sudaryti turinio planą bei Reels scenarijus.</p><span class="go">Netrukus</span></div><a class="card" href="claude-mokykla.html"><span class="tag">Gidas</span><span class="meta">13 pamokų · ~1 val.</span><h3>Claude nuo nulio</h3><p>Praktinis Claude gidas: pokalbiai, failai, projektai, jungtys ir dizainas. Su iliustracijomis, testu ir pažymėjimu.</p><span class="go">Pradėti mokytis →</span></a><div class="card soon"><span class="tag muted">Gidas</span><span class="meta">Ruošiama</span><h3>ChatGPT nuo nulio</h3><p>Toks pat praktinis gidas apie ChatGPT: nuo pirmo pokalbio iki projektų ir svetainių.</p><span class="go">Netrukus</span></div></div></div></section>
+<section class="group" id="irankiai"><div class="wrap"><h2>Įrankiai</h2><p class="sub">Įvedi savo duomenis ir gauni atsakymą, pritaikytą tau: planą, užklausą ar pasiūlymus tavo verslui.</p><div class="cards"><a class="card" href="claude-mokykla.html#planas"><span class="tag">Įrankis</span><span class="meta">1 min</span><h3>Mano DI planas</h3><p>Papasakok apie savo darbą ir gauk tris pirmas užduotis su paruoštomis užklausomis bei pamokų eilę.</p><span class="go">Sudaryti planą →</span></a><a class="card" href="claude-mokykla.html#verslui"><span class="tag">Įrankis</span><span class="meta">3 min</span><h3>Kaip uždirbti su DI</h3><p>Atsakyk apie savo patirtį ir įgūdžius, ir gausi tris pajamų kryptis su pirmu žingsniu.</p><span class="go">Pažiūrėti galimybes →</span></a><a class="card" href="claude-mokykla.html#verslas"><span class="tag">Įrankis</span><span class="meta">3 min</span><h3>DI mano versle</h3><p>Parašyk, kur tavo versle stringa, ir pamatyk, kur DI sutaupys daugiausia laiko.</p><span class="go">Atlikti diagnozę →</span></a><a class="card" href="claude-mokykla.html#konstruktorius"><span class="tag">Įrankis</span><span class="meta">2 min</span><h3>Užklausų kūrėjas</h3><p>Užpildyk kelis laukus ir gauk gerai sudėliotą užklausą. Puslapis parodo, ko joje trūksta.</p><span class="go">Kurti užklausą →</span></a><a class="card" href="claude-mokykla.html#parinkiklis"><span class="tag">Įrankis</span><span class="meta">1 min</span><h3>Kurią funkciją rinktis?</h3><p>Pasirink, ką nori padaryti, ir sužinosi, kurią Claude funkciją ir modelį naudoti.</p><span class="go">Atidaryti →</span></a></div></div></section>
+<section class="group" id="kopijuok"><div class="wrap"><h2>Kopijuok ir naudok</h2><p class="sub">Paruoštos komandos ir užklausos. Nukopijuok, pakeisk savo informacija ir įklijuok į ChatGPT ar Claude.</p><div class="cards"><a class="card" href="komandos.html"><span class="tag">ChatGPT</span><span class="meta">180 komandų su pavyzdžiais</span><h3>Trumpos komandos vaizdams</h3><p>Įkelk nuotrauką, parašyk vieną žodį ir gauk portretą, reklamą ar produkto kadrą.</p><span class="go">Atidaryti komandas →</span></a><a class="card" href="promptai.html"><span class="tag">ChatGPT</span><span class="meta">105 promptai</span><h3>Promptų biblioteka vaizdams</h3><p>Paruošti promptai su laukeliais, kuriuos užpildai savo žodžiais ir nusikopijuoji.</p><span class="go">Atidaryti biblioteką →</span></a><a class="card" href="claude-mokykla.html#uzklausos"><span class="tag">Claude</span><span class="meta">10 užklausų</span><h3>Claude užklausų biblioteka</h3><p>Laiškai klientams, turinio planas, susitikimų santraukos ir instrukcijos apie save.</p><span class="go">Atidaryti užklausas →</span></a></div></div></section>
+<section class="group" id="gidai"><div class="wrap"><h2>Socialinių tinklų gidai</h2><p class="sub">Straipsniai apie tai, kaip turinys virsta klientais.</p><div class="cards"><a class="card" href="instagram-algoritmas.html"><span class="tag">Gidas</span><span class="meta">Instagram · 2026</span><h3>Kaip Instagram sprendžia, kam parodyti tavo įrašą</h3><p>9 patikrintos taisyklės su konkrečiais veiksmais, planas 7 dienoms ir 2 minučių paskyros patikra.</p><span class="go">Skaityti →</span></a><a class="card" href="straipsnis-sistema.html"><span class="tag">Straipsnis</span><span class="meta">Sistema · Piltuvėlis</span><h3>Sistema, kuri chaotišką turinį paverčia klientais</h3><p>Kodėl peržiūros nėra verslas ir 6 lygiai, ant kurių stovi prognozuojami pardavimai.</p><span class="go">Skaityti →</span></a></div></div></section>
+<section class="final"><div class="wrap"><h2>Nori, kad tai <span class="em">dirbtų tavo versle</span>?</h2><p>Pirmas pokalbis nieko nekainuoja. Per 30 minučių pamatysime, kur DI ir turinio sistema tau sutaupytų daugiausia laiko.</p><a class="btn" href="https://tidycal.com/erikakartaseva/30minute-meetingerika" target="_blank" rel="noopener">Rezervuoti nemokamą pokalbį</a></div></section>
+</main>
+<footer class="site">
+  <div class="fwrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Erika Karta</h4>
+        <a href="index.html#poziuris">Požiūris</a>
+        <a href="index.html#paslaugos">Paslaugos</a>
+        <a href="index.html#rezultatai">Rezultatai</a>
+        <a href="index.html#blogas">Straipsniai</a>
+        <a href="index.html#apie">Apie mane</a>
+      </div>
+      <div>
+        <h4>Nemokamai</h4>
+        <a href="nemokamai.html">Visa nemokama medžiaga</a>
+        <a href="claude-mokykla.html">Claude nuo nulio</a>
+        <a href="komandos.html">ChatGPT komandos</a>
+        <a href="promptai.html">Promptų biblioteka</a>
+        <a href="instagram-algoritmas.html">Instagram algoritmas 2026</a>
+      </div>
+      <div>
+        <h4>Susisiek</h4>
+        <a href="https://www.instagram.com/erika.marketingas/" target="_blank" rel="noopener">Instagram · @erika.marketingas</a>
+        <a href="https://t.me/ErikaKarta" target="_blank" rel="noopener">Telegram · ErikaKarta</a>
+        <a href="https://www.facebook.com/erikakarta.uk" target="_blank" rel="noopener">Facebook · Erika Karta UK</a>
+        <a href="https://www.youtube.com/@erikakarta" target="_blank" rel="noopener">YouTube · @erikakarta</a>
+        <a href="https://www.tiktok.com/@erika.karta" target="_blank" rel="noopener">TikTok · @erika.karta</a>
+      </div>
+      <div>
+        <h4>Paslaugos</h4>
+        <a href="https://tidycal.com/erikakartaseva/30minute-meetingerika" target="_blank" rel="noopener">Nemokamas pokalbis</a>
+        <a href="konsultacija.html">Strateginė sesija · £150</a>
+        <a href="https://tidycal.com/erikakartaseva/45-mentoringmeeting" target="_blank" rel="noopener">Mentorystė · £4 000</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Vita Synergy LTD · Company Number: 15346047</span>
+    </div>
+  </div>
+</footer>
+<script>document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){var n=a.closest('.nav-open');if(n){n.classList.remove('nav-open');var b=n.querySelector('.nav-burger');if(b){b.textContent='\u2630';b.setAttribute('aria-expanded','false')}}})});</script>
+</body>
+</html>
