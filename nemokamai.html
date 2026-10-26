@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nemokamai · Erika Karta</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<meta name="description" content="Nemokami gidai, įrankiai ir paruoštos komandos: Claude ir ChatGPT nuo nulio, DI įrankiai verslui, komandos vaizdams ir socialinių tinklų gidai.">
+<meta name="description" content="Nemokami gidai, video pamokos ir įrankiai: dirbtinis intelektas ir socialiniai tinklai.">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Erika Karta">
 <link rel="canonical" href="https://www.vita-synergy.com/nemokamai">
 <meta property="og:title" content="Nemokamai · Erika Karta">
-<meta property="og:description" content="Nemokami gidai, įrankiai ir paruoštos komandos: Claude ir ChatGPT nuo nulio, DI įrankiai verslui, komandos vaizdams ir socialinių tinklų gidai.">
+<meta property="og:description" content="Nemokami gidai, video pamokos ir įrankiai: dirbtinis intelektas ir socialiniai tinklai.">
 <meta property="og:image" content="https://www.vita-synergy.com/erika-karta.jpg">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -126,6 +126,23 @@ a.card.feat:hover .go{background:var(--magenta);border-color:var(--magenta)}
 .btn:hover{background:var(--magenta)}
 @media(max-width:480px){.wrap{padding-left:16px;padding-right:16px}}
 </style>
+<style>
+.crumb{display:inline-flex;gap:8px;align-items:center;font-size:.86rem;font-weight:500;color:var(--muted);text-decoration:none;margin-bottom:22px}
+.crumb:hover{color:var(--pink)}
+.doors{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:8px 0 64px}
+@media(max-width:760px){.doors{grid-template-columns:1fr}}
+.door{display:flex;flex-direction:column;gap:14px;min-height:300px;padding:38px 34px;border-radius:var(--radius);border:1px solid var(--line);background:var(--surface);color:var(--cream);text-decoration:none;transition:transform .25s ease,border-color .25s ease;position:relative;overflow:hidden}
+.door:hover{transform:translateY(-4px);border-color:var(--pink)}
+.door::after{content:"";position:absolute;right:-70px;bottom:-70px;width:220px;height:220px;border-radius:50%;border:1.5px solid var(--line-pink)}
+.door .num{font-family:'Playfair Display',serif;font-style:italic;color:var(--pink);font-size:1.1rem}
+.door h2{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:400}
+.door p{color:var(--muted);font-weight:400;max-width:28em;flex:1}
+.door .inside{display:flex;flex-wrap:wrap;gap:8px}
+.door .inside span{font-size:.78rem;font-weight:500;color:var(--cream);border:1px solid var(--line);border-radius:99px;padding:5px 12px}
+.door .go{align-self:flex-start;font-size:.92rem;font-weight:500;color:#fff;background:var(--pink);padding:11px 22px;border-radius:99px}
+.door:hover .go{background:var(--magenta)}
+.group:first-of-type{border-top:0}
+</style>
 </head>
 <body>
 <nav class="topnav">
@@ -145,14 +162,10 @@ a.card.feat:hover .go{background:var(--magenta);border-color:var(--magenta)}
 <main>
 <section class="hero"><div class="wrap">
 <p class="eyebrow">Nemokamai</p>
-<h1>Viskas, ką gali <span class="em">pasiimti nemokamai</span></h1>
-<p class="lead">Gidai, įrankiai ir paruoštos komandos dirbtiniam intelektui ir socialiniams tinklams. Pasirink, ko reikia šiandien.</p>
-<div class="jump"><a href="#pirmi-zingsniai"><b>01</b>Dirbtinis intelektas: pirmi žingsniai</a><a href="#irankiai"><b>02</b>Įrankiai</a><a href="#kopijuok"><b>03</b>Kopijuok ir naudok</a><a href="#gidai"><b>04</b>Socialinių tinklų gidai</a></div>
+<h1>Pasirink <span class="em">temą</span></h1>
+<p class="lead">Visa nemokama medžiaga suskirstyta į dvi temas. Pasirink, kas tau aktualu dabar.</p>
 </div></section>
-<section class="group" id="pirmi-zingsniai"><div class="wrap"><h2>Dirbtinis intelektas: pirmi žingsniai</h2><p class="sub">Pradėk nuo nulio. Nereikia jokios patirties: žiūrėk, skaityk ir iškart išbandyk su savo užduotimis.</p><div class="cards"><article class="vcard"><h3>100 Reels idėjų per 30 minučių</h3><p>Sužinok, kaip su Claude ir Apify išanalizuoti konkurentų Instagram turinį, atrasti auditorijos problemas ir pagal analizę sudaryti turinio planą bei Reels scenarijus.</p><a class="vimg" href="https://youtu.be/VhCWXQCMIPA" target="_blank" rel="noopener" aria-label="Žiūrėti video: 100 Reels idėjų per 30 minučių"><img src="img/nemokamai/100-reels-ideju.webp" width="1200" height="855" loading="lazy" alt="100 Reels idėjų iš konkurentų analizės: 30 dienų planas ir scenarijai"></a><a class="vbtn" href="https://youtu.be/VhCWXQCMIPA" target="_blank" rel="noopener"><span class="vplay" aria-hidden="true"></span>Praktinis video: 14 minučių</a><p class="vnote">Visas pamokoje naudotas komandas rasi mano Telegram kanale.</p><a class="vlink" href="https://t.me/erikamarketingas" target="_blank" rel="noopener">Pasiimti video komandas ↗</a></article><a class="card" href="claude-mokykla.html"><span class="tag">Gidas</span><span class="meta">13 pamokų · ~1 val.</span><h3>Claude nuo nulio</h3><p>Praktinis Claude gidas: pokalbiai, failai, projektai, jungtys ir dizainas. Su iliustracijomis, testu ir pažymėjimu.</p><span class="go">Pradėti mokytis →</span></a><div class="card soon"><span class="tag muted">Gidas</span><span class="meta">Ruošiama</span><h3>ChatGPT nuo nulio</h3><p>Toks pat praktinis gidas apie ChatGPT: nuo pirmo pokalbio iki projektų ir svetainių.</p><span class="go">Netrukus</span></div></div></div></section>
-<section class="group" id="irankiai"><div class="wrap"><h2>Įrankiai</h2><p class="sub">Įvedi savo duomenis ir gauni atsakymą, pritaikytą tau: planą, užklausą ar pasiūlymus tavo verslui.</p><div class="cards"><a class="card" href="claude-mokykla.html#planas"><span class="tag">Įrankis</span><span class="meta">1 min</span><h3>Mano DI planas</h3><p>Papasakok apie savo darbą ir gauk tris pirmas užduotis su paruoštomis užklausomis bei pamokų eilę.</p><span class="go">Sudaryti planą →</span></a><a class="card" href="claude-mokykla.html#verslui"><span class="tag">Įrankis</span><span class="meta">3 min</span><h3>Kaip uždirbti su DI</h3><p>Atsakyk apie savo patirtį ir įgūdžius, ir gausi tris pajamų kryptis su pirmu žingsniu.</p><span class="go">Pažiūrėti galimybes →</span></a><a class="card" href="claude-mokykla.html#verslas"><span class="tag">Įrankis</span><span class="meta">3 min</span><h3>DI mano versle</h3><p>Parašyk, kur tavo versle stringa, ir pamatyk, kur DI sutaupys daugiausia laiko.</p><span class="go">Atlikti diagnozę →</span></a><a class="card" href="claude-mokykla.html#konstruktorius"><span class="tag">Įrankis</span><span class="meta">2 min</span><h3>Užklausų kūrėjas</h3><p>Užpildyk kelis laukus ir gauk gerai sudėliotą užklausą. Puslapis parodo, ko joje trūksta.</p><span class="go">Kurti užklausą →</span></a><a class="card" href="claude-mokykla.html#parinkiklis"><span class="tag">Įrankis</span><span class="meta">1 min</span><h3>Kurią funkciją rinktis?</h3><p>Pasirink, ką nori padaryti, ir sužinosi, kurią Claude funkciją ir modelį naudoti.</p><span class="go">Atidaryti →</span></a></div></div></section>
-<section class="group" id="kopijuok"><div class="wrap"><h2>Kopijuok ir naudok</h2><p class="sub">Paruoštos komandos ir užklausos. Nukopijuok, pakeisk savo informacija ir įklijuok į ChatGPT ar Claude.</p><div class="cards"><a class="card" href="komandos.html"><span class="tag">ChatGPT</span><span class="meta">180 komandų su pavyzdžiais</span><h3>Trumpos komandos vaizdams</h3><p>Įkelk nuotrauką, parašyk vieną žodį ir gauk portretą, reklamą ar produkto kadrą.</p><span class="go">Atidaryti komandas →</span></a><a class="card" href="promptai.html"><span class="tag">ChatGPT</span><span class="meta">105 promptai</span><h3>Promptų biblioteka vaizdams</h3><p>Paruošti promptai su laukeliais, kuriuos užpildai savo žodžiais ir nusikopijuoji.</p><span class="go">Atidaryti biblioteką →</span></a><a class="card" href="claude-mokykla.html#uzklausos"><span class="tag">Claude</span><span class="meta">10 užklausų</span><h3>Claude užklausų biblioteka</h3><p>Laiškai klientams, turinio planas, susitikimų santraukos ir instrukcijos apie save.</p><span class="go">Atidaryti užklausas →</span></a></div></div></section>
-<section class="group" id="gidai"><div class="wrap"><h2>Socialinių tinklų gidai</h2><p class="sub">Straipsniai apie tai, kaip turinys virsta klientais.</p><div class="cards"><a class="card" href="instagram-algoritmas.html"><span class="tag">Gidas</span><span class="meta">Instagram · 2026</span><h3>Kaip Instagram sprendžia, kam parodyti tavo įrašą</h3><p>9 patikrintos taisyklės su konkrečiais veiksmais, planas 7 dienoms ir 2 minučių paskyros patikra.</p><span class="go">Skaityti →</span></a><a class="card" href="straipsnis-sistema.html"><span class="tag">Straipsnis</span><span class="meta">Sistema · Piltuvėlis</span><h3>Sistema, kuri chaotišką turinį paverčia klientais</h3><p>Kodėl peržiūros nėra verslas ir 6 lygiai, ant kurių stovi prognozuojami pardavimai.</p><span class="go">Skaityti →</span></a></div></div></section>
+<section style="padding:0"><div class="wrap doors"><a class="door" href="dirbtinis-intelektas.html"><span class="num">01</span><h2>Dirbtinis intelektas</h2><p>Claude ir ChatGPT nuo nulio, video pamokos, DI agentai verslui ir paruoštos komandos.</p><span class="inside"><span>Video pamoka</span><span>Claude nuo nulio</span><span>Kaip uždirbti su DI</span><span>DI tavo versle</span><span>Komandos ir promptai</span></span><span class="go">Atidaryti →</span></a><a class="door" href="socialiniai-tinklai.html"><span class="num">02</span><h2>Socialiniai tinklai</h2><p>Kaip veikia Instagram algoritmas ir kaip turinys virsta klientais be cirkų ir trendų.</p><span class="inside"><span>Instagram algoritmas 2026</span><span>Pardavimų sistema</span></span><span class="go">Atidaryti →</span></a></div></section>
 <section class="final"><div class="wrap"><h2>Nori, kad tai <span class="em">dirbtų tavo versle</span>?</h2><p>Pirmas pokalbis nieko nekainuoja. Per 30 minučių pamatysime, kur DI ir turinio sistema tau sutaupytų daugiausia laiko.</p><a class="btn" href="https://tidycal.com/erikakartaseva/30minute-meetingerika" target="_blank" rel="noopener">Rezervuoti nemokamą pokalbį</a></div></section>
 </main>
 <footer class="site">
@@ -169,10 +182,10 @@ a.card.feat:hover .go{background:var(--magenta);border-color:var(--magenta)}
       <div>
         <h4>Nemokamai</h4>
         <a href="nemokamai.html">Visa nemokama medžiaga</a>
+        <a href="dirbtinis-intelektas.html">Dirbtinis intelektas</a>
         <a href="claude-mokykla.html">Claude nuo nulio</a>
-        <a href="komandos.html">ChatGPT komandos</a>
-        <a href="promptai.html">Promptų biblioteka</a>
-        <a href="instagram-algoritmas.html">Instagram algoritmas 2026</a>
+        <a href="di-uzdarbis.html">Kaip uždirbti su DI</a>
+        <a href="socialiniai-tinklai.html">Socialiniai tinklai</a>
       </div>
       <div>
         <h4>Susisiek</h4>
