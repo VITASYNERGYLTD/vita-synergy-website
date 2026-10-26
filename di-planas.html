@@ -264,6 +264,22 @@ footer.site .fwrap{max-width:1100px;margin:0 auto;padding:0 24px}
 .legal{border-top:1px solid var(--line);padding-top:24px;font-size:.8rem;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 @media(max-width:480px){footer.site .fwrap{padding-left:16px;padding-right:16px}}
 
+/* Šviesus skaitymo fonas turiniui; meniu ir poraštė lieka tamsūs kaip visoje svetainėje */
+.wrap{--paper:#FBF6F8;--surface:#FFFFFF;--surface-2:#F7E8EE;--ink:#24101A;--muted:#6B5560;--line:#EADBE1;
+  --accent:#C2185B;--accent-soft:#F7E8EE;--on-accent:#FFFFFF;--pink:#C2185B;--magenta:#A3124B;--ruby:#A4133C;--cream:#24101A;
+  --new:#1D7A55;--new-soft:#DFF2E9;--warn:#93570A;--warn-soft:#FBEBCF;--line-pink:rgba(194,24,91,.28);
+  color-scheme:light;color:var(--ink);background:var(--paper);box-shadow:0 0 0 100vmax var(--paper);clip-path:inset(0 -100vmax);font-size:17px}
+.wrap .cert{color:#FAF9F6;background:linear-gradient(135deg,#5C0E26,#2A1720)}
+.wrap .cert h3,.wrap .cert p,.wrap .cert .meta{color:#FAF9F6}
+.wrap .cert .eyebrow{color:#FAF9F6}
+.wrap details.lesson[open]{border-color:var(--pink)}
+.wrap .chip[aria-pressed="true"],.wrap nav.sections a.on{background:var(--burgundy);border-color:var(--burgundy);color:#fff}
+.wrap .score{background:var(--burgundy);color:#fff}
+.wrap .score button{color:#fff}
+.wrap .prompt{background:var(--surface-2)}
+.wrap .prompt pre{color:var(--ink)}
+.wrap input[type=text],.wrap textarea,.wrap select{background:#fff}
+
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
 @media (max-width:480px){.ladder{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
@@ -633,11 +649,11 @@ const IDEALIB={
  "Mokyti kitus":{t:"DI agentų rinkinys tavo nišai",w:"Supakuoji agentus, įgūdžius ir užklausas vienai profesijai (pvz., NT agentams ar kosmetologėms) ir parduodi kaip produktą su mokymu, kaip juo naudotis.",x:"Claude įgūdžiai ir papildiniai (Skills, Plugins)",p:"Tavo profesijos kolegos",f:"Paklausk 5 kolegų, kuri užduotis jiems suvalgo daugiausia laiko, ir sukurk agentą jai."}
 };
 const PAINLIB={
- "Atsakymai klientams":{s:"Klientų žinučių agentas",h:"Agentas žino jūsų kainas, paslaugas ir toną, paruošia atsakymus į žinutes ir laiškus ir primena apie neatsakytas užklausas. Jūs tik patvirtinate.",t:"3–5 val. per savaitę"},
- "Turinys socialiniuose tinkluose":{s:"Turinio gamybos agentas",h:"Iš vieno video ar pokalbio agentas pagamina savaitės turinį: Reels scenarijus, karuseles ir tekstus pagal jūsų stilių. Montavimo agentas paruošia video.",t:"4–8 val. per savaitę"},
- "Pasiūlymai ir sąmatos":{s:"Pasiūlymų agentas",h:"Iš pokalbio užrašų ar užklausos agentas per kelias minutes paruošia pasiūlymą pagal jūsų šabloną ir kainas.",t:"2–3 val. per savaitę"},
+ "Atsakymai klientams":{s:"Klientų žinučių agentas",h:"Agentas žino tavo kainas, paslaugas ir toną, paruošia atsakymus į žinutes ir laiškus ir primena apie neatsakytas užklausas. Tau lieka tik patvirtinti.",t:"3–5 val. per savaitę"},
+ "Turinys socialiniuose tinkluose":{s:"Turinio gamybos agentas",h:"Iš vieno video ar pokalbio agentas pagamina savaitės turinį: Reels scenarijus, karuseles ir tekstus pagal tavo stilių. Montavimo agentas paruošia video.",t:"4–8 val. per savaitę"},
+ "Pasiūlymai ir sąmatos":{s:"Pasiūlymų agentas",h:"Iš pokalbio užrašų ar užklausos agentas per kelias minutes paruošia pasiūlymą pagal tavo šabloną ir kainas.",t:"2–3 val. per savaitę"},
  "Dokumentai ir administravimas":{s:"Dokumentų agentas",h:"Agentas perskaito sutartis, sąskaitas ir laiškus, išrašo datas bei įsipareigojimus ir primena, kas artėja.",t:"2–3 val. per savaitę"},
- "Naujų klientų paieška":{s:"Rinkos analizės agentas ir interaktyvus lead magnetas",h:"Agentas analizuoja konkurentus ir auditorijos problemas, o interaktyvus testas ar skaičiuoklė svetainėje surenka kontaktus žmonių, kuriems tikrai reikia jūsų paslaugos.",t:"Daugiau užklausų be reklamos"},
+ "Naujų klientų paieška":{s:"Rinkos analizės agentas ir interaktyvus lead magnetas",h:"Agentas analizuoja konkurentus ir auditorijos problemas, o interaktyvus testas ar skaičiuoklė svetainėje surenka kontaktus žmonių, kuriems tikrai reikia tavo paslaugos.",t:"Daugiau užklausų be reklamos"},
  "Komandos organizavimas":{s:"Susitikimų ir užduočių agentas",h:"Po susitikimo agentas parašo santrauką, išdalina užduotis ir primena terminus.",t:"1–2 val. per savaitę"},
  "Ataskaitos ir skaičiai":{s:"Savaitinis analitikos agentas",h:"Kas pirmadienį agentas pats surenka skaičius iš socialinių tinklų, svetainės ir pardavimų ir atsiunčia, kas pavyko, kas ne ir ką daryti toliau.",t:"2–4 val. per savaitę"},
  "Rezervacijos ir priminimai":{s:"Priminimų agentas",h:"Agentas pagal kalendorių paruošia priminimus, padėkas po vizito ir atsiliepimų prašymus.",t:"1–2 val. per savaitę"}
@@ -661,7 +677,7 @@ function earnRule(i){let k=i.skills.filter(x=>IDEALIB[x]);if(!k.length)k=["Socia
   for(const x of ["Socialiniai tinklai","Rinkodara ir analizė","Dizainas ir vizualai","Technologijos"]){if(k.length>=3)break;if(!k.includes(x))k.push(x)}
   return {intro:"Štai trys paslaugos, kurias dar mažai kas siūlo ir už kurias verslai moka, nes jos sutaupo valandas kas savaitę.",ideas:k.slice(0,3).map(x=>({title:IDEALIB[x].t,what:IDEALIB[x].w,tools:IDEALIB[x].x,who:IDEALIB[x].p,first:IDEALIB[x].f})),learn:["Claude projektai ir įgūdžiai: tai agento „smegenys“ ir darbo taisyklės","Scheduled užduotys: agentas dirba pats, pavyzdžiui, kas pirmadienį","Apify: duomenų rinkimas iš Instagram ir svetainių analizei"],next:"Pirmą agentą sukurk sau. Kai jis veiks tavo veikloje, turėsi geriausią pavyzdį klientams."}}
 function bizRule(i){let k=i.pains.filter(x=>PAINLIB[x]);const picked=k.length;for(const x of ["Atsakymai klientams","Turinys socialiniuose tinkluose","Dokumentai ir administravimas","Pasiūlymai ir sąmatos"]){if(k.length>=3)break;if(!k.includes(x))k.push(x)}
-  return {summary:picked?`Daugiausia laiko tau atima: ${k.slice(0,picked).slice(0,3).join(", ").toLowerCase()}. Tai sritys, kur DI padeda greičiausiai, o šalia pridėjau dar kelias, kur nauda būna greita.`:"Štai sritys, kur DI smulkiam verslui padeda greičiausiai.",wins:k.slice(0,3).map(x=>({area:x,solution:PAINLIB[x].s,how:PAINLIB[x].h,saves:PAINLIB[x].t})),bigger:"Vėliau šiuos agentus galima sujungti į sistemą: vienas renka duomenis, kitas ruošia turinį, o trečias kas savaitę atsiskaito, kas pavyko.",help:"Erika gali pastatyti šiuos agentus jūsų verslui: prijungti įrankius, aprašyti jų darbo taisykles ir apmokyti komandą jais naudotis."}}
+  return {summary:picked?`Daugiausia laiko tau atima: ${k.slice(0,picked).slice(0,3).join(", ").toLowerCase()}. Tai sritys, kur DI padeda greičiausiai, o šalia pridėjau dar kelias, kur nauda būna greita.`:"Štai sritys, kur DI smulkiam verslui padeda greičiausiai.",wins:k.slice(0,3).map(x=>({area:x,solution:PAINLIB[x].s,how:PAINLIB[x].h,saves:PAINLIB[x].t})),bigger:"Vėliau šiuos agentus galima sujungti į sistemą: vienas renka duomenis, kitas ruošia turinį, o trečias kas savaitę atsiskaito, kas pavyko.",help:"Erika gali pastatyti šiuos agentus tavo verslui: prijungti įrankius, aprašyti jų darbo taisykles ir apmokyti komandą jais naudotis."}}
 function li(a){return a.map(x=>`<li>${esc(x)}</li>`).join("")}
 function renderEarn(r,ai){$("#mOut").hidden=false;$("#mOut").innerHTML=`<span class="eyebrow">${ai?"Paruošė Claude pagal tavo atsakymus":"Tavo galimybės"}</span><h3>${esc(r.intro)}</h3>
   ${r.ideas.map((d,n)=>`<div class="idea"><b>${n+1}. ${esc(d.title)}</b><p>${esc(d.what)}</p><dl>${d.tools?`<dt>Su kuo statoma</dt><dd>${esc(d.tools)}</dd>`:""}<dt>Kas mokės</dt><dd>${esc(d.who)}</dd><dt>Pirmas žingsnis</dt><dd>${esc(d.first)}</dd></dl></div>`).join("")}
