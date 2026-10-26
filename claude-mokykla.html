@@ -285,9 +285,9 @@ footer.site .fwrap{max-width:1100px;margin:0 auto;padding:0 24px}
 </nav>
 <div class="wrap">
   <header class="hero">
-    <div class="brand"><i></i><a href="nemokamai.html" style="color:inherit;text-decoration:none">← Nemokamai</a> · Claude nuo nulio</div>
+    <div class="brand"><i></i><a href="dirbtinis-intelektas.html" style="color:inherit;text-decoration:none">← Dirbtinis intelektas</a></div>
     <h1>Claude<br><span>nuo nulio</span></h1>
-    <p class="lead">Praktinis Claude gidas lietuviškai: 13 pamokų, asmeninis planas, funkcijų ir modelio parinkikliai, užklausų biblioteka naujausios Claude naujienos ir testas.</p>
+    <p class="lead">13 trumpų pamokų nuo pirmo pokalbio iki projektų, jungčių ir dizaino. Kiekvienoje pamokoje rasi iliustracijų ir vieną praktinę užduotį. Pradžiai užtenka pirmojo lygio: apie 25 minutės.</p>
     <div class="progress" aria-live="polite">
       <div class="progress-top"><span>Tavo progresas</span><b id="progText">0 / 13 pamokų</b></div>
       <div class="bar"><div id="progBar"></div></div>
@@ -297,94 +297,17 @@ footer.site .fwrap{max-width:1100px;margin:0 auto;padding:0 24px}
 
   <nav class="sections" aria-label="Skyriai">
     <ul>
-      <li><a class="home" href="nemokamai.html">← Nemokamai</a></li>
-      <li><a href="#planas">Mano planas</a></li>
-      <li><a href="#verslui">Uždirbk su DI</a></li>
-      <li><a href="#kelias">Kelias</a></li>
+      <li><a class="home" href="dirbtinis-intelektas.html">← Dirbtinis intelektas</a></li>
       <li><a href="#pamokos">Pamokos</a></li>
       <li><a href="#parinkiklis">Ką rinktis?</a></li>
-      <li><a href="#konstruktorius">Užklausų kūrėjas</a></li>
       <li><a href="#uzklausos">Užklausos</a></li>
       <li><a href="#naujienos">Naujienos</a></li>
       <li><a href="#testas">Testas</a></li>
-      <li><a href="#toliau">Kas toliau</a></li>
     </ul>
   </nav>
 
-  <section id="planas">
-    <div class="sec-head">
-      <span class="eyebrow">Asmeniškai tau</span>
-      <h2>Tavo Claude planas per 1 minutę</h2>
-      <p class="muted">Papasakok trumpai apie savo darbą ir gausi tris pirmas užduotis su paruoštomis užklausomis, pamokų eilę ir tai, ką verta prijungti.</p>
-    </div>
-    <form class="form" id="planForm" novalidate>
-      <div class="field"><label for="pWork">Kuo užsiimi?</label><input type="text" id="pWork" placeholder="Pvz., turiu grožio saloną ir pati veduosi Instagram" maxlength="200"></div>
-      <div class="field"><span>Ką dažniausiai darai darbe?</span><div class="chips" id="pTasks" role="group" aria-label="Darbai"></div></div>
-      <div class="field"><span>Kokius įrankius naudoji?</span><div class="chips" id="pTools" role="group" aria-label="Įrankiai"></div></div>
-      <div class="field"><label for="pLevel">Kiek naudojai Claude?</label><select id="pLevel"><option value="0">Dar niekada</option><option value="1">Kelis kartus bandžiau</option><option value="2">Naudoju reguliariai</option></select></div>
-      <div class="field"><label for="pPlan">Koks tavo Claude planas?</label><select id="pPlan"><option value="free">Free (nemokamas)</option><option value="paid">Pro, Max ar Team</option><option value="none">Dar neturiu paskyros</option></select></div>
-      <button class="btn" id="pGo" type="submit">Sukurti mano planą</button>
-      <p class="status" id="pStatus" aria-live="polite"></p>
-    </form>
-    <div class="plan" id="planOut" hidden></div>
-  </section>
 
-  <section id="verslui">
-    <div class="sec-head">
-      <span class="eyebrow">Pinigai ir verslas</span>
-      <h2>Ką DI gali duoti būtent tau?</h2>
-      <p class="muted">Atsakyk į kelis klausimus ir gausi konkrečius pasiūlymus. Pabaigoje rasi santrauką, kurią gali atsiųsti Erikai ir aptarti, kaip tai įgyvendinti.</p>
-    </div>
-    <div class="tabs" role="tablist" aria-label="Klausimynai">
-      <button class="tab" role="tab" id="tabEarn" aria-selected="true" aria-controls="earnPane">Kaip uždirbti su DI</button>
-      <button class="tab" role="tab" id="tabBiz" aria-selected="false" aria-controls="bizPane">DI mano versle</button>
-    </div>
 
-    <form class="form" id="earnPane" role="tabpanel" aria-labelledby="tabEarn" novalidate>
-      <div class="field"><label for="eNow">Ką dabar dirbi arba kokia tavo patirtis?</label><textarea id="eNow" maxlength="400" placeholder="Pvz., 8 metus dirbu buhaltere, laisvalaikiu fotografuoju"></textarea></div>
-      <div class="field"><span>Ką moki ar mėgsti daryti?</span><div class="chips" id="eSkills" role="group" aria-label="Įgūdžiai"></div></div>
-      <div class="field"><label for="eTime">Kiek laiko per savaitę gali skirti?</label><select id="eTime"><option>iki 5 valandų</option><option>5–15 valandų</option><option>daugiau nei 15 valandų</option></select></div>
-      <div class="field"><label for="eGoal">Ko sieki?</label><select id="eGoal"><option>papildomų pajamų šalia darbo</option><option>pakeisti darbą ar profesiją</option><option>auginti savo esamą verslą</option></select></div>
-      <div class="field"><label for="eAi">Kiek dabar naudoji DI?</label><select id="eAi"><option>beveik nenaudoju</option><option>kartais paklausiu ChatGPT ar Claude</option><option>naudoju kasdien darbe</option></select></div>
-      <button class="btn" id="eGo" type="submit">Parodyk mano galimybes</button>
-      <p class="status" id="eStatus" aria-live="polite"></p>
-    </form>
-
-    <form class="form" id="bizPane" role="tabpanel" aria-labelledby="tabBiz" novalidate hidden>
-      <div class="field"><label for="zWhat">Kokia tavo veikla?</label><input type="text" id="zWhat" maxlength="200" placeholder="Pvz., kirpykla Kaune, 2 darbuotojos"></div>
-      <div class="field"><label for="zTeam">Kiek žmonių dirba?</label><select id="zTeam"><option>tik aš</option><option>2–5</option><option>6–20</option><option>daugiau nei 20</option></select></div>
-      <div class="field"><span>Kur labiausiai stringa?</span><div class="chips" id="zPain" role="group" aria-label="Problemos"></div></div>
-      <div class="field"><label for="zHours">Kiek laiko per savaitę tai suvalgo?</label><select id="zHours"><option>iki 3 valandų</option><option>3–10 valandų</option><option>daugiau nei 10 valandų</option></select></div>
-      <div class="field"><label for="zTools">Kokias programas naudojate?</label><input type="text" id="zTools" maxlength="200" placeholder="Pvz., Gmail, Excel, Instagram, rezervacijų sistema"></div>
-      <div class="field"><label for="zTried">Ką jau bandėte su DI?</label><select id="zTried"><option>dar nieko</option><option>kartais naudojame ChatGPT ar Claude</option><option>DI naudojame kasdien</option></select></div>
-      <div class="field"><label for="zWish">Ką labiausiai norėtum, kad kas nors padarytų už tave?</label><textarea id="zWish" maxlength="400" placeholder="Pvz., kad kas nors atsakinėtų į klientų žinutes vakarais"></textarea></div>
-      <button class="btn" id="zGo" type="submit">Parodyk, kur DI padės</button>
-      <p class="status" id="zStatus" aria-live="polite"></p>
-    </form>
-
-    <div class="plan" id="mOut" hidden></div>
-    <div class="handoff" id="mHand" hidden>
-      <h3>Nori tai įgyvendinti? Atsiųsk santrauką Erikai</h3>
-      <div class="field"><label for="mContact">Tavo vardas ir kontaktas (nebūtina)</label><input type="text" id="mContact" maxlength="120" placeholder="Vardas, telefonas ar el. paštas"></div>
-      <div id="mBrief"></div>
-      <ol style="margin:0;padding-left:1.2em;display:grid;gap:4px;font-size:.92rem"><li>Paspausk „Kopijuoti“ prie santraukos.</li><li>Atidaryk Instagram arba Telegram ir įklijuok žinutėje.</li></ol>
-      <div class="row"><a class="btn" href="https://ig.me/m/erika.marketingas" target="_blank" rel="noopener">Rašyti Instagram</a><a class="btn ghost" href="https://t.me/ErikaKarta" target="_blank" rel="noopener">Atidaryti Telegram</a></div>
-      <p class="status">Instagram: @erika.marketingas · Telegram: ErikaKarta</p>
-    </div>
-  </section>
-
-  <section id="kelias">
-    <div class="sec-head">
-      <span class="eyebrow">Pasirink, nuo ko pradėti</span>
-      <h2>Trys keliai pagal tai, ko reikia šiandien</h2>
-    </div>
-    <div class="paths" role="group" aria-label="Mokymosi keliai">
-      <button class="path" data-path="zero" aria-pressed="false"><i class="dot" style="background:var(--new)"></i><b>Pradėti nuo nulio</b><span>Niekada nenaudojau Claude arba tik bandžiau.</span></button>
-      <button class="path" data-path="find" aria-pressed="false"><i class="dot" style="background:var(--warn)"></i><b>Rasti funkciją</b><span>Claude jau naudoju, noriu suprasti konkrečią funkciją.</span></button>
-      <button class="path" data-path="work" aria-pressed="false"><i class="dot" style="background:var(--accent)"></i><b>Perduoti Claude darbą</b><span>Noriu ne tik kalbėtis, bet atlikti realų darbą.</span></button>
-    </div>
-    <div class="path-out" id="pathOut"></div>
-  </section>
 
   <section id="pamokos">
     <div class="sec-head">
@@ -412,24 +335,6 @@ footer.site .fwrap{max-width:1100px;margin:0 auto;padding:0 24px}
     <div class="answer" id="modelOut"></div>
   </section>
 
-  <section id="konstruktorius">
-    <div class="sec-head">
-      <span class="eyebrow">Interaktyvu</span>
-      <h2>Užklausų kūrėjas</h2>
-      <p class="muted">Gera užklausa turi keturias dalis: kas tu, ko nori, kontekstą ir rezultato formą. Užpildyk laukus ir užklausa susidės pati.</p>
-    </div>
-    <form class="form" id="bForm" novalidate>
-      <div class="field"><label for="bRole">Kas tu?</label><input type="text" id="bRole" value="nekilnojamojo turto agentė Vilniuje" maxlength="160"></div>
-      <div class="field"><label for="bType">Ko nori?</label><select id="bType"></select></div>
-      <div class="field"><label for="bTopic">Apie ką?</label><input type="text" id="bTopic" value="naują 2 kambarių butą Žirmūnuose" maxlength="200"></div>
-      <div class="field"><label for="bCtx">Kontekstas</label><textarea id="bCtx" maxlength="600">Pirkėjai dažniausiai jaunos šeimos. Svarbu: šalia mokykla, renovuotas namas, kaina 165 000 €.</textarea><small>Kam skirta, kas svarbu, ko vengti. Kuo daugiau konteksto, tuo geresnis atsakymas.</small></div>
-      <div class="field"><span>Rezultato forma</span><div class="chips" id="bFormat" role="group" aria-label="Forma"></div></div>
-      <div class="field"><label for="bTone">Tonas</label><select id="bTone"><option>draugiškas</option><option>profesionalus</option><option>tiesus ir trumpas</option><option>įkvepiantis</option></select></div>
-    </form>
-    <div id="bOut"></div>
-    <div class="row"><button class="btn ghost" id="bImprove" type="button" hidden>Patobulinti su Claude</button><span class="status" id="bStatus" aria-live="polite"></span></div>
-    <div id="bBetter"></div>
-  </section>
 
   <section id="uzklausos">
     <div class="sec-head">
@@ -660,7 +565,7 @@ const KEY="claude-mokykla-v1";
 let state={done:[],quiz:{}};
 try{const s=JSON.parse(localStorage.getItem(KEY)||"null");if(s)state=Object.assign(state,s)}catch(e){}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}}
-const $=s=>document.querySelector(s);
+const _void=document.createElement('div');const $=s=>document.querySelector(s)||_void;
 const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const pad=n=>String(n).padStart(2,"0");
 
@@ -801,28 +706,28 @@ function renderCert(){
   $("#certTitle").textContent=$("#certName").value.trim()||"Tavo vardas";
 }
 /* money & business */
-const ESKILLS=["Rašyti tekstus","Dizainas ir vizualai","Socialiniai tinklai","Pardavimai ir bendravimas","Mokyti kitus","Organizuoti ir planuoti","Skaičiai ir lentelės","Technologijos","Fotografija ar video"];
+const ESKILLS=["Video ir montavimas","Socialiniai tinklai","Rinkodara ir analizė","Dizainas ir vizualai","Rašyti tekstus","Pardavimai ir bendravimas","Skaičiai ir ataskaitos","Technologijos","Mokyti kitus"];
 const ZPAINS=["Atsakymai klientams","Turinys socialiniuose tinkluose","Pasiūlymai ir sąmatos","Dokumentai ir administravimas","Naujų klientų paieška","Komandos organizavimas","Ataskaitos ir skaičiai","Rezervacijos ir priminimai"];
 const IDEALIB={
- "Rašyti tekstus":{t:"Tekstai verslams su DI",w:"Rašai įrašus, naujienlaiškius ir svetainių tekstus smulkiems verslams. Claude paruošia juodraščius, tu atneši toną ir patirtį.",p:"Smulkūs verslai be marketingo žmogaus",f:"Paruošk 3 pavyzdinius tekstus pažįstamam verslui nemokamai ir paprašyk atsiliepimo."},
- "Dizainas ir vizualai":{t:"Vizualų paketai per Claude Design",w:"Kuri karuseles, skrajutes ir pristatymus. Darbas, kuris užtrukdavo dieną, užtrunka valandą.",p:"Salonai, kavinės, renginių organizatoriai",f:"Sukurk 5 karuselių šabloną vienai nišai ir parodyk jį savo socialiniuose tinkluose."},
- "Socialiniai tinklai":{t:"Socialinių tinklų priežiūra",w:"Valdai kelių verslų paskyras: Claude padeda planuoti temas, rašyti tekstus ir atsakymus komentaruose.",p:"Verslai, kurie neturi laiko soc. tinklams",f:"Pasiūlyk vienam verslui mėnesio turinio planą kaip bandomąjį darbą."},
- "Pardavimai ir bendravimas":{t:"Pardavimų laiškai ir scenarijai",w:"Ruoši verslams laiškų sekas, pokalbių scenarijus ir atsakymų bazes klientams.",p:"Paslaugų verslai, e. parduotuvės",f:"Surašyk 10 dažniausių klientų klausimų atsakymus vienam verslui ir parodyk rezultatą."},
- "Mokyti kitus":{t:"DI mokymai savo srities žmonėms",w:"Moki savo profesijos kolegas naudotis DI jų darbe. Tavo pranašumas: žinai jų kasdienybę.",p:"Kolegos iš tavo profesijos ar srities",f:"Surenk 5 žmones į nemokamą valandos dirbtuvę ir sužinok, už ką jie mokėtų."},
- "Organizuoti ir planuoti":{t:"Virtuali asistentė su DI",w:"Tvarkai verslininkams paštą, kalendorių, dokumentus. Claude padaro rutiną, tu prižiūri kokybę.",p:"Užimti verslininkai, specialistai",f:"Aprašyk 3 paslaugas su aiškiu rezultatu ir pasiūlyk jas dviem pažįstamiems."},
- "Skaičiai ir lentelės":{t:"Ataskaitos ir analizė smulkiam verslui",w:"Iš verslo lentelių ruoši aiškias mėnesio ataskaitas ir įžvalgas. Claude padeda analizuoti, tu paaiškini.",p:"Parduotuvės, paslaugų verslai",f:"Pasiūlyk vienam verslui nemokamą jų pardavimų apžvalgą."},
- "Technologijos":{t:"DI įdiegimas verslams",w:"Prijungi verslui Claude prie jų įrankių, sukuri projektus ir įgūdžius. Rinka tokių žmonių labai stokoja.",p:"Verslai, kurie nori DI, bet nežino nuo ko pradėti",f:"Įdiek Claude savo arba pažįstamo veikloje ir aprašyk rezultatą kaip atvejo studiją."},
- "Fotografija ar video":{t:"Trumpi video verslams",w:"Kuri reels ir trumpus video. Claude padeda su scenarijais, kabliukais ir aprašymais, todėl dirbi greičiau.",p:"Kavinės, salonai, vietiniai prekės ženklai",f:"Nufilmuok 3 reels vienam verslui ir pasidalink rezultatais."}
+ "Video ir montavimas":{t:"Reels montavimo agentas",w:"Agentas iš neapdorotos medžiagos pats sukarpo video, uždeda subtitrus, grafiką ir muziką pagal kliento prekės ženklą. Tu kontroliuoji kokybę, o vieno Reels gamyba sutrumpėja nuo kelių valandų iki kelių minučių.",x:"Claude Code, įgūdžiai (Skills), CapCut arba DaVinci",p:"Ekspertai ir verslai, kurie filmuoja, bet neturi laiko montuoti",f:"Sumontuok agentu 5 Reels savo ar pažįstamo paskyrai ir parodyk rezultatą prieš ir po."},
+ "Socialiniai tinklai":{t:"Konkurentų ir rinkos analizės agentas",w:"Agentas surenka konkurentų Instagram turinį, randa, kas veikia ir kokias problemas kelia auditorija komentaruose, ir pagal tai sudaro 30 dienų turinio planą su Reels scenarijais.",x:"Claude, Apify, projektas su kliento duomenimis",p:"Ekspertai, salonai, e. parduotuvės, SMM specialistai",f:"Atlik tokią analizę vienam verslui ir parodyk jam 10 idėjų iš jo konkurentų."},
+ "Rinkodara ir analizė":{t:"Savaitinis analitikos agentas",w:"Kas pirmadienį agentas pats surenka skaičius iš socialinių tinklų, svetainės ir pardavimų, palygina su praėjusia savaite ir atsiunčia aiškų veiksmų planą. Verslas gauna rezultatus, o ne lenteles.",x:"Claude Scheduled užduotys, jungtys (Metricool, Google Sheets, Gmail)",p:"Verslai, kurie investuoja į rinkodarą, bet nemato, kas veikia",f:"Paleisk tokį agentą savo paskyrai mėnesiui ir užfiksuok, ką jis atrado."},
+ "Dizainas ir vizualai":{t:"Interaktyvūs lead magnetai",w:"Vietoj PDF kuri testus, skaičiuokles ir diagnostikas, kurie žmogui duoda asmenišką atsakymą ir surenka kontaktą. Su Claude tokį puslapį sukuri per dieną.",x:"Claude, Claude Design, statinė svetainė",p:"Treneriai, konsultantai, kursų kūrėjai",f:"Sukurk vieną interaktyvų testą savo nišai ir paleisk jį Instagram profilyje."},
+ "Rašyti tekstus":{t:"Turinio gamybos agentas",w:"Iš vieno video ar pokalbio agentas sukuria visos savaitės turinį: Reels scenarijus, karuseles, naujienlaiškį ir straipsnį. Tu parduodi ne tekstus, o veikiančią turinio sistemą.",x:"Claude projektas, įgūdžiai (Skills), Design",p:"Ekspertai ir mažos įmonės, kurios nespėja kurti turinio",f:"Iš vieno savo video agentu pagamink 10 turinio vienetų ir parodyk procesą."},
+ "Pardavimai ir bendravimas":{t:"Klientų žinučių agentas",w:"Agentas pagal verslo kainas, paslaugas ir toną paruošia atsakymus į žinutes ir laiškus, primena apie neatsakytas užklausas. Žmogui lieka tik patvirtinti.",x:"Claude projektas, Gmail ir kalendoriaus jungtys",p:"Paslaugų verslai, kuriems vakarais užklausos lieka neatsakytos",f:"Surink vieno verslo 20 dažniausių klausimų ir parodyk, kaip agentas į juos atsako."},
+ "Skaičiai ir ataskaitos":{t:"Gyvos verslo suvestinės",w:"Kuri suvestines, kurios atsinaujina pačios: pardavimai, užklausos, turinio rezultatai vienoje vietoje. Verslininkas mato situaciją per minutę.",x:"Claude Dashboards, Google Sheets, jungtys",p:"Parduotuvės, salonai, paslaugų verslai su keliais kanalais",f:"Padaryk tokią suvestinę savo veiklai ir naudok ją kaip pavyzdį."},
+ "Technologijos":{t:"Svetainės su DI per kelias dienas",w:"Kuri verslams svetaines, nusileidimo puslapius ir web versijas be programuotojo: tekstai, dizainas, interaktyvūs įrankiai. Talpinimas gali nekainuoti nieko.",x:"Claude Code, GitHub, Cloudflare arba GitHub Pages",p:"Ekspertai ir smulkūs verslai be svetainės arba su pasenusia",f:"Perdaryk vieno pažįstamo verslo svetainę ir paskelbk ją kaip atvejo studiją."},
+ "Mokyti kitus":{t:"DI agentų rinkinys tavo nišai",w:"Supakuoji agentus, įgūdžius ir užklausas vienai profesijai (pvz., NT agentams ar kosmetologėms) ir parduodi kaip produktą su mokymu, kaip juo naudotis.",x:"Claude įgūdžiai ir papildiniai (Skills, Plugins)",p:"Tavo profesijos kolegos",f:"Paklausk 5 kolegų, kuri užduotis jiems suvalgo daugiausia laiko, ir sukurk agentą jai."}
 };
 const PAINLIB={
- "Atsakymai klientams":{s:"Atsakymų bazė ir šablonai",h:"Claude projektas su dažniausiais klausimais, kainomis ir tonu. Atsakymas paruošiamas per kelias sekundes.",t:"2–4 val. per savaitę"},
- "Turinys socialiniuose tinkluose":{s:"Mėnesio turinio planas per vieną pokalbį",h:"Projektas su prekės ženklo taisyklėmis, o Design kuria vizualus.",t:"3–5 val. per savaitę"},
- "Pasiūlymai ir sąmatos":{s:"Pasiūlymo įgūdis",h:"Vieną kartą aprašytas šablonas (Skill): naujas pasiūlymas paruošiamas per kelias minutes.",t:"1–3 val. per savaitę"},
- "Dokumentai ir administravimas":{s:"Dokumentų peržiūra ir santraukos",h:"Claude perskaito sutartis ir laiškus, išrašo datas ir įsipareigojimus į lentelę.",t:"2–3 val. per savaitę"},
- "Naujų klientų paieška":{s:"Klientų paieškos sistema",h:"Research surenka potencialius klientus, o Claude paruošia asmeniškas žinutes.",t:"2–4 val. per savaitę"},
- "Komandos organizavimas":{s:"Susitikimų užrašai ir užduotys",h:"Iš užrašų gauni nutarimus ir užduočių lentelę su atsakingais.",t:"1–2 val. per savaitę"},
- "Ataskaitos ir skaičiai":{s:"Automatinė savaitės ataskaita",h:"Scheduled užduotis kas pirmadienį surenka skaičius ir paruošia suvestinę.",t:"1–3 val. per savaitę"},
- "Rezervacijos ir priminimai":{s:"Priminimų ir žinučių šablonai",h:"Claude paruošia priminimų, padėkų ir atsiliepimų prašymų tekstus, o kalendoriaus jungtis padeda planuoti.",t:"1–2 val. per savaitę"}
+ "Atsakymai klientams":{s:"Klientų žinučių agentas",h:"Agentas žino jūsų kainas, paslaugas ir toną, paruošia atsakymus į žinutes ir laiškus ir primena apie neatsakytas užklausas. Jūs tik patvirtinate.",t:"3–5 val. per savaitę"},
+ "Turinys socialiniuose tinkluose":{s:"Turinio gamybos agentas",h:"Iš vieno video ar pokalbio agentas pagamina savaitės turinį: Reels scenarijus, karuseles ir tekstus pagal jūsų stilių. Montavimo agentas paruošia video.",t:"4–8 val. per savaitę"},
+ "Pasiūlymai ir sąmatos":{s:"Pasiūlymų agentas",h:"Iš pokalbio užrašų ar užklausos agentas per kelias minutes paruošia pasiūlymą pagal jūsų šabloną ir kainas.",t:"2–3 val. per savaitę"},
+ "Dokumentai ir administravimas":{s:"Dokumentų agentas",h:"Agentas perskaito sutartis, sąskaitas ir laiškus, išrašo datas bei įsipareigojimus ir primena, kas artėja.",t:"2–3 val. per savaitę"},
+ "Naujų klientų paieška":{s:"Rinkos analizės agentas ir interaktyvus lead magnetas",h:"Agentas analizuoja konkurentus ir auditorijos problemas, o interaktyvus testas ar skaičiuoklė svetainėje surenka kontaktus žmonių, kuriems tikrai reikia jūsų paslaugos.",t:"Daugiau užklausų be reklamos"},
+ "Komandos organizavimas":{s:"Susitikimų ir užduočių agentas",h:"Po susitikimo agentas parašo santrauką, išdalina užduotis ir primena terminus.",t:"1–2 val. per savaitę"},
+ "Ataskaitos ir skaičiai":{s:"Savaitinis analitikos agentas",h:"Kas pirmadienį agentas pats surenka skaičius iš socialinių tinklų, svetainės ir pardavimų ir atsiunčia, kas pavyko, kas ne ir ką daryti toliau.",t:"2–4 val. per savaitę"},
+ "Rezervacijos ir priminimai":{s:"Priminimų agentas",h:"Agentas pagal kalendorių paruošia priminimus, padėkas po vizito ir atsiliepimų prašymus.",t:"1–2 val. per savaitę"}
 };
 let eSel=new Set(),zSel=new Set(),mode="earn",lastBrief="";
 function renderMoneyChips(){
@@ -839,16 +744,16 @@ $("#tabEarn").addEventListener("click",()=>setTab("earn"));$("#tabBiz").addEvent
 
 function earnInput(){return {now:$("#eNow").value.trim(),skills:[...eSel],time:$("#eTime").value,goal:$("#eGoal").value,ai:$("#eAi").value}}
 function bizInput(){return {what:$("#zWhat").value.trim(),team:$("#zTeam").value,pains:[...zSel],hours:$("#zHours").value,tools:$("#zTools").value.trim(),tried:$("#zTried").value,wish:$("#zWish").value.trim()}}
-function earnRule(i){let k=i.skills.filter(x=>IDEALIB[x]);if(!k.length)k=["Socialiniai tinklai","Organizuoti ir planuoti","Rašyti tekstus"];
-  for(const x of ["Technologijos","Mokyti kitus","Rašyti tekstus"]){if(k.length>=3)break;if(!k.includes(x))k.push(x)}
-  return {intro:"Štai trys kryptys pagal tavo įgūdžius.",ideas:k.slice(0,3).map(x=>({title:IDEALIB[x].t,what:IDEALIB[x].w,who:IDEALIB[x].p,first:IDEALIB[x].f})),learn:["Projektai su taisyklėmis (09 pamoka)","Įgūdžiai pasikartojantiems darbams (05 pamoka)","Claude Design vizualams (10 pamoka)"],next:"Išsirink vieną kryptį ir šią savaitę padaryk pirmą žingsnį."}}
+function earnRule(i){let k=i.skills.filter(x=>IDEALIB[x]);if(!k.length)k=["Socialiniai tinklai","Video ir montavimas","Dizainas ir vizualai"];
+  for(const x of ["Socialiniai tinklai","Rinkodara ir analizė","Dizainas ir vizualai","Technologijos"]){if(k.length>=3)break;if(!k.includes(x))k.push(x)}
+  return {intro:"Štai trys paslaugos, kurias dar mažai kas siūlo ir už kurias verslai moka, nes jos sutaupo valandas kas savaitę.",ideas:k.slice(0,3).map(x=>({title:IDEALIB[x].t,what:IDEALIB[x].w,tools:IDEALIB[x].x,who:IDEALIB[x].p,first:IDEALIB[x].f})),learn:["Claude projektai ir įgūdžiai: tai agento „smegenys“ ir darbo taisyklės","Scheduled užduotys: agentas dirba pats, pavyzdžiui, kas pirmadienį","Apify: duomenų rinkimas iš Instagram ir svetainių analizei"],next:"Pirmą agentą sukurk sau. Kai jis veiks tavo veikloje, turėsi geriausią pavyzdį klientams."}}
 function bizRule(i){let k=i.pains.filter(x=>PAINLIB[x]);const picked=k.length;for(const x of ["Atsakymai klientams","Turinys socialiniuose tinkluose","Dokumentai ir administravimas","Pasiūlymai ir sąmatos"]){if(k.length>=3)break;if(!k.includes(x))k.push(x)}
-  return {summary:picked?`Daugiausia laiko tau atima: ${k.slice(0,picked).slice(0,3).join(", ").toLowerCase()}. Tai sritys, kur DI padeda greičiausiai, o šalia pridėjau dar kelias, kur nauda būna greita.`:"Štai sritys, kur DI smulkiam verslui padeda greičiausiai.",wins:k.slice(0,3).map(x=>({area:x,solution:PAINLIB[x].s,how:PAINLIB[x].h,saves:PAINLIB[x].t})),bigger:"Vėliau verta sujungti šiuos sprendimus į vieną Claude projektą su jūsų taisyklėmis, kainomis ir dokumentais.",help:"Erika gali padėti viską paruošti: prijungti įrankius, sukurti projektą ir įgūdžius bei apmokyti komandą."}}
+  return {summary:picked?`Daugiausia laiko tau atima: ${k.slice(0,picked).slice(0,3).join(", ").toLowerCase()}. Tai sritys, kur DI padeda greičiausiai, o šalia pridėjau dar kelias, kur nauda būna greita.`:"Štai sritys, kur DI smulkiam verslui padeda greičiausiai.",wins:k.slice(0,3).map(x=>({area:x,solution:PAINLIB[x].s,how:PAINLIB[x].h,saves:PAINLIB[x].t})),bigger:"Vėliau šiuos agentus galima sujungti į sistemą: vienas renka duomenis, kitas ruošia turinį, o trečias kas savaitę atsiskaito, kas pavyko.",help:"Erika gali pastatyti šiuos agentus jūsų verslui: prijungti įrankius, aprašyti jų darbo taisykles ir apmokyti komandą jais naudotis."}}
 function li(a){return a.map(x=>`<li>${esc(x)}</li>`).join("")}
 function renderEarn(r,ai){$("#mOut").hidden=false;$("#mOut").innerHTML=`<span class="eyebrow">${ai?"Paruošė Claude pagal tavo atsakymus":"Tavo galimybės"}</span><h3>${esc(r.intro)}</h3>
-  ${r.ideas.map((d,n)=>`<div class="idea"><b>${n+1}. ${esc(d.title)}</b><p>${esc(d.what)}</p><dl><dt>Kas mokės</dt><dd>${esc(d.who)}</dd><dt>Pirmas žingsnis</dt><dd>${esc(d.first)}</dd></dl></div>`).join("")}
+  ${r.ideas.map((d,n)=>`<div class="idea"><b>${n+1}. ${esc(d.title)}</b><p>${esc(d.what)}</p><dl>${d.tools?`<dt>Su kuo statoma</dt><dd>${esc(d.tools)}</dd>`:""}<dt>Kas mokės</dt><dd>${esc(d.who)}</dd><dt>Pirmas žingsnis</dt><dd>${esc(d.first)}</dd></dl></div>`).join("")}
   <div><span class="eyebrow">Ką išmokti pirmiausia</span><ul style="margin:6px 0 0;padding-left:1.1em;display:grid;gap:4px">${li(r.learn)}</ul></div><p><b>Kitas žingsnis.</b> ${esc(r.next)}</p>`}
-function renderBiz(r,ai){$("#mOut").hidden=false;$("#mOut").innerHTML=`<span class="eyebrow">${ai?"Paruošė Claude pagal tavo atsakymus":"Tavo verslo diagnozė"}</span><h3>Kur DI padės greičiausiai</h3><p>${esc(r.summary)}</p>
+function renderBiz(r,ai){$("#mOut").hidden=false;$("#mOut").innerHTML=`<span class="eyebrow">${ai?"Paruošė Claude pagal tavo atsakymus":"Tavo verslo diagnozė"}</span><h3>Agentai, kurie tau sutaupytų daugiausia laiko</h3><p>${esc(r.summary)}</p>
   ${r.wins.map((w,n)=>`<div class="idea"><b>${n+1}. ${esc(w.solution)}</b><dl><dt>Problema</dt><dd>${esc(w.area)}</dd><dt>Kaip veiks</dt><dd>${esc(w.how)}</dd><dt>Sutaupysi</dt><dd>${esc(w.saves)}</dd></dl></div>`).join("")}
   <p><b>Didesnis žingsnis.</b> ${esc(r.bigger)}</p><p><b>Kur reikės pagalbos.</b> ${esc(r.help)}</p>`}
 function brief(){
@@ -866,20 +771,20 @@ function showHand(kind,i,r){lastBrief={kind,i,r};$("#mHand").hidden=false;brief(
 $("#earnPane").addEventListener("submit",async e=>{e.preventDefault();const i=earnInput(),base=earnRule(i),sm=await getSample();
   if(!sm||i.now.length<4){renderEarn(base,false);showHand("earn",i,base);$("#eStatus").textContent=sm?"Parašyk daugiau apie savo patirtį, ir Claude pasiūlys tikslesnių idėjų.":"";$("#mOut").scrollIntoView({block:"start"});return}
   const b=$("#eGo");b.disabled=true;$("#eStatus").textContent="Claude ieško tau tinkančių krypčių. Tai gali užtrukti iki minutės…";
-  const prompt=`Tu esi praktiška karjeros ir verslo patarėja Lietuvoje, padedanti žmonėms uždirbti naudojant DI įrankius (ypač Claude). Pasiūlyk 3 realistiškas pajamų kryptis šiam žmogui.
+  const prompt=`Tu esi praktiška karjeros ir verslo patarėja Lietuvoje, padedanti žmonėms uždirbti naudojant DI įrankius (ypač Claude). Pasiūlyk 3 novatoriškas pajamų kryptis šiam žmogui.
 Apie žmogų:
 - Patirtis ir dabartinis darbas: ${i.now}
 - Įgūdžiai ir pomėgiai: ${i.skills.join(", ")||"nenurodė"}
 - Laikas per savaitę: ${i.time}
 - Tikslas: ${i.goal}
 - DI naudojimas: ${i.ai}
-Reikalavimai: kryptys turi remtis jo patirtimi (jo pranašumas prieš kitus), būti įgyvendinamos Lietuvos rinkoje su jo turimu laiku, o DI turi padėti dirbti greičiau ar geriau. Nežadėk konkrečių pajamų sumų. Nesiūlyk nieko neetiško ar apgaulingo.
+Reikalavimai: NESIŪLYK to, ką jau daro visi (tekstų rašymas su ChatGPT, „socialinių tinklų priežiūra“, virtuali asistentė, paprasti DI mokymai). Siūlyk paslaugas, kurias dar mažai kas siūlo: DI agentus verslams (pvz., Reels montavimo agentas, konkurentų ir rinkos analizės agentas, kuris sudaro turinio planą, savaitinis analitikos agentas, kuris pats surenka skaičius ir duoda veiksmų planą, klientų žinučių agentas), interaktyvius lead magnetus (testai, skaičiuoklės, diagnostikos), svetaines ir web versijas, kuriamas su DI per kelias dienas, gyvas verslo suvestines, agentų rinkinius nišai. Kryptys turi remtis jo patirtimi, būti įgyvendinamos su jo turimu laiku. Nurodyk realius įrankius (Claude, Claude Code, Skills, Scheduled užduotys, Apify, jungtys). Nežadėk konkrečių pajamų sumų. Nesiūlyk nieko neetiško ar apgaulingo.
 Grąžink TIK JSON be jokio kito teksto:
-{"intro":"vienas sakinys, kreipiantis „tu“, koks jo didžiausias pranašumas","ideas":[{"title":"trumpas krypties pavadinimas","what":"1–2 sakiniai: ką jis darytų ir kaip padėtų DI","who":"kas konkrečiai jam mokėtų","first":"vienas konkretus pirmas žingsnis šią savaitę"}],"learn":["2–3 Claude dalykai, kuriuos jam išmokti pirmiausia"],"next":"vienas sakinys, nuo ko pradėti"}
+{"intro":"vienas sakinys, kreipiantis „tu“, koks jo didžiausias pranašumas","ideas":[{"title":"trumpas paslaugos pavadinimas","what":"1–2 sakiniai: ką konkrečiai statytų ir ką tai duoda klientui","tools":"su kokiais įrankiais statoma","who":"kas konkrečiai jam mokėtų","first":"vienas konkretus pirmas žingsnis šią savaitę"}],"learn":["2–3 Claude dalykai, kuriuos jam išmokti pirmiausia"],"next":"vienas sakinys, nuo ko pradėti"}
 Lygiai 3 idėjos. Rašyk natūralia, paprasta lietuvių kalba.`;
   try{const r=await sm.json(prompt,{modelTier:"default"});
     if(!r||!Array.isArray(r.ideas)||!r.ideas.length)throw{code:"bad"};
-    const out={intro:String(r.intro||base.intro),ideas:r.ideas.slice(0,3).map(d=>({title:String(d.title||""),what:String(d.what||""),who:String(d.who||""),first:String(d.first||"")})),learn:Array.isArray(r.learn)&&r.learn.length?r.learn.map(String).slice(0,3):base.learn,next:String(r.next||base.next)};
+    const out={intro:String(r.intro||base.intro),ideas:r.ideas.slice(0,3).map(d=>({title:String(d.title||""),what:String(d.what||""),tools:String(d.tools||""),who:String(d.who||""),first:String(d.first||"")})),learn:Array.isArray(r.learn)&&r.learn.length?r.learn.map(String).slice(0,3):base.learn,next:String(r.next||base.next)};
     renderEarn(out,true);showHand("earn",i,out);$("#eStatus").textContent="";
   }catch(err){renderEarn(base,false);showHand("earn",i,base);$("#eStatus").textContent=err&&err.code==="not_granted"?"Pasiūlymai sudaryti be Claude. Leidus puslapiui naudotis Claude, jie bus tikslesni.":"Parodžiau bendrus pasiūlymus pagal tavo atsakymus."}
   finally{b.disabled=false;$("#mOut").scrollIntoView({block:"start"})}
@@ -887,7 +792,7 @@ Lygiai 3 idėjos. Rašyk natūralia, paprasta lietuvių kalba.`;
 $("#bizPane").addEventListener("submit",async e=>{e.preventDefault();const i=bizInput(),base=bizRule(i),sm=await getSample();
   if(!sm||i.what.length<3){renderBiz(base,false);showHand("biz",i,base);$("#zStatus").textContent=sm?"Parašyk, kokia tavo veikla, ir Claude pateiks tikslesnę diagnozę.":"";$("#mOut").scrollIntoView({block:"start"});return}
   const b=$("#zGo");b.disabled=true;$("#zStatus").textContent="Claude analizuoja tavo verslą. Tai gali užtrukti iki minutės…";
-  const prompt=`Tu esi DI įdiegimo smulkiame versle konsultantė Lietuvoje. Įvertink, kur šiam verslui DI (ypač Claude) padėtų greičiausiai.
+  const prompt=`Tu esi DI įdiegimo smulkiame versle konsultantė Lietuvoje. Įvertink, kokie DI agentai šiam verslui sutaupytų daugiausia laiko arba atneštų daugiau klientų. Siūlyk agentus, kurie dirba patys (pvz., savaitinis analitikos agentas, turinio gamybos agentas, klientų žinučių agentas, rinkos analizės agentas) ir interaktyvius lead magnetus, o ne bendrus patarimus „naudok ChatGPT“.
 Apie verslą:
 - Veikla: ${i.what}
 - Darbuotojų: ${i.team}
@@ -1004,7 +909,7 @@ renderPlanChips();try{const sp=JSON.parse(localStorage.getItem(KEY+"-plan")||"nu
 initBuilder();
 renderMoneyChips();
 renderLessons();updateProgress();renderPath("zero");renderNeeds(0);renderModels(1);renderNews();renderQuiz();
-if(location.hash==="#verslas"){setTab("biz");document.getElementById("verslui").scrollIntoView()}else if(location.hash){const el=document.getElementById(location.hash.slice(1));if(el)el.scrollIntoView()}
+if(location.hash==="#verslas"){setTab("biz");document.getElementById("verslui").scrollIntoView()}else if(location.hash){const el=document.getElementById(location.hash.slice(1));if(el){if(el.tagName==="DETAILS")el.open=true;el.scrollIntoView()}}
 </script>
 <footer class="site">
   <div class="fwrap">
@@ -1020,10 +925,10 @@ if(location.hash==="#verslas"){setTab("biz");document.getElementById("verslui").
       <div>
         <h4>Nemokamai</h4>
         <a href="nemokamai.html">Visa nemokama medžiaga</a>
+        <a href="dirbtinis-intelektas.html">Dirbtinis intelektas</a>
         <a href="claude-mokykla.html">Claude nuo nulio</a>
-        <a href="komandos.html">ChatGPT komandos</a>
-        <a href="promptai.html">Promptų biblioteka</a>
-        <a href="instagram-algoritmas.html">Instagram algoritmas 2026</a>
+        <a href="di-uzdarbis.html">Kaip uždirbti su DI</a>
+        <a href="socialiniai-tinklai.html">Socialiniai tinklai</a>
       </div>
       <div>
         <h4>Susisiek</h4>
