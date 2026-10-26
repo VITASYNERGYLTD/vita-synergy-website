@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nemokamai · Erika Karta</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<meta name="description" content="Nemokami gidai, video pamokos ir įrankiai: dirbtinis intelektas ir socialiniai tinklai.">
+<meta name="description" content="Nemokamos pamokos, video ir klausimynai apie dirbtinį intelektą ir socialinius tinklus.">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Erika Karta">
 <link rel="canonical" href="https://www.vita-synergy.com/nemokamai">
 <meta property="og:title" content="Nemokamai · Erika Karta">
-<meta property="og:description" content="Nemokami gidai, video pamokos ir įrankiai: dirbtinis intelektas ir socialiniai tinklai.">
+<meta property="og:description" content="Nemokamos pamokos, video ir klausimynai apie dirbtinį intelektą ir socialinius tinklus.">
 <meta property="og:image" content="https://www.vita-synergy.com/erika-karta.jpg">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -127,11 +127,24 @@ a.card.feat:hover .go{background:var(--magenta);border-color:var(--magenta)}
 @media(max-width:480px){.wrap{padding-left:16px;padding-right:16px}}
 </style>
 <style>
+.card{padding:0;overflow:hidden}
+.cimg{display:block;width:100%;aspect-ratio:16/10;overflow:hidden;border-bottom:1px solid var(--line);background:var(--surface-2)}
+.cimg img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+a.card:hover .cimg img{transform:scale(1.03)}
+.cbody{display:flex;flex-direction:column;align-items:flex-start;padding:24px 24px 26px;flex:1;width:100%}
+.card.soon .cimg{opacity:.55}
+.cards.two{grid-template-columns:repeat(2,1fr)}
+@media(max-width:600px){.cards.two{grid-template-columns:1fr}}
+.door{padding:0}
+.door .dimg{display:block;aspect-ratio:16/9;overflow:hidden;border-bottom:1px solid var(--line)}
+.door .dimg img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.door:hover .dimg img{transform:scale(1.03)}
+.door .dbody{display:flex;flex-direction:column;gap:14px;padding:30px 30px 34px;flex:1}
 .crumb{display:inline-flex;gap:8px;align-items:center;font-size:.86rem;font-weight:500;color:var(--muted);text-decoration:none;margin-bottom:22px}
 .crumb:hover{color:var(--pink)}
 .doors{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:8px 0 64px}
 @media(max-width:760px){.doors{grid-template-columns:1fr}}
-.door{display:flex;flex-direction:column;gap:14px;min-height:300px;padding:38px 34px;border-radius:var(--radius);border:1px solid var(--line);background:var(--surface);color:var(--cream);text-decoration:none;transition:transform .25s ease,border-color .25s ease;position:relative;overflow:hidden}
+.door{display:flex;flex-direction:column;gap:0;border-radius:var(--radius);border:1px solid var(--line);background:var(--surface);color:var(--cream);text-decoration:none;transition:transform .25s ease,border-color .25s ease;position:relative;overflow:hidden}
 .door:hover{transform:translateY(-4px);border-color:var(--pink)}
 .door::after{content:"";position:absolute;right:-70px;bottom:-70px;width:220px;height:220px;border-radius:50%;border:1.5px solid var(--line-pink)}
 .door .num{font-family:'Playfair Display',serif;font-style:italic;color:var(--pink);font-size:1.1rem}
@@ -165,7 +178,7 @@ a.card.feat:hover .go{background:var(--magenta);border-color:var(--magenta)}
 <h1>Pasirink <span class="em">temą</span></h1>
 <p class="lead">Visa nemokama medžiaga suskirstyta į dvi temas. Pasirink, kas tau aktualu dabar.</p>
 </div></section>
-<section style="padding:0"><div class="wrap doors"><a class="door" href="dirbtinis-intelektas.html"><span class="num">01</span><h2>Dirbtinis intelektas</h2><p>Claude ir ChatGPT nuo nulio, video pamokos, DI agentai verslui ir paruoštos komandos.</p><span class="inside"><span>Video pamoka</span><span>Claude nuo nulio</span><span>Kaip uždirbti su DI</span><span>DI tavo versle</span><span>Komandos ir promptai</span></span><span class="go">Atidaryti →</span></a><a class="door" href="socialiniai-tinklai.html"><span class="num">02</span><h2>Socialiniai tinklai</h2><p>Kaip veikia Instagram algoritmas ir kaip turinys virsta klientais be cirkų ir trendų.</p><span class="inside"><span>Instagram algoritmas 2026</span><span>Pardavimų sistema</span></span><span class="go">Atidaryti →</span></a></div></section>
+<section style="padding:0"><div class="wrap doors"><a class="door" href="dirbtinis-intelektas.html"><span class="dimg"><img src="img/nemokamai/cover-video.webp" width="1200" height="750" alt=""></span><span class="dbody"><span class="num">01</span><h2>Dirbtinis intelektas</h2><p>Čia rasi video pamoką, Claude pamokas nuo nulio, klausimynus apie DI tavo darbe ir versle bei paruoštas komandas.</p><span class="inside"><span>Video pamoka</span><span>Claude nuo nulio</span><span>Klausimynai</span><span>Komandos ir promptai</span></span><span class="go">Atidaryti →</span></span></a><a class="door" href="socialiniai-tinklai.html"><span class="dimg"><img src="img/nemokamai/cover-socialiniai.webp" width="1200" height="750" alt=""></span><span class="dbody"><span class="num">02</span><h2>Socialiniai tinklai</h2><p>Čia sužinosi, kaip veikia Instagram algoritmas ir kaip turinys virsta klientais be cirkų ir trendų.</p><span class="inside"><span>Instagram algoritmas 2026</span><span>Pardavimų sistema</span></span><span class="go">Atidaryti →</span></span></a></div></section>
 <section class="final"><div class="wrap"><h2>Nori, kad tai <span class="em">dirbtų tavo versle</span>?</h2><p>Pirmas pokalbis nieko nekainuoja. Per 30 minučių pamatysime, kur DI ir turinio sistema tau sutaupytų daugiausia laiko.</p><a class="btn" href="https://tidycal.com/erikakartaseva/30minute-meetingerika" target="_blank" rel="noopener">Rezervuoti nemokamą pokalbį</a></div></section>
 </main>
 <footer class="site">

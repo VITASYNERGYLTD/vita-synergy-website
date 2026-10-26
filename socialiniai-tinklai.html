@@ -127,11 +127,24 @@ a.card.feat:hover .go{background:var(--magenta);border-color:var(--magenta)}
 @media(max-width:480px){.wrap{padding-left:16px;padding-right:16px}}
 </style>
 <style>
+.card{padding:0;overflow:hidden}
+.cimg{display:block;width:100%;aspect-ratio:16/10;overflow:hidden;border-bottom:1px solid var(--line);background:var(--surface-2)}
+.cimg img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+a.card:hover .cimg img{transform:scale(1.03)}
+.cbody{display:flex;flex-direction:column;align-items:flex-start;padding:24px 24px 26px;flex:1;width:100%}
+.card.soon .cimg{opacity:.55}
+.cards.two{grid-template-columns:repeat(2,1fr)}
+@media(max-width:600px){.cards.two{grid-template-columns:1fr}}
+.door{padding:0}
+.door .dimg{display:block;aspect-ratio:16/9;overflow:hidden;border-bottom:1px solid var(--line)}
+.door .dimg img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.door:hover .dimg img{transform:scale(1.03)}
+.door .dbody{display:flex;flex-direction:column;gap:14px;padding:30px 30px 34px;flex:1}
 .crumb{display:inline-flex;gap:8px;align-items:center;font-size:.86rem;font-weight:500;color:var(--muted);text-decoration:none;margin-bottom:22px}
 .crumb:hover{color:var(--pink)}
 .doors{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:8px 0 64px}
 @media(max-width:760px){.doors{grid-template-columns:1fr}}
-.door{display:flex;flex-direction:column;gap:14px;min-height:300px;padding:38px 34px;border-radius:var(--radius);border:1px solid var(--line);background:var(--surface);color:var(--cream);text-decoration:none;transition:transform .25s ease,border-color .25s ease;position:relative;overflow:hidden}
+.door{display:flex;flex-direction:column;gap:0;border-radius:var(--radius);border:1px solid var(--line);background:var(--surface);color:var(--cream);text-decoration:none;transition:transform .25s ease,border-color .25s ease;position:relative;overflow:hidden}
 .door:hover{transform:translateY(-4px);border-color:var(--pink)}
 .door::after{content:"";position:absolute;right:-70px;bottom:-70px;width:220px;height:220px;border-radius:50%;border:1.5px solid var(--line-pink)}
 .door .num{font-family:'Playfair Display',serif;font-style:italic;color:var(--pink);font-size:1.1rem}
@@ -166,7 +179,7 @@ a.card.feat:hover .go{background:var(--magenta);border-color:var(--magenta)}
 <h1>Socialiniai tinklai, kurie <span class="em">parduoda</span></h1>
 <p class="lead">Gidai apie tai, kaip veikia Instagram ir kaip turinys virsta klientais.</p>
 </div></section>
-<section class="group" id="gidai"><div class="wrap"><h2>Gidai ir straipsniai</h2><p class="sub">Skaityk ir iškart pritaikyk savo paskyrai.</p><div class="cards"><a class="card" href="instagram-algoritmas.html"><span class="tag">Gidas</span><span class="meta">Instagram · 2026</span><h3>Kaip Instagram sprendžia, kam parodyti tavo įrašą</h3><p>9 patikrintos taisyklės su konkrečiais veiksmais, planas 7 dienoms ir 2 minučių paskyros patikra.</p><span class="go">Skaityti →</span></a><a class="card" href="straipsnis-sistema.html"><span class="tag">Straipsnis</span><span class="meta">Sistema · Piltuvėlis</span><h3>Sistema, kuri chaotišką turinį paverčia klientais</h3><p>Kodėl peržiūros nėra verslas ir 6 lygiai, ant kurių stovi prognozuojami pardavimai.</p><span class="go">Skaityti →</span></a></div></div></section>
+<section class="group" id="gidai"><div class="wrap"><h2>Gidai ir straipsniai</h2><p class="sub">Skaityk ir iškart pritaikyk savo paskyrai.</p><div class="cards two"><a class="card" href="instagram-algoritmas.html"><span class="cimg"><img src="img/nemokamai/cover-instagram.webp" width="1200" height="750" loading="lazy" alt=""></span><span class="cbody"><span class="tag">Gidas</span><span class="meta">Instagram · 2026</span><h3>Kaip Instagram sprendžia, kam parodyti tavo įrašą</h3><p>Čia sužinosi 9 patikrintas 2026 m. taisykles, kaip Instagram sprendžia, kam rodyti tavo įrašą, gausi 7 dienų planą ir 2 minučių paskyros patikrą.</p><span class="go">Skaityti →</span></span></a><a class="card" href="straipsnis-sistema.html"><span class="cimg"><img src="img/nemokamai/cover-sistema.webp" width="1200" height="750" loading="lazy" alt=""></span><span class="cbody"><span class="tag">Straipsnis</span><span class="meta">Sistema · Piltuvėlis</span><h3>Sistema, kuri chaotišką turinį paverčia klientais</h3><p>Čia sužinosi, kodėl peržiūros dar nėra verslas ir ant kokių 6 lygių stovi prognozuojami pardavimai per socialinius tinklus.</p><span class="go">Skaityti →</span></span></a></div></div></section>
 <section class="final"><div class="wrap"><h2>Nori, kad tai <span class="em">dirbtų tavo versle</span>?</h2><p>Pirmas pokalbis nieko nekainuoja. Per 30 minučių pamatysime, kur DI ir turinio sistema tau sutaupytų daugiausia laiko.</p><a class="btn" href="https://tidycal.com/erikakartaseva/30minute-meetingerika" target="_blank" rel="noopener">Rezervuoti nemokamą pokalbį</a></div></section>
 </main>
 <footer class="site">
