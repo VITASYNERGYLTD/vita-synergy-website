@@ -412,6 +412,12 @@ footer.site .fwrap{max-width:1100px;margin:0 auto;padding:0 24px}
         <li><a href="https://www.anthropic.com/news/barclays-scales-claude" target="_blank" rel="noopener">Barclays scales Claude</a></li>
         <li><a href="https://www.aboutamazon.com/news/innovation-at-amazon/seller-assistant-plugin-amazon-quick-claude" target="_blank" rel="noopener">Amazon Seller Assistant plugin</a></li>
         <li><a href="https://www.reuters.com/business/finance/anthropic-warns-ai-may-pose-existential-risks-humanity-ipo-filing-2026-09-29/" target="_blank" rel="noopener">Reuters: Anthropic IPO filing</a></li>
+        <li><a href="https://www.anthropic.com/news/s1-sec" target="_blank" rel="noopener">Anthropic files S-1 with the SEC</a></li>
+        <li><a href="https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan" target="_blank" rel="noopener">What is the Ultra plan?</a></li>
+        <li><a href="https://claude.com/resources/articles/expanding-claude-for-nonprofits" target="_blank" rel="noopener">Expanding Claude for Nonprofits</a></li>
+        <li><a href="https://claude.com/resources/articles/unified-claude-enterprise" target="_blank" rel="noopener">Claude Cowork and chat come together for Enterprise</a></li>
+        <li><a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" target="_blank" rel="noopener">Donating Agent Skills to the Agentic AI Foundation</a></li>
+        <li><a href="https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/" target="_blank" rel="noopener">TechCrunch: Claude for Startups</a></li>
         <li><a href="https://releasebot.io/updates/anthropic/claude" target="_blank" rel="noopener">Releasebot: Claude updates</a></li>
       </ol>
     </div>
@@ -435,7 +441,7 @@ const LESSONS=[
   pts:["Modelis yra Claude versija. Jos skiriasi kaip skirtingos kvalifikacijos darbuotojai: vienas galvoja ilgiau, kitas atsako akimirksniu.",
        "Modelį gali keisti net pokalbio viduryje: paspausk modelio pavadinimą prie įvesties laukelio.",
        "Effort nustato, kiek modelis „galvoja“ prieš atsakydamas: Low, Medium (rekomenduojamas), High, Extra ir Max. Kuo aukštesnis lygis, tuo atsakymas išsamesnis, bet ilgiau trunka ir greičiau naudoja limitą. Max naudoja 4 kartus ir daugiau.",
-       "Šiuo metu yra keturi modeliai: Haiku 5.5 (greičiausias), Sonnet 5.5 (paprastesniems darbams), Opus 5.5 (sudėtingiems ir kasdieniams darbams) ir Fable 5.1 (sunkiausiems iššūkiams). Fable 5.1 įeina į Max planą, o Pro plane naudojamas už papildomus kreditus. Senesni modeliai yra skiltyje More models. Interaktyvų parinkiklį rasi skiltyje „Ką rinktis?“.",
+       "Šiuo metu yra keturi modeliai: Haiku 5.5 (greičiausias), Sonnet 5.5 (paprastesniems darbams), Opus 5.5 (sudėtingiems ir kasdieniams darbams) ir Fable 5.1 (sunkiausiems iššūkiams). Fable 5.1 įeina į Max ir Ultra planus, o Pro plane naudojamas už papildomus kreditus. Senesni modeliai yra skiltyje More models. Interaktyvų parinkiklį rasi skiltyje „Ką rinktis?“.",
        "Galingesni modeliai limitą naudoja greičiau nei Sonnet ar Haiku."],
   task:"Atverk modelių sąrašą ir surask, kuris modelis pasirinktas tavo paskyroje."},
  {n:3,t:"Failai, ekrano nuotraukos ir paieška",when:"Kai nori pateikti failą arba ieškoti internete.",
@@ -499,7 +505,7 @@ const LESSONS=[
        "Trys pasitikėjimo režimai: Ask (rodo kiekvieną pataisymą), Code (taiso pats, klausia prieš komandas), Plan (pirmiausia aprašo planą, nieko neliesdamas)."],
   task:"Jei aktualu, nuspręsk, kurio režimo (Ask, Code ar Plan) reikia tavo užduočiai."},
  {n:12,t:"Kasdienis naudojimas ir saugumas",when:"Kai tikrini planus, limitus ir saugumą.",
-  pts:["Planai: Free pabandyti (jame jau veikia Docs, Slides ir Design), Pro kasdieniam darbui, Max intensyviam, Team ir Enterprise komandoms. Kainas tikrink claude.ai/pricing.",
+  pts:["Planai: Free pabandyti (jame jau veikia Docs, Slides ir Design), Pro kasdieniam darbui, Max intensyviam, Ultra pačiam intensyviausiam (be 5 valandų limito), Team ir Enterprise komandoms. Kainas tikrink claude.ai/pricing.",
        "Limitas atsinaujina kas kelias valandas. Ilgi pavedimai ir Research jį naudoja sparčiau.",
        "Balso režimas: mikrofono ženkliukas programoje ir telefone.",
        "Ilgame pokalbyje Claude gali „pamesti giją“. Pradėk naują ir trumpai apibendrink, kas svarbu.",
@@ -533,23 +539,26 @@ const MODELS=[
  ["Haiku 5.5","haiku",22,"Greičiausias ir pigiausias. Trumpiems, paprastiems atsakymams ir dideliems kiekiams.","Išleistas spalio 7 d."],
  ["Sonnet 5.5","sonetas",42,"Efektyviausias paprastesniems darbams: laiškai, trumpi tekstai, santraukos. Taupo limitą.","Išleistas rugsėjo 28 d."],
  ["Opus 5.5","opusas",66,"Sudėtingiems ir kasdieniams darbams. Geras numatytasis pasirinkimas daugumai užduočių. Anthropic teigimu, daugumoje darbų prilygsta Fable 5.1.","Išleistas rugsėjo 22 d."],
- ["Fable 5.1","pasakėčia",88,"Sunkiausiems iššūkiams. Įeina į Max planą, o Pro plane naudojamas už papildomus kreditus.","Išleistas rugsėjo 1 d."]
+ ["Fable 5.1","pasakėčia",88,"Sunkiausiems iššūkiams. Įeina į Max ir Ultra planus, o Pro plane naudojamas už papildomus kreditus.","Išleistas rugsėjo 1 d."]
 ];
 
 const NEWS=[
+ {d:"2026-10-30",c:"f",k:1,t:"Naujas Ultra planas",x:"Brangiausias asmeninis planas Max 20x pervadintas Ultra. Jis kainuoja 200 USD per mėnesį, duoda 10 kartų daugiau naudojimo nei Pro per savaitę, o patvirtintoms paskyroms nebelieka 5 valandų limito. Esami prenumeratoriai perkelti automatiškai, kaina nepasikeitė.",w:"Daugumai pradedančiųjų užtenka Pro. Max (100 USD) ir Ultra verta tik tada, kai Claude dirba visą dieną ir nuolat atsiremi į limitą."},
+ {d:"2026-10-26",c:"b",k:1,t:"Anthropic ruošiasi į biržą",x:"Bendrovė JAV vertybinių popierių komisijai pateikė viešą S-1 paraišką. Akcijomis planuojama prekiauti Nasdaq biržoje simboliu ANT. Akcijų skaičius ir kaina dar nenustatyti.",w:"Viešai kotiruojama įmonė turės reguliariai atsiskaityti apie pajamas ir rizikas, tad apie tiekėją, kuriuo remiasi tavo verslas, žinosi daugiau."},
+ {d:"2026-10-26",c:"b",t:"Claude ne pelno organizacijoms",x:"Patvirtintoms ne pelno organizacijoms Team ir Enterprise planuose nemokamai įdiegiamas papildinys lėšų paieškai, paraiškoms, rinkodarai ir darbuotojų paieškai. Team planą dabar galima pirkti nuo dviejų žmonių, o Claude Code įeina be papildomo mokesčio.",w:"Jei vadovauji asociacijai ar labdaros organizacijai, Claude gali padėti rašyti paraiškas ir ieškoti rėmėjų už nedidelę kainą."},
+ {d:"2026-10-23",c:"f",t:"Vienas Claude ir Enterprise klientams",x:"Pokalbiai ir ilgos užduotys fone dabar sujungti į vieną Claude ir Enterprise plane. Pro ir Max planuose taip veikia nuo rugsėjo.",w:"Didelėse įmonėse dirbantys tavo klientai ar partneriai dabar naudoja tą patį Claude kaip ir tu."},
+ {d:"2026-10-22",c:"f",t:"Įgūdžiai tampa bendru standartu",x:"Anthropic perdavė įgūdžių (Agent Skills) standartą nepriklausomam Agentic AI Foundation fondui prie Linux Foundation. Įgūdžius jau palaiko daugiau nei 70 platformų, tarp jų ChatGPT, Cursor ir GitHub Copilot.",w:"Kartą aprašytas įgūdis tinka ne tik Claude. Tavo darbo taisyklės nepririštos prie vieno įrankio."},
  {d:"2026-10-21",c:"f",k:1,t:"Claude Duet: proaktyvus agentas",x:"Nauja atskira programėlė, kurioje Claude pats ateina su tuo, kas reikalauja dėmesio: kas rytą siunčia trumpą santrauką, stebi prijungtas programas ir dirba fone. Prieš siųsdamas žinutę, mokėdamas ar ką nors trindamas parodo, ką ketina daryti, ir laukia patvirtinimo.",w:"Skirta specialistams ir smulkiam verslui. Kol kas tik JAV Pro ir Max vartotojams per laukiančiųjų sąrašą."},
  {d:"2026-10-15",c:"f",t:"Code Review visiems Team ir Enterprise",x:"Automatinė kodo peržiūra išėjo iš bandomosios versijos ir veikia maždaug tris kartus greičiau.",w:"Aktualu, jei komanda kuria programinę įrangą."},
  {d:"2026-10-08",c:"f",k:1,t:"Docs, Slides ir Design visuose planuose",x:"Trys artefaktų tipai išėjo iš beta ir prieinami net Free plane. Atsirado Dashboards (gyvos suvestinės iš duomenų) ir Motion (animuoti paaiškinimai). Atskiras claude.ai/design užsidaro gruodžio 14 d.",w:"Pristatymus ir dokumentus gali kurti ir be mokamo plano."},
  {d:"2026-10-07",c:"m",t:"Claude Haiku 5.5",x:"Greičiausias ir pigiausias Anthropic mažasis modelis, skirtas dideliems kiekiams. Max ir Team planai gavo mėnesinius API kreditus.",w:"Greitiems klausimams ir automatizacijoms."},
  {d:"2026-10-06",c:"f",t:"Claude dirba Google Docs, Sheets ir Slides",x:"Priedas Google Workspace ir naujos jungtys leidžia Claude kurti ir redaguoti Google failus. Pagal nutylėjimą kiekvienas pakeitimas laukia patvirtinimo.",w:"Jei dirbi Google aplinkoje, nebereikia kopijuoti teksto pirmyn atgal."},
+ {d:"2026-10-06",c:"b",t:"Nemokami metai Team plano startuoliams",x:"Įmonės, įkurtos per pastaruosius penkerius metus arba gavusios investicijų per dvejus, gali gauti metus nemokamo Claude Team plano iki penkių premium vietų ir 1 000 USD API kreditų. Paraiška teikiama claude.com/programs/startups.",w:"Jei ką tik pradėjai verslą, verta pasitikrinti, ar atitinki sąlygas. Tai sutaupo kelis tūkstančius eurų per metus."},
  {d:"2026-10-02",c:"b",r:1,t:"Anthropic skiria 100 mln. USD AI diegimo inžinieriams",x:"Paleista Claude Frontier Academy, kuri iki 2027 m. pabaigos turi parengti 10 000 specialistų. Dalyvauja Accenture, Deloitte, McKinsey ir kitos organizacijos.",w:"Rinka moka ne už mokėjimą naudotis AI, o už gebėjimą įdiegti jį į realius procesus."},
  {d:"2026-10-01",c:"b",r:1,t:"Barclays naudoja Claude visame banke",x:"Žinių asistentą naudoja daugiau nei 16 000 darbuotojų, o modeliai kasdien rūšiuoja apie 120 000 klientų laiškų.",w:"Brandos testas: kuriame konkrečiame procese AI turi rolę, prieigas ir žmogaus patvirtinimą?"},
  {d:"2026-09-29",c:"b",r:1,t:"Anthropic IPO dokumentai",x:"Pasak Reuters, bendrovė investuotojams pati įvardija pažangaus AI rizikas, o beveik pusė jos pajamų ateina per Amazon ir Google debesijas.",w:"Pamoka verslui: nestatyk visos sistemos ant vieno tiekėjo."},
  {d:"2026-09-28",c:"m",t:"Claude Sonnet 5.5",x:"Antras 5.5 šeimos modelis: greitesnis ir pigesnis Opus 5.5 papildas kasdieniams darbams.",w:"Tikėtinas tavo numatytasis modelis kasdienai."},
- {d:"2026-09-23",c:"b",r:1,t:"Amazon pardavėjų asistentas ateina į Claude",x:"Amazon Seller Assistant tampa nuolat veikiančiu agentu su verslo atmintimi, o Selling Partner papildinys beta režimu startuoja Claude.",w:"Agentas su kontekstu, leidimais, ribomis ir auditu: taip verta galvoti apie savo AI komandą."},
- {d:"2026-09-22",c:"m",k:1,t:"Claude Opus 5.5",x:"Anthropic teigimu, daugumoje darbų pasiekia Fable 5.1 lygį, o tipiniuose darbuose kainuoja apie 40 % mažiau nei Opus 5. Pro, Max ir Team planams padidinti limitai.",w:"Galingas modelis rimtiems darbams nebeturi būti brangiausias."},
- {d:"2026-09-16",c:"f",k:1,t:"Chat ir Cowork tampa vienu Claude",x:"Nebereikia rinktis režimo: viename pokalbyje gali užduoti klausimą arba perduoti visą ataskaitą. Kartu startavo Docs ir Slides, o Design atkeliavo į pokalbius.",w:"Nebereikia galvoti, kurį režimą rinktis. Pirmiausia Pro ir Max."},
- {d:"2026-09-01",c:"m",t:"Claude Fable 5.1 ir Mythos 5.1",x:"Tas pats modelis su skirtingomis apsaugomis. Fable 5.1 prieinamas visiems, Mythos 5.1 tik patikimoms organizacijoms, ypač kibernetinio saugumo srityje.",w:"Fable 5.1 yra aukščiausia viešai prieinama pakopa."}
+ {d:"2026-09-23",c:"b",r:1,t:"Amazon pardavėjų asistentas ateina į Claude",x:"Amazon Seller Assistant tampa nuolat veikiančiu agentu su verslo atmintimi, o Selling Partner papildinys beta režimu startuoja Claude.",w:"Agentas su kontekstu, leidimais, ribomis ir auditu: taip verta galvoti apie savo AI komandą."}
 ];
 
 const QUIZ=[
