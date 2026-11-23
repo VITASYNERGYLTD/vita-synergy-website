@@ -135,6 +135,67 @@ footer.site .fwrap{max-width:1100px;margin:0 auto;padding:0 24px}
 .foot-grid a:hover{color:var(--pink)}
 .legal{border-top:1px solid var(--line);padding-top:24px;font-size:.8rem}
 @media(max-width:480px){footer.site .fwrap{padding-left:16px;padding-right:16px}}
+
+/* v2 išdėstymas */
+.hero2 .grid{display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:center}
+@media(max-width:860px){.hero2 .grid{grid-template-columns:1fr;gap:28px}}
+.hero2 .lead{margin-bottom:0}
+.offercard{background:var(--surface);border:1.5px solid var(--line-pink);border-radius:var(--radius);padding:30px 28px}
+.offercard .price{margin:12px 0 18px}
+.offercard .btn{width:100%;text-align:center}
+.offercard .who2{font-size:.92rem;color:var(--muted);margin-top:16px}
+.offercard .who2 b{color:var(--cream);font-weight:500}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:8px}
+@media(max-width:860px){.trio{grid-template-columns:1fr}}
+.trio .box p{color:var(--cream)}
+.trio .box .k{display:block;font-family:'Playfair Display',serif;font-style:italic;color:var(--pink);font-size:1.15rem;margin-bottom:10px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-bottom:34px}
+@media(max-width:860px){.split{grid-template-columns:1fr;gap:18px}}
+.split .quote{margin:0}
+.sub{font-family:'Playfair Display',serif;font-size:1.45rem;color:var(--cream);margin:10px 0 18px}
+.pains{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media(max-width:760px){.pains{grid-template-columns:1fr}}
+.pains .box h3{font-size:1.15rem;margin-bottom:8px}
+.pains .box.wide{grid-column:1/-1}
+.turn{margin:56px 0 0;padding:40px 36px;border-radius:var(--radius);background:linear-gradient(135deg,var(--surface-2),var(--surface) 70%);border:1px solid var(--line-pink)}
+@media(max-width:600px){.turn{padding:28px 22px}}
+.turn h3{font-size:clamp(1.4rem,3vw,1.9rem);margin-bottom:14px}
+.turn p{color:var(--cream)}
+.buyers{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:24px 0}
+@media(max-width:860px){.buyers{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:460px){.buyers{grid-template-columns:1fr}}
+.buyers div{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:14px;padding:18px 16px;color:var(--cream);font-size:.98rem}
+.buyers b{display:block;font-family:'Playfair Display',serif;font-style:italic;color:var(--pink);font-weight:400;font-size:1.3rem;margin-bottom:4px}
+.punch{font-family:'Playfair Display',serif;font-size:clamp(1.3rem,2.6vw,1.7rem);color:var(--cream);margin:6px 0 0;line-height:1.35}
+.punch .em{font-style:italic}
+.aud{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:26px}
+@media(max-width:900px){.aud{grid-template-columns:1fr}}
+.aud .box h3{font-size:1.2rem;margin-bottom:8px}
+.aud .box .who{margin-bottom:14px!important}
+.aud .box p:last-child{color:var(--cream)}
+.notfor{margin-top:26px;max-width:none}
+.notfor h3{font-size:1.15rem;margin-bottom:12px}
+.xlist{list-style:none;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:860px){.xlist{grid-template-columns:1fr}}
+.xlist li{position:relative;padding-left:28px;color:var(--muted);font-size:.98rem}
+.xlist li::before{content:"\2715";position:absolute;left:0;top:0;color:var(--pink);font-weight:600}
+.lessons{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:26px}
+@media(max-width:800px){.lessons{grid-template-columns:1fr}}
+.lesson{display:flex;flex-direction:column}
+.lesson .n{font-family:'Playfair Display',serif;font-style:italic;color:var(--pink);font-size:1.05rem;display:block;margin-bottom:6px}
+.lesson h3{font-size:1.22rem;margin-bottom:10px}
+.lesson p{margin-bottom:10px!important}
+.lesson .q{color:var(--cream)!important;font-weight:500}
+.lesson .res{margin-top:auto!important;padding:14px 16px;border-radius:12px;background:rgba(94,184,154,.08);border:1px solid rgba(94,184,154,.25);color:var(--cream)!important;font-size:.95rem!important}
+.lesson .res b{color:var(--emerald)!important;font-weight:600}
+.lesson .extra{display:inline-block;margin-top:10px;font-size:.8rem;color:var(--pink);font-weight:500}
+.bonus{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:26px}
+@media(max-width:800px){.bonus{grid-template-columns:1fr}}
+.bonus .box{border-color:var(--line-pink)}
+.bonus .box h3{font-size:1.25rem;margin-bottom:10px}
+.bonus .box .q{color:var(--cream);font-weight:500}
+.bonus .get{margin-top:14px!important;font-size:.92rem!important;color:var(--cream)!important}
+.bonus .get b{color:var(--pink);font-weight:600}
 </style>
 </head>
 <body>
@@ -142,76 +203,105 @@ footer.site .fwrap{max-width:1100px;margin:0 auto;padding:0 24px}
   <div class="nav-in">
     <a class="logo" href="https://www.vita-synergy.com/">ERIKA <i>KARTA</i></a>
     <div class="nav-links">
-      <a href="#kvadratai">Keturi kvadratai</a>
+      <a href="#kam">Kam skirta</a>
+      <a href="#pamokos">Pamokos</a>
       <a href="#istorija">Mano istorija</a>
-      <a href="#viduje">Kas viduje</a>
       <a href="#klausimai">Klausimai</a>
     </div>
-    <a class="nav-cta" href="#kaina">Noriu programos</a>
+    <a class="nav-cta" href="#kaina">Noriu mokymų</a>
     <button class="nav-burger" type="button" aria-label="Meniu" aria-expanded="false" onclick="var n=this.closest('.nav-in').parentElement;var o=n.classList.toggle('nav-open');this.setAttribute('aria-expanded',o);this.textContent=o?'✕':'☰'">&#9776;</button>
   </div>
 </nav>
 <main>
 
 <section class="hero2"><div class="wrap">
+<div class="grid">
+<div>
 <h1>Kaip parduoti šiandien, kai visi persisotinę <span class="em">ir tavęs nebemato?</span></h1>
 <p class="lead"><b>Pradėk kurti tokį turinį, kuris patraukia potencialių pirkėjų dėmesį, sukelia susidomėjimą tavo produktu ir veda juos iki pirkimo.</b></p>
-<p class="lead">Žmonėms netrūksta pasiūlymų. Jiems trūksta priežasčių pasirinkti būtent tavo pasiūlymą.</p>
-<p class="lead"><b>Pardavimas prasideda ne tada, kai žmogus paspaudžia mygtuką „Mokėti“.</b> Jis prasideda daug anksčiau, kai supranti, kodėl žmogus apskritai perka, kas jam svarbu ir kas paskatina priimti sprendimą.</p>
-<p class="lead">Šiuose mokymuose išmoksi atpažinti skirtingus pirkimo motyvus, suprasti, kas stabdo žmogų nuo pirkimo, ir kurti turinį, kuris padeda parduoti net tiems, kurie šiandien tavo produkto dar neieško.</p>
-<p class="lead"><b>Praktiniai mokymai</b> ekspertams, paslaugų specialistams, smulkaus verslo savininkams ir tinklinio marketingo partneriams.</p>
+</div>
+<div class="offercard">
 <span class="tag-offer">Specialus laikinas pasiūlymas</span>
 <p class="price"><s class="old">£159</s>£59</p>
 <a class="btn" href="#kaina">Noriu išmokti parduoti per turinį</a>
+<p class="who2"><b>Praktiniai mokymai</b> ekspertams, paslaugų specialistams, smulkaus verslo savininkams ir tinklinio marketingo partneriams.</p>
+</div>
+</div>
+<div class="trio" style="margin-top:56px">
+<div class="box"><span class="k">Pasiūlymų netrūksta</span><p>Žmonėms netrūksta pasiūlymų. Jiems trūksta priežasčių pasirinkti būtent tavo pasiūlymą.</p></div>
+<div class="box"><span class="k">Pardavimas prasideda anksčiau</span><p>Ne tada, kai žmogus paspaudžia mygtuką „Mokėti“. Jis prasideda daug anksčiau, kai supranti, kodėl žmogus apskritai perka, kas jam svarbu ir kas paskatina priimti sprendimą.</p></div>
+<div class="box"><span class="k">Ką išmoksi</span><p>Atpažinti skirtingus pirkimo motyvus, suprasti, kas stabdo žmogų nuo pirkimo, ir kurti turinį, kuris padeda parduoti net tiems, kurie šiandien tavo produkto dar neieško.</p></div>
+</div>
 </div></section>
 
 <section class="sec" id="problema"><div class="wrap">
-<p class="eyebrow">Problema</p>
-<h2>Tu esi savo srities specialistas, <span class="em">ne turinio kūrėjas</span></h2>
-<p class="big">Kiekvieną rytą tas pats klausimas: „Ką šiandien įkelti?“ O vakare graužia kaltė: „Vėl nieko nepaskelbiau.“</p>
-<p>Atrodo, kad privalai daryti viską: ekspertinius įrašus, asmenines istorijas, rilsus, užkulisius. Kuo daugiau patarimų prisižiūri, tuo daugiau darbo sau susikuri.</p>
-<p>O rezultatas keistas. Vienas žmogus pamato tave pirmą kartą ir po dešimties minučių parašo: „Kur sumokėti?“ Kitas seka pusmetį, paklausia kainos ir dingsta.</p>
-<p>Skirtumas ne filmavime ir ne sekėjų skaičiuje. <b>Skirtingoms nišoms reikia visiškai skirtingo turinio.</b> Patarimas, kuris veikia psichologei, žvakių kūrėjai tik sugadina emociją. O tai, kas parduoda žvakes, buhalterei neatneša nė vienos užklausos.</p>
-<p class="quote">„Gerai, šito nebekeliu. Tai ką konkrečiai man šiandien nufilmuoti ar parašyti, kad ateitų klientai?“</p>
-<p>Į šį klausimą ir atsako „Turinio kvadrantas“.</p>
+<div class="split">
+<div>
+<h2>Kodėl kuri turinį, <span class="em">bet žmonės neperka?</span></h2>
+<p>Tu daliniesi naudingais patarimais, filmuoji Reels, pasakoji apie savo produktus ar paslaugas. Stengiesi būti matoma, priminti apie save ir nepraleisti nė vienos galimybės pritraukti klientų.</p>
+</div>
+<p class="quote">Bet kiek viso šito darbo iš tikrųjų virsta pardavimais?</p>
+</div>
+<p class="sub">Gal atpažinsi savo situaciją?</p>
+<div class="pains">
+<div class="box"><h3>Kuri turinį, bet nesulauki norimų rezultatų</h3><p>Vieni įrašai beveik nesulaukia dėmesio, kitus žmonės išsisaugo, pakomentuoja, padėkoja, bet pirkti neskuba.</p></div>
+<div class="box"><h3>Nuolat ieškai naujų idėjų</h3><p>Stebi konkurentus, bandai populiarius formatus, tačiau tai, kas veikia vienam verslui, nebūtinai veikia tavo.</p></div>
+<div class="box"><h3>Žmonės domisi, bet neperka</h3><p>Klausia kainos, prašo informacijos, ilgai susirašinėja, o galiausiai atsako: „Pagalvosiu.“</p></div>
+<div class="box"><h3>Nežinai, kaip parduoti neatrodant įkyriai</h3><p>Nenori kiekviename įraše reklamuoti produkto, bet kai apie jį nekalbi, žmonės net nesupranta, ką iš tavęs galima nusipirkti.</p></div>
+<div class="box wide"><h3>Turinys atima vis daugiau laiko</h3><p>Kartais vienam Reels skiri kelias valandas, o rytoj vėl turi pradėti nuo klausimo: „Ką šiandien įkelti?“</p></div>
+</div>
+<div class="turn">
+<h3>O jeigu problema ne ta, kad kuri <span class="em">per mažai turinio?</span></h3>
+<p>Žmonės neperka vien todėl, kad pamato tavo produktą.</p>
+<div class="buyers">
+<div><b>Vienam</b>jo reikia jau dabar.</div>
+<div><b>Kitam</b>dar reikia suprasti, kuo jis naudingas.</div>
+<div><b>Trečias</b>lygina pasiūlymus.</div>
+<div><b>Ketvirtas</b>apie tokį pirkinį net negalvojo, kol kažkas nesukėlė noro.</div>
+</div>
+<p>Ir visiems jiems negali parduoti vienodai. Kai supranti, kodėl žmogus perka ir ko jam reikia, kad apsispręstų, pasikeičia ne tik tavo turinio temos.</p>
+<p class="punch">Pasikeičia <span class="em">visa pardavimo logika.</span></p>
+</div>
 </div></section>
 
-<section class="sec" id="kvadratai"><div class="wrap">
-<p class="eyebrow">Keturi kvadratai</p>
-<h2>Rask savo ir pamatyk, <span class="em">ko jam reikia</span></h2>
-<p class="big">Kiekvienam kvadratui kurse yra atskira pamoka: ką rodyti, kaip kelti pasitikėjimą ir kokios klaidos stabdo pardavimus.</p>
-<div class="cards4">
-<div class="box q1"><span class="n">1 · Problemos nėra</span><h3>„Gražu. Noriu ir aš.“</h3><p class="who">Papuošalai, drabužiai, desertai, žvakės, namų dekoras, SPA.</p><p>Išmoksi sukelti norą be išgalvoto skausmo: per procesą, gyvenimo estetiką, naudojimo situacijas ir skirtingą turinį tiems, kas perka sau ir dovanai.</p></div>
-<div class="box q2"><span class="n">2 · Problema aiški, sprendimas aiškus</span><h3>„Žinau, ko reikia. Kodėl tave?“</h3><p class="who">Manikiūras, buhalterija, masažas, fotografija, valymas, korepetitoriai.</p><p>Išmoksi parodyti, kodėl verta rinktis būtent tave: per darbo atvejus, aiškią eigą, kainą ir sąlygas bei atsakymus į tai, ko klientas bijo.</p></div>
-<div class="box q3"><span class="n">3 · Problema aiški, sprendimas neaiškus</span><h3>„Žinau, kas skauda, bet nežinau, kas padės.“</h3><p class="who">Psichologija, koučingas, mityba, rinkodara, verslo konsultacijos, mokymai.</p><p>Išmoksi paaiškinti savo metodą paprastais žodžiais, parodyti, kam jis tinka, ir abstraktų rezultatą paversti konkrečiu pokyčiu žmogaus kasdienybėje.</p></div>
-<div class="box q4"><span class="n">4 · Problema atsiranda tam tikru momentu</span><h3>„Šiandien nereikia, bet kai prispirs...“</h3><p class="who">Odontologija, autoservisai, remontas, renginiai, dovanos progoms.</p><p>Išmoksi išlikti atmintyje iki to momento, būti greitai randamu, kai jis ateina, ir laiku pradėti kalbėti apie sezonines paslaugas.</p></div>
+<section class="sec" id="kam"><div class="wrap">
+<h2>Kam skirti <span class="em">šie mokymai?</span></h2>
+<p class="big">Jeigu turi ką parduoti, bet nežinai, kaip per turinį pritraukti daugiau pirkėjų, šie mokymai skirti tau.</p>
+<div class="aud">
+<div class="box yes"><h3>Esi ekspertė ar paslaugų specialistė?</h3><p class="who">Psichologė, trenerė, mentorė, kosmetologė, buhalterė, korepetitorė ar kitos srities specialistė.</p><p>Suprasi, kaip pristatyti savo paslaugos vertę, kuo sudominti potencialius klientus ir ką jiems parodyti, kad būtų lengviau apsispręsti.</p></div>
+<div class="box yes"><h3>Turi smulkų verslą ar parduodi fizinius produktus?</h3><p class="who">Prekės, gaminiai, nedidelė parduotuvė.</p><p>Sužinosi, kaip kurti turinį, kuris ne tik pristato prekę, bet ir sukelia norą ją įsigyti. Net tada, kai žmogus jos specialiai neieškojo.</p></div>
+<div class="box yes"><h3>Dirbi tinkliniame marketinge?</h3><p class="who">Produktai ir verslo galimybė.</p><p>Išsiaiškinsi, kaip sudominti žmones savo produktais ir verslo galimybe, kaip kalbėti apie jų vertę ir pritraukti potencialius klientus bei partnerius neapsiribojant katalogais, akcijomis ar nuolatiniais kvietimais prisijungti.</p></div>
 </div>
-<p style="margin-top:24px">Tavo produktas gali tilpti į kelis kvadratus, ir tai normalu. Kurse yra atskira pamoka, kaip tą patį produktą pristatyti keturiems skirtingiems pirkėjams.</p>
+<div class="box notfor"><h3>Šie mokymai netiks, jeigu:</h3>
+<ul class="xlist">
+<li>Dar neturi produkto, paslaugos ar aiškios verslo veiklos.</li>
+<li>Ieškai tik techninių Reels filmavimo ir montavimo pamokų.</li>
+<li>Tikiesi, kad viena stebuklinga frazė ar įrašas garantuos pardavimus be jokio papildomo darbo.</li>
+</ul></div>
 </div></section>
 
-<section class="sec"><div class="wrap">
-<p class="eyebrow">Kaip tai atrodo</p>
-<h2>Tas pats darbas. <span class="em">Kitas turinys.</span></h2>
+<section class="sec" id="pamokos"><div class="wrap">
+<h2>Ką išmoksi ir ką galėsi <span class="em">pritaikyti savo versle?</span></h2>
+<p class="big">Ne dar vienas idėjų sąrašas, kurį pamirši po savaitės. Suprasi, kaip veikia pirkėjo sprendimas ir kokį vaidmenį jame atlieka tavo turinys.</p>
+<div class="lessons">
+<div class="box lesson"><span class="n">1 pamoka</span><h3>Kodėl žmonės perka ir koks turinys jiems sukelia norą?</h3><p>Suprasi keturias skirtingas pirkimo motyvų kryptis ir kodėl tas pats turinys negali vienodai veikti visiems. Pradėsime nuo pirkinių, kurių žmonės neplanuoja, bet staiga užsinori.</p><p class="res"><b>Rezultatas:</b> suprasi, kaip per turinį sukelti susidomėjimą ir norą įsigyti produktą net tada, kai žmogus nejaučia jokios konkrečios problemos.</p></div>
+<div class="box lesson"><span class="n">2 pamoka</span><h3>Kai klientas jau žino, ko jam reikia</h3><p class="q">Kaip parduoti žmogui, kuris jau ieško konkretaus produkto ar specialisto?</p><p>Išmoksi parodyti savo kompetenciją, darbo rezultatus ir priežastis pasirinkti būtent tave, neapkraudama žmogaus nereikalinga informacija.</p><p class="res"><b>Rezultatas:</b> žinosi, kaip kurti turinį, kuris padeda išsiskirti iš konkurentų ir gauti daugiau tikslinių užklausų.</p></div>
+<div class="box lesson"><span class="n">3 pamoka</span><h3>Kai žmogus turi problemą, bet nežino, kokį sprendimą pasirinkti</h3><p class="q">Kodėl vieniems klientams neužtenka parodyti produktą ar pasakyti kainą?</p><p>Išmoksi paaiškinti savo siūlomo sprendimo vertę, parodyti galimą rezultatą ir padėti žmogui suprasti, kodėl jam verta svarstyti tavo pasiūlymą.</p><span class="extra">Papildomai: PDF atmintinė ir praktinės užduotys</span><p class="res"><b>Rezultatas:</b> žinosi, kaip sudominti tuos, kurie dar nėra apsisprendę, kokio specialisto, produkto ar metodo jiems reikia.</p></div>
+<div class="box lesson"><span class="n">4 pamoka</span><h3>Kaip parduoti tai, ko žmogui prireikia tik tam tikroje situacijoje?</h3><p class="q">Ką daryti, kai tavo produkto ar paslaugos žmonėms nereikia kiekvieną dieną?</p><p>Suprasi, kaip išlikti potencialaus kliento atmintyje, priminti apie situacijas, kuriose tavo pasiūlymas aktualus, ir padėti žmogui tave prisiminti atsiradus poreikiui.</p><p class="res"><b>Rezultatas:</b> turėsi aiškesnę kryptį, kaip kurti turinį sezoniniams, proginiams ir situaciniams pirkimams.</p></div>
+<div class="box lesson"><span class="n">5 pamoka</span><h3>Ką parodyti žmogui, kad jis būtų pasiruošęs pirkti?</h3><p class="q">Kodėl vienas žmogus perka iš karto, o kitam neužtenka net kelių mėnesių tavo turinio?</p><p>Susipažinsi su pirkėjo sąmoningumo laiptais ir suprasi, kokios informacijos jam reikia skirtingais apsisprendimo etapais.</p><p class="res"><b>Rezultatas:</b> žinosi, kokį turinį kurti žmogui, kuris dar nesupranta savo poreikio, jau ieško sprendimo ar yra pasiruošęs rinktis, iš ko pirkti.</p></div>
+<div class="box lesson"><span class="n">6 pamoka</span><h3>Kaip visa tai sujungti, kad turinys vestų į pardavimus?</h3><p class="q">Atskiri Reels, įrašai ir Stories dar nėra pardavimo sistema.</p><p>Išmoksi susieti dėmesį pritraukiantį turinį, pasitikėjimą stiprinančius įrašus ir pardavimo pasiūlymus į aiškų kliento kelią.</p><p class="res"><b>Rezultatas:</b> galėsi susidėlioti savo turinio ir pardavimų piltuvėlio planą, kad žinotum ne tik ką skelbti, bet ir kokį kitą žingsnį turėtų žengti potencialus klientas.</p></div>
+</div>
+</div></section>
 
-<div class="cmp">
-<div class="box no"><span class="lbl">Žvakių kūrėja · neveikia</span><p>„Ar pavargote nuo vakarų be jaukumo? Mūsų žvakė padės įveikti stresą.“</p></div>
-<div class="box yes"><span class="lbl ok">Veikia</span><p>Lietingas vakaras, žvakė ant palangės, arbata, knyga. Po vaizdu kaina ir kaip užsisakyti.</p></div>
+<section class="sec" id="bonusai"><div class="wrap">
+<p class="eyebrow">Bonus pamokos</p>
+<h2>Kad susidomėjimas nesibaigtų <span class="em">žinute „Pagalvosiu“</span></h2>
+<p class="big">Pritraukti potencialų klientą yra tik pusė darbo. Svarbu neprarasti jo tada, kai jis pagaliau susidomi tavo pasiūlymu.</p>
+<p>Todėl mokymuose rasi ir praktines pamokas apie pardavimą tiesiogiai bendraujant su klientais.</p>
+<div class="bonus">
+<div class="box"><span class="n" style="font-family:'Playfair Display',serif;font-style:italic;color:var(--pink)">Bonusas 1</span><h3>Kaip parduoti per susirašinėjimą?</h3><p class="q">Ką atsakyti, kai žmogus parašo „Kiek kainuoja?“, „Per brangu“ arba „Dar pagalvosiu“?</p><p>Suprasi, kaip išsiaiškinti kliento poreikį, pristatyti pasiūlymą ir atsakyti į abejones be įkyraus įkalbinėjimo.</p><p class="get"><b>Gauni:</b> video pamoką ir PDF žinučių šablonus.</p></div>
+<div class="box"><span class="n" style="font-family:'Playfair Display',serif;font-style:italic;color:var(--pink)">Bonusas 2</span><h3>Kaip vesti diagnostinį pokalbį, kuris padeda parduoti?</h3><p>Kaip per trumpą pokalbį išsiaiškinti tikrąją kliento situaciją, parodyti savo paslaugos vertę ir pristatyti pasiūlymą, neišdalinant visos konsultacijos nemokamai?</p><p class="get"><b>Gauni:</b> praktinę pokalbio struktūrą, kurią galėsi pritaikyti savo pardavimuose.</p></div>
 </div>
-<div class="cmp">
-<div class="box no"><span class="lbl">Buhalterė · neveikia</span><p>„Kodėl verslui reikia buhalterio.“</p></div>
-<div class="box yes"><span class="lbl ok">Veikia</span><p>„Metus netvarkėte dokumentų ir gėda kreiptis? Štai nuo ko pradedame, kai klientas ateina su apleista apskaita.“</p></div>
-</div>
-<div class="cmp">
-<div class="box no"><span class="lbl">Koučerė · neveikia</span><p>„Kviečiu į 8 savaičių programą iš 6 modulių.“</p></div>
-<div class="box yes"><span class="lbl ok">Veikia</span><p>„Kodėl sekmadienio vakarą sugenda nuotaika vien pagalvojus, kad rytoj vėl į darbą?“</p></div>
-</div>
-<div class="cmp">
-<div class="box no"><span class="lbl">Tortų kepėja · neveikia</span><p>Kasdien: „Užsisakyk dabar, šią savaitę nuolaida.“ Žmogui šiandien nėra ko švęsti.</p></div>
-<div class="box yes"><span class="lbl ok">Veikia</span><p>Rodo, kaip gimsta tortas, kad ją prisimintų. Profilyje aišku: prieš kiek dienų užsakyti, kiek kainuoja ir kur rašyti.</p></div>
-</div>
-
-<p style="margin-top:26px">Nė vienam iš šių pavyzdžių nereikėjo geresnės kameros ar daugiau sekėjų. Reikėjo suprasti, <b>dėl ko žmogus perka ir ką jis jau žino</b>.</p>
-<a class="btn ghost" href="#kaina">Noriu to išmokti</a>
 </div></section>
 
 <section class="sec" id="istorija"><div class="wrap">
@@ -226,44 +316,6 @@ footer.site .fwrap{max-width:1100px;margin:0 auto;padding:0 24px}
 <p>Žmonės pirko, nes buvo skaitę mano įrašus. Dar iki pokalbio jau suprato, kaip aš galvoju, kaip dirbu ir kuo galiu jiems padėti.</p>
 <p>Daugiau žmonių man klientų neatnešė. Atnešė turinys, kuris tinkamiems žmonėms pasakė tai, ko jiems reikėjo.</p>
 </div></div>
-</div></section>
-
-<section class="sec"><div class="wrap">
-<p class="eyebrow">Abejonė</p>
-<h2>„Aš jau baigiau <span class="em">kelis kursus</span>“</h2>
-<p class="big">Instagram mokymus, gal dar pardavimų kursą. O klientų vis tiek mažai.</p>
-<p>Gali būti, kad žinių tau netrūksta. Nufilmuoti moki, tekstą parašyti moki. Tik tie kursai mokė visus vienodai, o tavo nišai pusė tų taisyklių netinka.</p>
-<p>Šis kursas nemoko filmuoti. Jis moko nuspręsti, apie ką kalbėti rytoj ir kokį darbą tas įrašas turi atlikti.</p>
-<div class="box yes" style="max-width:44em;margin-top:26px"><span class="lbl">Vieta atsiliepimui</span><p><span class="ph">[TIKRAS ATVEJIS: kas buvo dalyvė, ką pardavinėjo, ką pakeitė savo turinyje ir kas nutiko. 3–4 sakiniai.]</span></p></div>
-</div></section>
-
-<section class="sec" id="viduje"><div class="wrap">
-<p class="eyebrow">Kas viduje</p>
-<h2>Temos, kurias išnagrinėsi <span class="em">su savo produktu</span></h2>
-<p class="big">Po kiekvienos pamokos yra praktinė užduotis, kurią darai su savo produktu ir savo paskyra.</p>
-<div class="cards4">
-<div class="box yes"><span class="n">Kvadratas</span><h3>Keturios pirkimo situacijos</h3><p>Po pamoką kiekvienam kvadratui ir viena apie tai, kaip tą patį produktą perka keturi skirtingi pirkėjai.</p></div>
-<div class="box"><span class="n">Laiptai</span><h3>Beno Hunto laiptai</h3><p>Penkios pasirengimo pirkti pakopos, nuo „Man viskas normalu“ iki „Kur užsisakyti?“. Iš vieno produkto gauni penkias temas ir paprastą savaitę.</p></div>
-<div class="box"><span class="n">Žinutės</span><h3>Pardavimai per susirašinėjimą</h3><p>Ką atsakyti į „Kiek kainuoja?“, „Per brangu“ ir „Pagalvosiu“, ir ką parašyti, kai žmogus sako „Perku“.</p></div>
-<div class="box"><span class="n">Pokalbis</span><h3>Diagnostinis pokalbis</h3><p>Kaip pravesti įvadinį pokalbį, kad jis nevirstų valanda nemokamų patarimų ir baigtųsi aiškumu abiem pusėms.</p></div>
-<div class="box"><span class="n">Piltuvėlis</span><h3>Kelias nuo įrašo iki užsakymo</h3><p>Pirmasis pardavimo piltuvėlis: kuo sudominsi, kaip parodysi vertę ir kaip žmogus galės nusipirkti. Be svetainės ir sudėtingos automatizacijos.</p></div>
-<div class="box"><span class="n">Tinkliniam marketingui</span><h3>Kvietimas į komandą</h3><p>Papildoma tema partneriams: kaip pristatyti ne tik kompaniją, bet ir tai, kodėl verta jungtis būtent prie tavo komandos.</p></div>
-</div>
-</div></section>
-
-<section class="sec"><div class="wrap">
-<p class="eyebrow">Rezultatas</p>
-<h2>Ką susidėliosi <span class="em">per kursą</span></h2>
-<ul class="list">
-<li><b>Kokio tiksliai turinio reikia tavo kvadratui.</b> Konkrečios temos vietoj to, ką išbraukei.</li>
-<li><b>Kaip sujungti įrašus į pardavimo grandinę.</b> Penkios temos pagal laiptus, savaitės planas ir piltuvėlio schema nuo įrašo iki užsakymo.</li>
-<li><b>Ką nustoti daryti visam laikui.</b> Kad turiniui neliktų visas tavo laikas, o klientams tik tai, kas nuo jo liko.</li>
-<li><b>Paruoštas žinutes.</b> Atsakymą į kainos klausimą, į „Pagalvosiu“ ir žinutę po sprendimo pirkti.</li>
-</ul>
-<div class="two" style="margin-top:36px">
-<div class="box yes"><h3>Tinka, jeigu</h3><p>Jau turi produktą ar paslaugą, turinį kuri savo jėgomis ir nori žinoti, ką kelti, kad žmonės ne tik žiūrėtų, bet ir pirktų.</p></div>
-<div class="box"><h3>Netinka, jeigu</h3><p>Dar nežinai, ką parduosi, arba tikiesi „stebuklingos piliulės“. Kursas nemoko filmuoti ir nežada pardavimų: rezultatas priklauso ir nuo produkto, kainos bei tavo veiksmų.</p></div>
-</div>
 </div></section>
 
 <section class="sec" id="kaina"><div class="wrap">
