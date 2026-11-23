@@ -232,6 +232,11 @@ body{font-weight:400}
 .chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
 .chips span{background:#fff;border:1px solid var(--line-pink);border-radius:99px;padding:10px 18px;font-size:.98rem;color:var(--cream)}
 #reels .trio .box{border-left:3px solid var(--pink)}
+.dark{background:#0D0D0D!important;--cream:#FAF9F6;--muted:#CDBFC5;--surface:#181014;--surface-2:#221219;--line:rgba(250,249,246,.12);--pink:#E8357F;--line-pink:rgba(232,53,127,.35)}
+.dark .box{box-shadow:none}
+.dark .turn{background:linear-gradient(135deg,#221219,#181014 70%)}
+.dark .chips span{background:#181014}
+.dark .btn{background:#D90F6A}.dark .btn:hover{background:#b80d59}
 #kaina{background:#3A0D1E!important;--cream:#FAF9F6;--muted:#E6D4DB;--surface:#4A1529;--surface-2:#55182F;--line:rgba(255,255,255,.14);--pink:#F0428F;--line-pink:rgba(240,66,143,.4)}
 .sec p.quote{font-size:1.4rem;color:var(--cream);font-weight:400}
 .sec p.punch{font-size:clamp(1.35rem,2.6vw,1.75rem);color:var(--cream);font-weight:400}
@@ -254,7 +259,7 @@ body{font-weight:400}
 </nav>
 <main>
 
-<section class="hero2"><div class="wrap">
+<section class="hero2 dark"><div class="wrap">
 <div class="grid">
 <div>
 <h1>Kaip parduoti šiandien, kai visi persisotinę <span class="em">ir tavęs nebemato?</span></h1>
@@ -297,7 +302,7 @@ body{font-weight:400}
 </div>
 </div></section>
 
-<section class="sec" id="reels"><div class="wrap">
+<section class="sec dark" id="reels"><div class="wrap">
 <h2>Gal tau nereikia <span class="em">dar daugiau Reels?</span></h2>
 <p class="big">Kai pardavimų mažai, dažniausiai pradedame ieškoti, ką dar padaryti.</p>
 <div class="chips">
@@ -363,7 +368,7 @@ body{font-weight:400}
 </div>
 </div></section>
 
-<section class="sec" id="istorija"><div class="wrap">
+<section class="sec dark" id="istorija"><div class="wrap">
 <p class="eyebrow">Mano istorija</p>
 <div class="story2">
 <div class="simg"><img src="https://www.vita-synergy.com/erika-karta.jpg" width="900" height="1026" alt="Erika Karta" loading="lazy"></div>
